@@ -10,7 +10,8 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.window.OnBackInvokedDispatcher;
+import android.view.WindowManager;
+import android.view.View;
 
 public class MainActivity extends Activity {
     private WebView webView;
@@ -18,7 +19,11 @@ public class MainActivity extends Activity {
 
     @Override public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Keep WebView below the native status bar/notch, including Android 15.
+        getWindow().getDecorView().setSystemUiVisibility(0);
+        getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getWindow().setStatusBarColor(Color.rgb(36, 93, 209));
+        getWindow().getDecorView().setSystemUiVisibility(0);
         getWindow().setNavigationBarColor(Color.rgb(246, 249, 255));
         webView = new WebView(this);
         webView.setBackgroundColor(Color.rgb(246, 249, 255));

@@ -1,27 +1,16 @@
-# GitHub Release — Nahwoo V0.1.1
+# Summary
+Nahwoo V0.1.2 — Ikon resmi, logo Tentang, navigasi ringkas, dan perbaikan status bar Android
 
-## Summary (singkat)
+# Description
+Pembaruan tampilan dan integrasi Android Nahwoo.
 
-Nahwoo V0.1.1 — fondasi aplikasi Android offline berbasis WebView, menggunakan prototipe UI terbaru dengan Beranda responsif, pembelajaran, latihan, Catatan Saya, Smart Search, dan tutorial interaktif.
+Perubahan:
+- Menggunakan logo PNG resmi Nahwoo sebagai ikon launcher Android (legacy dan adaptive icon).
+- Mengganti logo pada Pengaturan → Tentang Aplikasi dengan SVG terbaru yang diberikan.
+- Memadatkan tinggi navigasi bawah khusus lisensi Free/Freemium ketika banner AdMob tampil.
+- Mempertahankan ukuran navigasi bawah Premium.
+- Memperbaiki area status bar Android agar jam, sinyal, dan baterai berada di atas konten aplikasi.
+- Memberi warna status bar cobalt #245DD1 dan menjaga header serta banner berada di bawah area notch.
+- Mempertahankan fitur HTML V1.0.7 dan workflow GitHub Actions sebelumnya.
 
-## Description (siap tempel)
-
-### Nahwoo Android V0.1.1 — Initial GitHub Build
-
-Rilis pengembangan pertama untuk pengujian APK Android Nahwoo — *Belajar Baca Kitab dari Nol*, bagian dari Sejuta Santri Apps.
-
-**Fitur awal**
-- Antarmuka mobile offline dari prototipe Nahwoo.
-- Beranda adaptif dengan progres belajar, mufradat, lisensi, dan Tips Nahwu.
-- Navigasi Belajar, Latihan, Catatan Saya, dan Pengaturan.
-- Simpan materi, catatan pribadi, bookmark mufradat dan tips menggunakan penyimpanan lokal.
-- Tutorial interaktif, animasi antartab, dropdown, dan tombol.
-- Build debug APK otomatis menggunakan GitHub Actions.
-
-**Batasan versi awal**
-- Konten dan data masih demo; belum ada bank soal/materi final.
-- AdMob, autentikasi Google, Google Play Billing, Firebase, dan verifikasi WhatsApp belum terintegrasi.
-- Belum terhubung ke `nahwoo.sejutasantri.id`.
-- APK untuk pengujian internal, bukan rilis produksi.
-
-**Rencana berikutnya**: validasi APK di perangkat Android, lalu pengembangan web Nahwoo dan layanan verifikasi WhatsApp/Firebase secara bertahap.
+Status: Development / Internal Testing. Banner AdMob, Google Sign-In, Firebase, Play Billing, dan WhatsApp API masih simulasi/belum terintegrasi.

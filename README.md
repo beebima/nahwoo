@@ -38,3 +38,7 @@ Workflow juga berjalan otomatis ketika perubahan di-push ke branch `main` atau `
 ## GitHub release
 
 Lihat `GITHUB_RELEASE.md` untuk ringkasan dan deskripsi siap tempel.
+
+
+## V0.1.2
+Ikon Android resmi, logo Tentang Aplikasi baru, navbar Free/Freemium lebih ringkas, dan status bar/notch biru.
