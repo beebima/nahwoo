@@ -42,3 +42,7 @@ Lihat `GITHUB_RELEASE.md` untuk ringkasan dan deskripsi siap tempel.
 
 ## V0.1.2
 Ikon Android resmi, logo Tentang Aplikasi baru, navbar Free/Freemium lebih ringkas, dan status bar/notch biru.
+
+
+## V0.1.3 — System bars
+WebView uses edge-to-edge layout with a cobalt status-bar backdrop and a top status inset; no bottom navigation inset is reserved. The system gesture/navigation area transparently overlays the bottom ad (Free/Freemium) or HTML bottom navigation (Premium). Test on real Android devices.

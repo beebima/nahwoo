@@ -12,6 +12,9 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.view.WindowManager;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowInsets;
+import android.widget.FrameLayout;
 
 public class MainActivity extends Activity {
     private WebView webView;
@@ -19,15 +22,54 @@ public class MainActivity extends Activity {
 
     @Override public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Keep WebView below the native status bar/notch, including Android 15.
-        getWindow().getDecorView().setSystemUiVisibility(0);
-        getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getWindow().setStatusBarColor(Color.rgb(36, 93, 209));
-        getWindow().getDecorView().setSystemUiVisibility(0);
-        getWindow().setNavigationBarColor(Color.rgb(246, 249, 255));
+        // Draw behind both system bars. Reserve ONLY the top status inset;
+        // the bottom navigation/gesture area overlays the HTML ad or nav.
+        Window window = getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        window.getDecorView().setSystemUiVisibility(
+            View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION);
+        window.setStatusBarColor(Color.TRANSPARENT);
+        window.setNavigationBarColor(Color.TRANSPARENT);
+        if (android.os.Build.VERSION.SDK_INT >= 29) {
+            window.setStatusBarContrastEnforced(false);
+            window.setNavigationBarContrastEnforced(false);
+        }
+        // Light system icons over cobalt status area; dark gesture handle
+        // over the light ad/banner or navigation background.
+        window.getDecorView().setSystemUiVisibility(
+            View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+            | View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR);
+
+        FrameLayout root = new FrameLayout(this);
+        root.setBackgroundColor(Color.rgb(36, 93, 209)); // status/notch backdrop
         webView = new WebView(this);
         webView.setBackgroundColor(Color.rgb(246, 249, 255));
-        setContentView(webView);
+        FrameLayout.LayoutParams webParams = new FrameLayout.LayoutParams(
+            FrameLayout.LayoutParams.MATCH_PARENT,
+            FrameLayout.LayoutParams.MATCH_PARENT);
+        root.addView(webView, webParams);
+        setContentView(root);
+        root.setOnApplyWindowInsetsListener((view, insets) -> {
+            int statusTop;
+            if (android.os.Build.VERSION.SDK_INT >= 30) {
+                statusTop = insets.getInsets(WindowInsets.Type.statusBars()).top;
+            } else {
+                statusTop = insets.getSystemWindowInsetTop();
+            }
+            FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) webView.getLayoutParams();
+            if (params.topMargin != statusTop) {
+                params.topMargin = statusTop;
+                webView.setLayoutParams(params);
+            }
+            // Do not consume insets: system gesture remains operable.
+            return insets;
+        });
+        root.requestApplyInsets();
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true); // Required by the bundled offline HTML prototype.
         settings.setDomStorageEnabled(true); // Preserves local progress and notes.
