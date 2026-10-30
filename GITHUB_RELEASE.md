@@ -1,13 +1,6 @@
-# Summary
-Nahwoo V0.1.3 — Fix status bar cobalt dan gesture overlay tanpa ruang tambahan
+Nahwoo Android V0.1.5 - Inject Materi Level 1
 
-# Description
-Perbaikan UI Android khusus system bars dan layout WebView.
-
-- Area status bar/notch menampilkan latar biru Nahwoo #245DD1, dengan ikon sistem terang.
-- Banner AdMob demo dan header dimulai tepat di bawah status bar.
-- Area gesture Android tidak lagi mengambil ruang terpisah: transparan dan menumpang di atas banner bawah untuk Free/Freemium atau navigasi bawah untuk Premium.
-- Navigasi bawah tetap menyesuaikan jenis lisensi.
-- Konten dan fitur Nahwoo lainnya tidak diubah.
-
-Status: Development / Internal Testing. Perlu verifikasi pada perangkat Android 15 dan mode navigasi gesture/3 tombol.
+- Inject 10 sublevel L1-S01 sampai L1-S10 dari DOCX (draf review).
+- Reader mendukung teks Arab, terjemahan, penjelasan, latihan cepat, dan rangkuman.
+- Materi level 2-24 tetap dummy.
+- Bank soal Latihan tidak diubah.
