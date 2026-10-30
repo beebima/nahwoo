@@ -1,6 +1,17 @@
-Nahwoo Android V0.1.5 - Inject Materi Level 1
+# Nahwoo Android V0.1.6 — Smart Reader Level 01 V2
 
-- Inject 10 sublevel L1-S01 sampai L1-S10 dari DOCX (draf review).
-- Reader mendukung teks Arab, terjemahan, penjelasan, latihan cepat, dan rangkuman.
-- Materi level 2-24 tetap dummy.
-- Bank soal Latihan tidak diubah.
+## Summary
+Nahwoo Android V0.1.6 — Smart Reader V2 + Materi Level 01
+
+## Description
+- Mengganti seluruh materi Level 01 dengan 10 sublevel dari NAHWOO_Materi_Level_01_V2.
+- Memperkenalkan Smart Reader V2: pembuka, target belajar, contoh Arab berharakat, kartu bedah kata, insight, peringatan, latihan interaktif, dan ringkasan.
+- Mengambil jawaban latihan dari lampiran produksi dan menampilkannya hanya setelah tombol dibuka.
+- Menyembunyikan metadata produksi, prompt, dan lampiran QA dari halaman murid.
+- Mengikuti pengaturan ukuran font Arab dan Latin serta tema aplikasi.
+- Mempertahankan progres, catatan, navigasi, dan fitur lainnya.
+- Memperbaiki versionCode dan versionName Android menjadi 6 / 0.1.6.
+
+## Status
+- Belum diuji sebagai APK di perangkat fisik.
+- Teks dan harakat Arab masih memerlukan review ilmiah akhir.
