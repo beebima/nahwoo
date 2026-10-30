@@ -15,9 +15,12 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowInsets;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
     private WebView webView;
+    private long lastHomeBackAt = 0L;
+    private static final long EXIT_INTERVAL_MS = 2000L;
     private static final String APP_URL = "file:///android_asset/index.html";
 
     @Override public void onCreate(Bundle savedInstanceState) {
@@ -93,8 +96,24 @@ public class MainActivity extends Activity {
     }
 
     @Override public void onBackPressed() {
-        if (webView != null && webView.canGoBack()) webView.goBack();
-        else super.onBackPressed();
+        if (webView == null) { super.onBackPressed(); return; }
+        // Native back and gesture back both enter this handler. WebView page history
+        // cannot navigate a single-page app, so delegate to its screen stack.
+        webView.evaluateJavascript("(typeof nwAndroidBack==='function')?nwAndroidBack():'home'", value -> {
+            if (isFinishing() || isDestroyed()) return;
+            if ("\"home\"".equals(value)) {
+                long now = android.os.SystemClock.elapsedRealtime();
+                if (now - lastHomeBackAt <= EXIT_INTERVAL_MS) {
+                    finish();
+                } else {
+                    lastHomeBackAt = now;
+                    Toast.makeText(this, "Tekan kembali sekali lagi untuk keluar dari Nahwoo", Toast.LENGTH_SHORT).show();
+                }
+            } else {
+                // Every press outside Beranda is one navigation step, never an exit.
+                lastHomeBackAt = 0L;
+            }
+        });
     }
 
     @Override protected void onDestroy() {

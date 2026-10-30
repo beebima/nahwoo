@@ -1,17 +1,5 @@
-# Nahwoo Android V0.1.6 — Smart Reader Level 01 V2
+# Nahwoo Android V0.1.7 — Evaluasi Level 1
 
-## Summary
-Nahwoo Android V0.1.6 — Smart Reader V2 + Materi Level 01
+20 soal per sublevel (200 soal), 6 opsi A-F, navigasi 20 nomor, draft tersimpan offline, kirim hanya setelah lengkap, nilai dan pembahasan pasca-submit. Layout reader lebih rapi dan penekanan bold/italic.
 
-## Description
-- Mengganti seluruh materi Level 01 dengan 10 sublevel dari NAHWOO_Materi_Level_01_V2.
-- Memperkenalkan Smart Reader V2: pembuka, target belajar, contoh Arab berharakat, kartu bedah kata, insight, peringatan, latihan interaktif, dan ringkasan.
-- Mengambil jawaban latihan dari lampiran produksi dan menampilkannya hanya setelah tombol dibuka.
-- Menyembunyikan metadata produksi, prompt, dan lampiran QA dari halaman murid.
-- Mengikuti pengaturan ukuran font Arab dan Latin serta tema aplikasi.
-- Mempertahankan progres, catatan, navigasi, dan fitur lainnya.
-- Memperbaiki versionCode dan versionName Android menjadi 6 / 0.1.6.
-
-## Status
-- Belum diuji sebagai APK di perangkat fisik.
-- Teks dan harakat Arab masih memerlukan review ilmiah akhir.
+Catatan: L1-S01 berisi 20 soal master yang ditinjau; L1-S02 sampai L1-S10 adalah soal pemahaman teks otomatis berbasis materi, memerlukan review editorial sebelum rilis publik.
