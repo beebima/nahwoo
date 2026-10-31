@@ -1,0 +1,95 @@
+{
+  "reader_tests": [
+    {
+      "level": 1,
+      "sublevel": 1,
+      "cardCount": 8,
+      "quizOptions": 6,
+      "numbers": 20,
+      "arabicElements": 18,
+      "body": "← Daftar sublevel\nLEVEL 1 · SUBLEVEL 1\nPerbedaan membaca Al-Qur'an dan memahami bahasa Arab\n🎯 Yang bakal kamu kuasai\n\nSesudah bagian ini, kamu diharapkan bisa membedakan melafalkan, mengenali arti kata, dan memahami pesan kalimat; menemukan siapa melakukan apa pada contoh pendek; serta me",
+      "keyBefore": false,
+      "activeLevel": 1
+    },
+    {
+      "level": 4,
+      "sublevel": 5,
+      "cardCount": 9,
+      "quizOptions": 6,
+      "numbers": 20,
+      "arabicElements": 24,
+      "body": "← Daftar sublevel\nLEVEL 4 · SUBLEVEL 5\nJumlah fi‘liyah\n🎯 Yang bakal kamu kuasai\n\nKamu akan membedakan jumlah fi‘liyah dari jumlah ismiyah dasar, mengenali tindakan yang membuka cerita, dan menemukan pelaku serta tambahan sederhana. Kamu belum perlu menganalisis kalimat pasif, pola inversi",
+      "keyBefore": false,
+      "activeLevel": 4
+    },
+    {
+      "level": 8,
+      "sublevel": 10,
+      "cardCount": 10,
+      "quizOptions": 6,
+      "numbers": 20,
+      "arabicElements": 28,
+      "body": "← Daftar sublevel\nLEVEL 8 · SUBLEVEL 10\nAnalisis i‘rab kalimat pendek\n🎯 Yang bakal kamu kuasai\n\nSetelah sesi ini, kamu bisa mengenali contoh analisis i‘rab kalimat pendek, membandingkan dua bentuk pada posisi berbeda, menjelaskan alasan pemakaian tanda, serta menolak penjelasan yang tidak",
+      "keyBefore": false,
+      "activeLevel": 8
+    },
+    {
+      "level": 9,
+      "sublevel": 1,
+      "cardCount": 8,
+      "quizOptions": 6,
+      "numbers": 20,
+      "arabicElements": 16,
+      "body": "← Daftar sublevel\nLEVEL 9 · SUBLEVEL 1\nFa‘il isim zhahir\n🎯 Yang bakal kamu kuasai\n\nMenemukan nama pelaku yang tertulis jelas, membedakannya dari benda yang dikenai tindakan, dan menggunakan harakat rafa‘ sebagai petunjuk bersama susunan kalimat.\n\nYuk, mulai dari sini\n\nAda pintu yang terbu",
+      "keyBefore": false,
+      "activeLevel": 9
+    },
+    {
+      "level": 10,
+      "sublevel": 4,
+      "cardCount": 8,
+      "quizOptions": 6,
+      "numbers": 20,
+      "arabicElements": 13,
+      "body": "← Daftar sublevel\nLEVEL 10 · SUBLEVEL 4\nNa‘at dan man‘ut\n🎯 Bekal yang bakal kamu dapat\n\nMenemukan man‘ut sebagai isim yang diterangkan dan na‘at sebagai sifat yang mengikutinya, serta membedakan frasa sifat dari kalimat yang sudah memberi kabar lengkap.\n\nNgobrol dulu\n\nBayangkan seseorang ",
+      "keyBefore": false,
+      "activeLevel": 10
+    },
+    {
+      "level": 11,
+      "sublevel": 8,
+      "cardCount": 8,
+      "quizOptions": 6,
+      "numbers": 20,
+      "arabicElements": 20,
+      "body": "← Daftar sublevel\nLEVEL 11 · SUBLEVEL 8\nIsim zaman dan makan\n🎯 Target belajar\n\nMembedakan isim makan yang menunjuk tempat dari isim zaman yang menunjuk waktu pada contoh turunannya, dengan bantuan konteks kalimat.\n\nKenapa perlu belajar ini?\n\nSaat mencari ruang kelas, kamu perlu tahu pintu",
+      "keyBefore": false,
+      "activeLevel": 11
+    },
+    {
+      "level": 12,
+      "sublevel": 10,
+      "cardCount": 9,
+      "quizOptions": 6,
+      "numbers": 20,
+      "arabicElements": 29,
+      "body": "← Daftar sublevel\nLEVEL 12 · SUBLEVEL 10\nPraktik membaca teks gundul pendek\n🎯 Yang akan kita kuasai\n\nMembaca tiga kalimat Arab gundul sebagai rangkaian pendek, menghubungkan pelaku yang sama ketika konteks mendukung, dan tidak menciptakan alasan maupun tokoh tambahan.\n\nMulai dari sini\n\nSe",
+      "keyBefore": false,
+      "activeLevel": 12
+    }
+  ],
+  "before_private_key": {
+    "submitted": true,
+    "keysLoaded": false,
+    "result": false,
+    "notice": "Pembahasan belum berhasil dimuat.\n\nJawabanmu telah tersimpan. Ketuk untuk mencoba memuat pembahasan lagi.\n\nMuat pembahasan"
+  },
+  "after_private_key": {
+    "submitted": true,
+    "score": "HASIL EVALUASI\n35/100\n\n7 benar · 13 perlu dipelajari\n\nPetunjuk digunakan pada 0 soal (tidak mengurangi nilai)",
+    "explanations": 20,
+    "keysLoaded": true,
+    "stored": true
+  },
+  "javascript_errors": []
+}

@@ -1,48 +1,25 @@
-# Nahwoo — Android V0.1.1
+# Nahwoo Android V0.1.8.3 — Preview Materi Level 01–12 V2.4
 
-**Belajar Baca Kitab dari Nol** · Sejuta Santri Apps
+Proyek Android WebView offline untuk pengujian materi Smart Reader. Bangun dengan workflow GitHub Actions yang tersedia dalam `.github/workflows/android-debug.yml`.
 
-Versi awal aplikasi Android berbasis WebView offline yang membungkus prototipe HTML Nahwoo terakhir yang disepakati. **Versi aplikasi Android 0.1.1 berbeda dari nomor versi prototipe HTML 1.0.7.**
+## Perubahan pada revisi ini
 
-## Cara build di GitHub (tanpa instal Android Studio)
+- Mengganti materi 12 level dengan sumber `NAHWOO_LEVEL_01-12_REVISI_ANTI_PENGULANGAN_V2.4(1).zip`.
+- Perbaikan pengulangan narasi terutama Level 09–12, dengan penyesuaian Level 08.
+- 120 sublevel dan 2.400 soal Guided Discovery tetap tersedia. Revisi sumber tidak mengubah bank soal maupun kunci.
+- Perbaikan aplikasi terdahulu seperti tombol/gesture Back, pengaturan font, penyimpanan progres, dan layout dipertahankan.
+- Level 13–24 belum diisi; bank soal utama 24.000 masih terpisah.
 
-1. Buat repository GitHub baru (misalnya `nahwoo-android`).
-2. Unggah **isi folder ZIP ini ke root repository** (bukan folder pembungkusnya).
-3. Buka tab **Actions** → **Build Nahwoo Android Debug APK** → **Run workflow**.
-4. Setelah workflow selesai, unduh artifact `nahwoo-v0.1.1-debug-apk`.
-5. Ekstrak artifact lalu instal `app-debug.apk` pada perangkat Android untuk pengujian.
+## Keterbatasan penting
 
-Workflow juga berjalan otomatis ketika perubahan di-push ke branch `main` atau `master`.
+Ini proyek **preview**, bukan konten final yang telah lolos validasi ahli. Baca `CONTENT_REPLACEMENT_V24_REPORT.json` untuk audit injeksi. Laporan sumber V2.4 menyatakan Level 08 masih mengandung bukti Arab yang diulang di beberapa soal. Review pedagogis, akurasi nahwu-sharaf, variasi soal dan pengujian Android tetap diperlukan sebelum publikasi.
 
-## Ruang lingkup V0.1.1
+Kunci evaluasi berada pada file terpisah `content/level_XX_keys.js` yang hanya dimuat ke WebView setelah 20 jawaban dikirim. Karena aplikasinya offline, metode ini bukan perlindungan anticurang absolut.
 
-- Android native wrapper Java + WebView dengan konten HTML tersimpan di APK.
-- UI Nahwoo terbaru: Beranda fit screen, belajar, latihan, catatan, smart search, lisensi demo, dan tutorial.
-- LocalStorage aktif untuk menyimpan progres dan catatan pada perangkat.
-- Link eksternal dibuka melalui aplikasi browser.
-- Belum ada integrasi AdMob sungguhan, Google Sign-In, Google Play Billing, Firebase, atau WhatsApp API.
+## Versi Android
 
-## Penting sebelum produksi
+`versionCode 10`, `versionName 0.1.8.3`.
 
-- APK dari workflow adalah **debug build**, bukan release Play Store/AAB.
-- Data disimpan lokal; menghapus data aplikasi dapat menghapus progres dan catatan.
-- Konten belajar, soal, mufradat, dan tips dalam HTML masih berupa data demo.
-- Tampilan login, lisensi, dan iklan saat ini adalah simulasi; **tidak boleh dianggap verifikasi pembayaran/akun nyata**.
-- Domain web yang direncanakan: `nahwoo.sejutasantri.id`; belum disambungkan pada versi ini.
-- Integrasi WhatsApp harus memakai backend/Firebase yang memverifikasi status, bukan hanya tombol HTML.
+## GitHub
 
-## Versi
-
-`versionName = 0.1.1` · `versionCode = 1` · `applicationId = id.sejutasantri.nahwoo`
-
-## GitHub release
-
-Lihat `GITHUB_RELEASE.md` untuk ringkasan dan deskripsi siap tempel.
-
-
-## V0.1.2
-Ikon Android resmi, logo Tentang Aplikasi baru, navbar Free/Freemium lebih ringkas, dan status bar/notch biru.
-
-
-## V0.1.3 — System bars
-WebView uses edge-to-edge layout with a cobalt status-bar backdrop and a top status inset; no bottom navigation inset is reserved. The system gesture/navigation area transparently overlays the bottom ad (Free/Freemium) or HTML bottom navigation (Premium). Test on real Android devices.
+Teks Summary dan Description disediakan di `GITHUB_RELEASE.md`.
