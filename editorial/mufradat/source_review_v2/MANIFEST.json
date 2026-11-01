@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-11-01",
+  "files": [
+    {
+      "name": "INVENTARIS_1683_BENTUK_DARI_MATERI_SOAL.csv",
+      "bytes": 236428,
+      "sha256": "741fa95aeb02cf34ac81c20eb29be122176dc9dbfbb8d3cc04976d7a6d221b31"
+    },
+    {
+      "name": "INVENTARIS_SEMUA_BENTUK_ARAB_PUBLIC_24_LEVEL.csv",
+      "bytes": 357364,
+      "sha256": "d31423fc4afa6f3845bc92b8e5f0017f0f1b81fbda2a0dd0fa3bb3cb48b9ed8b"
+    },
+    {
+      "name": "MUFRADAT_50_CONTOH_TERISI_DRAFT_REVIEW.csv",
+      "bytes": 14185,
+      "sha256": "23ca051df7596cd595d88e53c3ad8ba9f31116cf92af6acb3affe5eba1d49a23"
+    },
+    {
+      "name": "MUFRADAT_50_CONTOH_TERISI_DRAFT_REVIEW.docx",
+      "bytes": 39918,
+      "sha256": "2321d4dd97a85a2d13f499c68eb4b2cf322b72ec3d59783d87c4d575cc9303df"
+    },
+    {
+      "name": "MUFRADAT_50_CONTOH_TERISI_DRAFT_REVIEW.json",
+      "bytes": 43077,
+      "sha256": "3415651b6235c0f435fdbe912b4f0dcc8ac5a7552a07bc02b04464e1f48e3c5c"
+    },
+    {
+      "name": "QA_PREPRODUKSI.json",
+      "bytes": 809,
+      "sha256": "388fd79f6b31e9aff6d3e187eb59e8c27ef2679201bfff3d2e0f811ecdcb0668"
+    },
+    {
+      "name": "README_DAN_SOP.md",
+      "bytes": 2244,
+      "sha256": "1e5ebc46b90126fdb22bf02abd6310a2967995e3a45594725a17f82c6e6b1ad1"
+    }
+  ]
+}

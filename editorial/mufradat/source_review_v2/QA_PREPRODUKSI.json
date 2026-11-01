@@ -1,0 +1,13 @@
+{
+  "source_zip": "NAHWOO_LEVEL01-24_PERBAIKAN_PRIORITAS_V2_DRAFT_REVIEW.zip",
+  "levels_inspected": 24,
+  "source_example_tokens_normalized": 1683,
+  "sample_records_filled": 50,
+  "target_validated_entries": 10000,
+  "remaining_target_after_50_approved_hypothetically": 9950,
+  "warning": "1.683 bentuk sumber belum menjadi lema tervalidasi. 50 contoh juga berstatus DRAFT_REVIEW. Tidak ada klaim 10.000 lengkap.",
+  "requirements": "10 DOCX x 1000 + JSON; 100–250 entri per batch internal; manual QA >=10% per batch; all ambiguities reviewed.",
+  "full_public_wordform_candidates": 1816,
+  "scope_full": "Semua blok materi (termasuk inline) dan stimulus, opsi, serta teks petunjuk publik; kandidat belum diuji sebagai lema benar.",
+  "scope_core": "1.683 bentuk pada blok contoh Arab dan stimulus inti"
+}

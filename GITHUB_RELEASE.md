@@ -1,18 +1,21 @@
-# GitHub Commit — Nahwoo V0.1.8.6
+# GitHub Commit — Nahwoo V0.1.8.7
 
 ## Summary
-Nahwoo V0.1.8.6 — Beranda Kamus Mini, Smart Search Arab–Indonesia & Fondasi 10.000 Mufradat
+Nahwoo V0.1.8.7 — Inject 50 Mufradat Draf, Smart Search Arab–Indonesia & Inventaris 1.816 Bentuk
 
 ## Description
-- Mengganti **hanya** tombol cepat Pengaturan pada Beranda menjadi Kamus Mini, ikon buku/kamus dengan kaca pembesar.
-- Mempertahankan tab Pengaturan dan ikon gear di navigasi bawah tanpa perubahan.
-- Meningkatkan halaman Mufradat yang sudah ada menjadi Kamus Mini offline.
-- Smart Search dua arah: kata Arab (berharakat/tanpa harakat) dan arti bahasa Indonesia (pencarian sebagian kata serta typo ringan).
-- Mencari hanya kosakata kepala dan arti/alias Indonesia; **tidak** mencari dari contoh kalimat, terjemahan contoh, atau jenis kata.
-- Setiap hasil menampilkan kosakata Arab, arti Indonesia, jenis kata, contoh kalimat berharakat dan terjemah contoh.
-- Menambah bookmark kata dan tampilan hasil bertahap untuk bank 10.000+ entri.
-- Mengintegrasikan 24 kosakata contoh awal; target bank 10.000 dan cakupan kata materi/soal menunggu sumber editorial.
-- Menghasilkan inventaris 1816 bentuk kosakata Arab unik (normalisasi) dari 24 level sebagai daftar kandidat QA, bukan terjemahan final.
-- Mempertahankan materi 24 level, 240 sublevel, 4.800 soal, dua hint, format font, navigasi Back dan progres lokal.
-- Android versionCode 13; versionName 0.1.8.6.
-- QA perlu meliputi pencarian Arab/Indonesia, memastikan contoh kalimat tidak masuk hasil pencarian, Back, tab Pengaturan, dan build APK Android.
+- Mengganti 24 entri demo Kamus Mini dengan 50 entri mufradat bersumber dari paket DRAFT_REVIEW yang diberikan.
+- Mempertahankan arti Indonesia, kelas kata, Arab berharakat, dan contoh Arab beserta terjemahan dari sumber tanpa menulis ulang isinya.
+- Mempertahankan smart search dua arah hanya pada lema/alias, tanpa pencarian di contoh kalimat.
+- Menampilkan label Draf — menunggu review guru pada kartu kosakata.
+- Menyimpan inventaris 1.683 kandidat inti dan 1.816 bentuk Arab keseluruhan dalam folder editorial untuk kurasi, bukan langsung masuk hasil kamus.
+- Menyimpan data JSON dan laporan QA sumber sebagai berkas editorial.
+- Mempertahankan seluruh 24 level, 240 sublevel, 4.800 soal, pengaturan font, dan navigasi.
+- Android versionCode 14, versionName 0.1.8.7.
+
+## QA
+- Struktur 50/50 entri lengkap dan unik; checksum manifest sumber lolos.
+- Pencarian Arab/Indonesia dan pengecualian teks contoh diuji.
+- JavaScript sintaks dan integritas ZIP diperiksa.
+- APK/perangkat fisik belum diuji dan peninjauan bahasa Arab independen belum selesai.
+- Target 10.000 belum tercapai; 1.816 kandidat bukan lema tervalidasi.

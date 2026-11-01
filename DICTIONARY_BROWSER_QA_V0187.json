@@ -1,0 +1,88 @@
+{
+  "entry_count": 50,
+  "ui_count": "",
+  "draft_badges": 30,
+  "arabic_vowelled": {
+    "query": "كَتَبَ",
+    "total": 1,
+    "arabic": [
+      "كَتَبَ"
+    ],
+    "expected_present": true
+  },
+  "arabic_unvowelled": {
+    "query": "كتب",
+    "total": 1,
+    "arabic": [
+      "كَتَبَ"
+    ],
+    "expected_present": true
+  },
+  "indonesian": {
+    "query": "menulis",
+    "total": 1,
+    "arabic": [
+      "كَتَبَ"
+    ],
+    "expected_present": true
+  },
+  "arabic_with_article": {
+    "query": "الكتاب",
+    "total": 1,
+    "arabic": [
+      "كِتَابٌ"
+    ],
+    "expected_present": true
+  },
+  "meaning_book": {
+    "query": "buku",
+    "total": 1,
+    "arabic": [
+      "كِتَابٌ"
+    ],
+    "expected_present": true
+  },
+  "polysemy_ilm": {
+    "query": "علم",
+    "total": 5,
+    "arabic": [
+      "عَلِمَ",
+      "عَلَّمَ",
+      "عِلْمٌ",
+      "تَعَلَّمَ",
+      "مُعَلِّمٌ"
+    ],
+    "expected_present": null
+  },
+  "search_example_excluded": {
+    "query": "رِسَالَةً",
+    "total": 1,
+    "arabic": [
+      "رِسَالَةٌ"
+    ],
+    "expected_present": null
+  },
+  "search_example_translation_excluded": {
+    "query": "murid itu menulis sebuah surat",
+    "total": 0,
+    "arabic": [],
+    "expected_present": null
+  },
+  "search_full_sentence_excluded": {
+    "query": "كَتَبَ الطَّالِبُ رِسَالَةً",
+    "total": 0,
+    "arabic": [],
+    "expected_present": null
+  },
+  "ui_results_indonesian": {
+    "count": 2,
+    "contains_arabic": true
+  },
+  "all_cards_initial": 30,
+  "all_cards_after_more": 50,
+  "saved_word": true,
+  "page_errors": [],
+  "ok": true,
+  "test_environment": "Headless Chromium with HTML set_content; localStorage mocked, assets preloaded; Android physical device not tested.",
+  "note": "UI count status blank in this non-network test harness; 50 cards and draft labels confirmed. Normal app loader sets status on loading completion."
+}

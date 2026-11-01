@@ -1,0 +1,32 @@
+{
+  "app_version": "0.1.8.7",
+  "version_code": 14,
+  "source": "NAHWOO_MUFRADAT_INVENTARIS_DAN_CONTOH_50_DRAFT_REVIEW(1).zip",
+  "source_status": "DRAFT_REVIEW",
+  "imported_word_entries": 50,
+  "word_class_breakdown": {
+    "fiil": 24,
+    "isim": 26
+  },
+  "source_core_candidate_forms": 1683,
+  "source_all_candidate_forms": 1816,
+  "target_validated_lemmas": 10000,
+  "validated_lemmas_confirmed": 0,
+  "candidate_inventories_visible_in_search": false,
+  "search_fields": [
+    "ar",
+    "forms_ar",
+    "meaning",
+    "aliases"
+  ],
+  "search_excluded_fields": [
+    "example",
+    "translation",
+    "root",
+    "tags",
+    "source_refs"
+  ],
+  "source_checksums": "All files in supplied MANIFEST.json match SHA256 and size",
+  "editorial_note": "No scholarly sign-off; all 50 entries are review drafts, IDs provisional.",
+  "architecture": "50 records in offline asset content/mufradat_bank.js, inventories archived under editorial only"
+}
