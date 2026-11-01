@@ -1,0 +1,11 @@
+{
+  "level_count": 24,
+  "sublevel_count": 240,
+  "evaluation_question_count": 4800,
+  "dictionary_demo_entries": 24,
+  "distinct_arabic_tokens_from_content_for_editorial_review": 1816,
+  "covered_by_demo_bank_normalized": 24,
+  "coverage_policy": "Inventory only. No automatic translations; Arabic tokens and grammatical forms need scholarly lexical review before ingestion.",
+  "search_scope": "Arabic headword + Indonesian meaning/aliases only. Example Arabic and translated example are excluded.",
+  "future_goal_lexemes": 10000
+}

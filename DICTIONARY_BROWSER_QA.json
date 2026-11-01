@@ -1,0 +1,86 @@
+{
+  "home_title": "Nahwoo Android V0.1.8.6 — Kamus Mini",
+  "home_kamus_tile": 1,
+  "home_pengaturan_tile": 0,
+  "lower_settings": 1,
+  "bank_count": 24,
+  "dictionary_header": "Kamus Mini",
+  "result_cards_no_query": 24,
+  "search_tests": [
+    {
+      "query": "كَتَبَ",
+      "count": 1,
+      "names": [
+        "كَتَبَ"
+      ]
+    },
+    {
+      "query": "كتب",
+      "count": 1,
+      "names": [
+        "كَتَبَ"
+      ]
+    },
+    {
+      "query": "menulis",
+      "count": 1,
+      "names": [
+        "كَتَبَ"
+      ]
+    },
+    {
+      "query": "surat",
+      "count": 1,
+      "names": [
+        "رِسَالَةٌ"
+      ]
+    },
+    {
+      "query": "Zaid",
+      "count": 1,
+      "names": [
+        "زَيْدٌ"
+      ]
+    },
+    {
+      "query": "الكتاب",
+      "count": 1,
+      "names": [
+        "كِتَابٌ"
+      ]
+    },
+    {
+      "query": "المسجد",
+      "count": 1,
+      "names": [
+        "مَسْجِدٌ"
+      ]
+    },
+    {
+      "query": "murid",
+      "count": 1,
+      "names": [
+        "طَالِبٌ"
+      ]
+    },
+    {
+      "query": "Ali",
+      "count": 1,
+      "names": [
+        "عَلِيٌّ"
+      ]
+    },
+    {
+      "query": "GAGAL_TIDAK_ADA",
+      "count": 0,
+      "names": []
+    }
+  ],
+  "example_excluded": true,
+  "some_example": true,
+  "card_zayd": 1,
+  "saved_after_star": true,
+  "bottom_settings_navigates": true,
+  "home_back": "home",
+  "errors": []
+}

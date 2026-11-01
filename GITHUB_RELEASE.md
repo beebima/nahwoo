@@ -1,27 +1,18 @@
-# GitHub Commit Summary
-Nahwoo V0.1.8.5 — Inject Lengkap Level 01–24, 240 Sublevel, 4.800 Soal & 9.600 Hint (Review)
+# GitHub Commit — Nahwoo V0.1.8.6
 
-# Description
-NAHWOO ANDROID V0.1.8.5 — INJEKSI 24 LEVEL (DRAFT REVIEW)
+## Summary
+Nahwoo V0.1.8.6 — Beranda Kamus Mini, Smart Search Arab–Indonesia & Fondasi 10.000 Mufradat
 
-KONTEN
-- Mengganti seluruh materi Level 01–12 dan menambahkan Level 13–24 berdasarkan paket revisi prioritas V2.
-- 24 level, 240 sublevel, 4.800 soal evaluasi Guided Discovery.
-- Setiap sublevel memiliki 20 soal dengan pilihan A–F dan dua hint; total 28.800 opsi dan 9.600 hint.
-- Mempertahankan format MAIN_HEADING, SUBHEADING, BODY, ARABIC_TEXT, QUOTE serta dukungan bold/italic.
-- Kunci dan pembahasan berada di berkas terpisah dan hanya dimuat UI setelah submit 20 jawaban.
-- Pemisahan ini bukan enkripsi; aset offline dapat diekstrak secara teknis.
-
-FITUR APLIKASI
-- Mempertahankan enam pengaturan font, preview materi, navigasi Back/gesture, dan progres lokal.
-- Menggunakan namespace evaluasi V0.1.8.5 untuk memisahkan jawaban soal versi terdahulu.
-- Mempertahankan kebijakan akses Freemium aplikasi (Level 13–24 mengikuti aturan akses sebelumnya).
-- versionCode 12 / versionName 0.1.8.5.
-
-QA & BATASAN
-- Struktur 240 materi, 4.800 soal, 28.800 opsi, 9.600 hint, 4.800 kunci lulus pemeriksaan otomatis.
-- Sintaks 48 berkas konten dan halaman HTML diuji.
-- Simulasi browser membuka 24 contoh level dan pembahasan 20 soal Level 24; lulus.
-- Laporan paket sumber masih menyebut pengulangan stimulus/hint, terutama di Level 15, 18, dan 19.
-- Audit keilmuan independen dan review pengecoh 28.800 opsi belum selesai.
-- APK/perangkat Android belum diuji. Gunakan sebagai build preview, BUKAN rilis produksi final.
+## Description
+- Mengganti **hanya** tombol cepat Pengaturan pada Beranda menjadi Kamus Mini, ikon buku/kamus dengan kaca pembesar.
+- Mempertahankan tab Pengaturan dan ikon gear di navigasi bawah tanpa perubahan.
+- Meningkatkan halaman Mufradat yang sudah ada menjadi Kamus Mini offline.
+- Smart Search dua arah: kata Arab (berharakat/tanpa harakat) dan arti bahasa Indonesia (pencarian sebagian kata serta typo ringan).
+- Mencari hanya kosakata kepala dan arti/alias Indonesia; **tidak** mencari dari contoh kalimat, terjemahan contoh, atau jenis kata.
+- Setiap hasil menampilkan kosakata Arab, arti Indonesia, jenis kata, contoh kalimat berharakat dan terjemah contoh.
+- Menambah bookmark kata dan tampilan hasil bertahap untuk bank 10.000+ entri.
+- Mengintegrasikan 24 kosakata contoh awal; target bank 10.000 dan cakupan kata materi/soal menunggu sumber editorial.
+- Menghasilkan inventaris 1816 bentuk kosakata Arab unik (normalisasi) dari 24 level sebagai daftar kandidat QA, bukan terjemahan final.
+- Mempertahankan materi 24 level, 240 sublevel, 4.800 soal, dua hint, format font, navigasi Back dan progres lokal.
+- Android versionCode 13; versionName 0.1.8.6.
+- QA perlu meliputi pencarian Arab/Indonesia, memastikan contoh kalimat tidak masuk hasil pencarian, Back, tab Pengaturan, dan build APK Android.
