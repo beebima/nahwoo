@@ -1,0 +1,272 @@
+{
+  "app_version": "0.1.8.5",
+  "source_archive": "NAHWOO_LEVEL01-24_PERBAIKAN_PRIORITAS_V2_DRAFT_REVIEW(1).zip",
+  "source_status": "DRAFT_REVIEW",
+  "counts": {
+    "blocks": 8598,
+    "questions": 4800,
+    "options": 28800,
+    "hints": 9600,
+    "answers": 4800,
+    "sublevels": 240
+  },
+  "per_level": [
+    {
+      "level": 1,
+      "source_level_title": "Mengenali Kata dan Membuka Kunci Kitab Gundul",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 269847,
+      "file_keys_bytes": 63988,
+      "public_sha256": "80cbe3706989fc1a43ce913e0de656331c3814d5396327c255b4b6bce33a61a7",
+      "keys_sha256": "e99b3f47526787723326203060705c4ea85da293042c4239a17a735acb44b738"
+    },
+    {
+      "level": 2,
+      "source_level_title": "Identitas Isim dan Bentuk Kata",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 291884,
+      "file_keys_bytes": 66037,
+      "public_sha256": "5376c909600dcd1c7206bfca39db189e7b61bf5a371fef915f1ce3e1637dea90",
+      "keys_sha256": "1da24822e69f1a2a6fb004508e803e944e035d00d143e3a9d1470bc187fabcc4"
+    },
+    {
+      "level": 3,
+      "source_level_title": "Jumlah Ismiyah: Siapa dan Bagaimana Keadaannya?",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 311338,
+      "file_keys_bytes": 79743,
+      "public_sha256": "061e076622880f1cc2fb42fc43ba9f92bc1557875c878d1f5a62ed9552ac207f",
+      "keys_sha256": "355fe048962e023e451ac2df1bc43914aae443c3faba5d0dfded7c46a696aa3d"
+    },
+    {
+      "level": 4,
+      "source_level_title": "Jumlah Fi'liyah: Siapa Melakukan Apa?",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 325788,
+      "file_keys_bytes": 81394,
+      "public_sha256": "e24df4b99d07dd7db558f4b80d6e54b097fdc8e7dfddccd877d81c324d0fc09a",
+      "keys_sha256": "60063fd7cb41c48cefab2994b0536be8f84464a2704de32d00b5333c2fe8a6ee"
+    },
+    {
+      "level": 5,
+      "source_level_title": "Huruf Jar dan Susunan Idhafah",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 292612,
+      "file_keys_bytes": 88586,
+      "public_sha256": "6920a055b6859e8a410b8e48bbe6d506c7eafc5fa2edf38c3f4041cf0c5d55f9",
+      "keys_sha256": "576b4d392a6f1898ca2ed3a565f8cf0d506636518a93cb7a70663ae4ffc2aa11"
+    },
+    {
+      "level": 6,
+      "source_level_title": "Sifat, Kata Tunjuk, dan Susunan Frasa",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 284881,
+      "file_keys_bytes": 53862,
+      "public_sha256": "10353922157cdc4b9d5434f38c2b19749747f3be9434fc4211b1e478dd447e12",
+      "keys_sha256": "62f95168b62f0a8d978f4dd7f94bb76ab918b8f4f3e20fb0b3f53256c6f62c78"
+    },
+    {
+      "level": 7,
+      "source_level_title": "Ḍamīr: Pelaku, Kepemilikan, dan Rujukan",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 274281,
+      "file_keys_bytes": 71417,
+      "public_sha256": "d27796fe6b870de265635a5082b3fd73ef86d4f2204908c0f1d9821487428972",
+      "keys_sha256": "e343493077efaab2afe4f94aa54e37526274048e051d6a8d2ae7382823cd15dd"
+    },
+    {
+      "level": 8,
+      "source_level_title": "Sistem I'rab Secara Menyeluruh",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 255541,
+      "file_keys_bytes": 50040,
+      "public_sha256": "6b6416df5bb33b420aaa92dd64694d4ae1db3861914158dbecc54bb73e9c26ff",
+      "keys_sha256": "dc8f7bcc7a7a43fe57817b6da6d6d5368dc48007e728c0e3c775839e1191db2d"
+    },
+    {
+      "level": 9,
+      "source_level_title": "Akar Kata dan Wazan",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 196935,
+      "file_keys_bytes": 62682,
+      "public_sha256": "75125ef8c578ef7032473b812eb5e182024b240fcdd26e2b69741bf64835a841",
+      "keys_sha256": "5e2e6efe7eb194a854b44f3c26a44efea35a9a225bb8b5b4a22bfbdd4d68bc64"
+    },
+    {
+      "level": 10,
+      "source_level_title": "Tashrif Fi‘il Menurut Dhamir",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 271896,
+      "file_keys_bytes": 76878,
+      "public_sha256": "35aece7f613695344b5c6499480df534398a4eca33d72cbb236a6ae7b259e68b",
+      "keys_sha256": "9cd6251d6f2dae3ac9884878223e868daae3e5308b1b21f90effe6b60ebc441d"
+    },
+    {
+      "level": 11,
+      "source_level_title": "Pelaku, Objek, Pasif, dan Bentuk Turunan",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 246119,
+      "file_keys_bytes": 60420,
+      "public_sha256": "ee3055be16a33e38e95e68ed71dab6e667f3fcec48085e37b1437a1332d5d5f3",
+      "keys_sha256": "51f1eb0337a3be2ad96f2df04d0cbb02b819e15e258f379eacbf75d7956c0fb3"
+    },
+    {
+      "level": 12,
+      "source_level_title": "Klinik Membaca Kitab Gundul Dasar",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 247862,
+      "file_keys_bytes": 83566,
+      "public_sha256": "fef54e0212951299feb0fb58142c2a1b378ce4498f62f8ddc5c8b7d1e0cb92b6",
+      "keys_sha256": "7c972b467a6a7d22d5264fdb6cd95daaf8764767de9333720a99bcb05b9924c9"
+    },
+    {
+      "level": 13,
+      "source_level_title": "Isim Khusus dan Pengecualian Bacaan",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 285601,
+      "file_keys_bytes": 68528,
+      "public_sha256": "fcf41c4cf2a9969409b799c924c140f36ed505c9b08bfff91df69afd32af5af0",
+      "keys_sha256": "33f14b613184f2a32bcb0dee062eeb1494954cc3e8b24d10ce29db5fe4b57f8a"
+    },
+    {
+      "level": 14,
+      "source_level_title": "'Amil yang Mengubah Susunan Kalimat",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 263715,
+      "file_keys_bytes": 94387,
+      "public_sha256": "70d80fad22235f5d37f30a19b194c8362f2563067eca7a98faa41ee88589bc1c",
+      "keys_sha256": "52e08ce235895f0cefc73885f0a2b68b26842bcce93cd21a7146e58249d379df"
+    },
+    {
+      "level": 15,
+      "source_level_title": "Tawaabi' dan Pelengkap Kalimat",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 298482,
+      "file_keys_bytes": 71782,
+      "public_sha256": "922e154868ec78ca8c23da13b86b3d646a29020c7278d2845500eaa519b35d05",
+      "keys_sha256": "108e1ddd2a60b97a095887db59c7354523a398a95c7a421b864fe52fb0a3eceb"
+    },
+    {
+      "level": 16,
+      "source_level_title": "Fi'il Mazid, Mu'tal, dan Perubahan Bentuk",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 290208,
+      "file_keys_bytes": 68096,
+      "public_sha256": "630d0364b41d762edb7f6dc2c6292dcd38f60a4d669b3ae49f4240f2fbda557a",
+      "keys_sha256": "6d19edf7f10c4421aa02a80eacf16e3b9d43f74ade4818bd581d49e15391a89d"
+    },
+    {
+      "level": 17,
+      "source_level_title": "Kalimat Bertingkat dan Hubungan Antarklausa",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 351847,
+      "file_keys_bytes": 76640,
+      "public_sha256": "fb77080d3b1b793b804c8296b13628a7f27630362b92a14e3924ef3ef76356c1",
+      "keys_sha256": "6a3c372e89c127029337bff9cf47008cd708daa094776bd815ddb929c391ab87"
+    },
+    {
+      "level": 18,
+      "source_level_title": "Membaca Kitab Fikih",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 232108,
+      "file_keys_bytes": 70640,
+      "public_sha256": "49f5f0ad62661548f19287b83b7a780f50a6378dacd9c9ff128d39e14b964705",
+      "keys_sha256": "70a9efcc1e951a7cfd002c5a11c94e5b0c42916dc0529b807e7972cabce8b13b"
+    },
+    {
+      "level": 19,
+      "source_level_title": "Membaca Hadis dan Syarah Hadis",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 254350,
+      "file_keys_bytes": 81813,
+      "public_sha256": "015497091b5bf42d38d387f7cb8c2df9f5a855737cef21df88c9f6590ed5c79e",
+      "keys_sha256": "8696502223325a59cf85a44838a1ec80551d7ba2a496064914dbfc8d2c5ba52e"
+    },
+    {
+      "level": 20,
+      "source_level_title": "Membaca Kitab Akhlak dan Tasawuf",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 313024,
+      "file_keys_bytes": 88099,
+      "public_sha256": "b4a1af806c12c0edd401f0ccd21d8eee80928c5b268e4ed3fe3ea7b75a3cc442",
+      "keys_sha256": "6c9d86dcdcb53d75a5cf3ffcb6dfafcea1428b6845fa888063a4ce74e3c14ec6"
+    },
+    {
+      "level": 21,
+      "source_level_title": "Level 21",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 302535,
+      "file_keys_bytes": 101533,
+      "public_sha256": "12666af2f52af928349db937e8d4ac85ffadab465846d61649af7a9d4417fc4d",
+      "keys_sha256": "b007cffe3e5c10fdf1b6afa75ee3fe1417ff38cfd8384c4b38500e3de4c89cc2"
+    },
+    {
+      "level": 22,
+      "source_level_title": "Level 22",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 352443,
+      "file_keys_bytes": 63653,
+      "public_sha256": "e0803f5f72ae753a4eef09a71a7408b56ebdeec827f9a08506ff57a44cb4c330",
+      "keys_sha256": "fec5c0a86311ab937e6b79437245bc6dbad609656e9ee8be528ab7b05038984c"
+    },
+    {
+      "level": 23,
+      "source_level_title": "Level 23",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 309577,
+      "file_keys_bytes": 66627,
+      "public_sha256": "3d6f0b3ee48ae0d7e8d164c895bce21e22216994d3fbae834fa7f8b671351ac4",
+      "keys_sha256": "ac21c74a59c894c7a3bb8d759c7b785ab242767a2951eeaefde7e1d9a3db85b1"
+    },
+    {
+      "level": 24,
+      "source_level_title": "Level 24",
+      "materials": 10,
+      "questions": 200,
+      "file_public_bytes": 325032,
+      "file_keys_bytes": 77234,
+      "public_sha256": "3d27cb55fe0363c353a58b1ef52aad7d3d6798976fe92808069d1fec880ce747",
+      "keys_sha256": "5571f92b391a84611bf787f431829df0f17647d8bd59e6610212403d9a4e48ea"
+    }
+  ],
+  "answer_text_mismatches": [],
+  "source_warning": "Sumber menyatakan audit keilmuan independen dan anti-pengulangan belum tuntas. Ini paket pengujian.",
+  "generated_utc": "2026-11-01T12:27:48.965762+00:00",
+  "browser_qa": {
+    "levels_rendered": 24,
+    "errors": [],
+    "evaluation_20_submission": {
+      "answered_counter": "m.\n\n20/20 ",
+      "answer_hidden_before_submit": true,
+      "result_visible_after_submit": true,
+      "explanations_visible": true,
+      "count_review_articles": 20,
+      "saved_heading_size": 31,
+      "saved_quote_size": 25
+    },
+    "notes": "Browser test uses localStorage shim on opaque test origin; native WebView not tested."
+  }
+}

@@ -1,5 +1,7 @@
-# Nahwoo Android V0.1.8.4
-Proyek offline Android WebView Sejuta Santri. Materi Level 01–12 tetap aktif, 120 sublevel dan 2.400 evaluasi.
-Enam pengaturan font dan kartu preview langsung, didukung standar semantik MAIN_HEADING, SUBHEADING, QUOTE, ARABIC_TEXT, BODY.
-Detail ada di CONTENT_SEMANTIC_TAGS_V0184.md. Android versionCode 11 / versionName 0.1.8.4.
-QA UI browser telah dilakukan; build APK/perangkat fisik belum.
+# Nahwoo Android 0.1.8.5
+
+Basis 0.1.8.4; seluruh 24 level diinject dari revisi prioritas V2 (draf review).
+240 materi dan 4.800 soal (20 soal/sublevel) dengan 6 opsi dan 2 hint.
+Kunci dimuat setelah submit, tetapi data offline tidak anti-ekstraksi.
+Konten belum diaudit ilmiah oleh guru; lihat INJECTION_QA_V0185.json dan GITHUB_RELEASE.md.
+Android versionCode 12 / versionName 0.1.8.5.

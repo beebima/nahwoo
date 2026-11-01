@@ -1,0 +1,206 @@
+{
+  "tested_levels": [
+    {
+      "level": 1,
+      "title": "Mengenal tujuan belajar membaca kitab gundul",
+      "body": 3147,
+      "quiz": 4006,
+      "questions": 20,
+      "blocks": 47
+    },
+    {
+      "level": 2,
+      "title": "Tanda-tanda isim dalam kalimat",
+      "body": 2409,
+      "quiz": 4143,
+      "questions": 20,
+      "blocks": 40
+    },
+    {
+      "level": 3,
+      "title": "Apa yang membuat dua kata menjadi kalimat bermakna?",
+      "body": 2637,
+      "quiz": 4022,
+      "questions": 20,
+      "blocks": 39
+    },
+    {
+      "level": 4,
+      "title": "Ketika Kata Kerja Membuka Kalimat",
+      "body": 2359,
+      "quiz": 4480,
+      "questions": 20,
+      "blocks": 37
+    },
+    {
+      "level": 5,
+      "title": "Kasrah yang Punya Alasan",
+      "body": 2297,
+      "quiz": 4700,
+      "questions": 20,
+      "blocks": 36
+    },
+    {
+      "level": 6,
+      "title": "Satu Benda, Satu Sifat",
+      "body": 2292,
+      "quiz": 4640,
+      "questions": 20,
+      "blocks": 40
+    },
+    {
+      "level": 7,
+      "title": "Ada Nama yang Tidak Diulang",
+      "body": 2519,
+      "quiz": 4010,
+      "questions": 20,
+      "blocks": 42
+    },
+    {
+      "level": 8,
+      "title": "Mengapa Akhir Kata Bisa Berubah?",
+      "body": 2529,
+      "quiz": 4044,
+      "questions": 20,
+      "blocks": 43
+    },
+    {
+      "level": 9,
+      "title": "Bentuk Kata dan Tugas Kata",
+      "body": 1903,
+      "quiz": 3861,
+      "questions": 20,
+      "blocks": 29
+    },
+    {
+      "level": 10,
+      "title": "Tashrif istilahi dan tashrif lughawi",
+      "body": 1988,
+      "quiz": 3988,
+      "questions": 20,
+      "blocks": 29
+    },
+    {
+      "level": 11,
+      "title": "Mengulang fa'il dan maf'ul bih dengan variasi bentuk",
+      "body": 2146,
+      "quiz": 3873,
+      "questions": 20,
+      "blocks": 32
+    },
+    {
+      "level": 12,
+      "title": "Strategi membaca kitab gundul langkah demi langkah",
+      "body": 2176,
+      "quiz": 3945,
+      "questions": 20,
+      "blocks": 32
+    },
+    {
+      "level": 13,
+      "title": "Mengulang tanda i'rab asli dan pengganti",
+      "body": 1983,
+      "quiz": 4321,
+      "questions": 20,
+      "blocks": 35
+    },
+    {
+      "level": 14,
+      "title": "Mengulang mubtada' dan khabar sebelum terkena 'amil",
+      "body": 2291,
+      "quiz": 3991,
+      "questions": 20,
+      "blocks": 33
+    },
+    {
+      "level": 15,
+      "title": "Mengulang na'at dan man'ut dalam susunan panjang",
+      "body": 2151,
+      "quiz": 4354,
+      "questions": 20,
+      "blocks": 34
+    },
+    {
+      "level": 16,
+      "title": "Mengulang fi'il mujarrad dan mengenal fi'il mazid",
+      "body": 2232,
+      "quiz": 4347,
+      "questions": 20,
+      "blocks": 34
+    },
+    {
+      "level": 17,
+      "title": "Isim maushul: kata penghubung relatif",
+      "body": 1815,
+      "quiz": 4742,
+      "questions": 20,
+      "blocks": 39
+    },
+    {
+      "level": 18,
+      "title": "Karakter bahasa kitab fikih",
+      "body": 2045,
+      "quiz": 3858,
+      "questions": 20,
+      "blocks": 36
+    },
+    {
+      "level": 19,
+      "title": "Karakter bahasa hadis dan syarah",
+      "body": 2021,
+      "quiz": 4054,
+      "questions": 20,
+      "blocks": 30
+    },
+    {
+      "level": 20,
+      "title": "Karakter bahasa kitab akhlak dan tasawuf",
+      "body": 2059,
+      "quiz": 4343,
+      "questions": 20,
+      "blocks": 30
+    },
+    {
+      "level": 21,
+      "title": "Maf'ul mutlaq dan fungsinya",
+      "body": 1777,
+      "quiz": 4479,
+      "questions": 20,
+      "blocks": 30
+    },
+    {
+      "level": 22,
+      "title": "Mengulang pembedaan isim marfu', manshub, dan majrur pada konteks rumit",
+      "body": 2820,
+      "quiz": 4557,
+      "questions": 20,
+      "blocks": 42
+    },
+    {
+      "level": 23,
+      "title": "Memetakan struktur satu paragraf sebelum membaca",
+      "body": 2035,
+      "quiz": 4344,
+      "questions": 20,
+      "blocks": 29
+    },
+    {
+      "level": 24,
+      "title": "Strategi menghadapi teks yang belum dikenal",
+      "body": 2070,
+      "quiz": 4317,
+      "questions": 20,
+      "blocks": 33
+    }
+  ],
+  "errors": [],
+  "checks": {
+    "answered_counter": "m.\n\n20/20 ",
+    "answer_hidden_before_submit": true,
+    "result_visible_after_submit": true,
+    "explanations_visible": true,
+    "count_review_articles": 20,
+    "saved_heading_size": 31,
+    "saved_quote_size": 25
+  }
+}
