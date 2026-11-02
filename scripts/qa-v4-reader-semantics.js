@@ -25,3 +25,4 @@ assert.ok(html.includes('var(--arabic-size'),'Independent Arabic font setting');
 const script=html.match(/<script>([\s\S]*?)<\/script>/);
 assert.ok(script,'Inline JS present');new vm.Script(script[1],{filename:'index-inline.js'});
 console.log(JSON.stringify({status:'PASS',levels:8,competencies:80,semanticHeadingTypes:Object.keys(vars.kinds).length}));
+assert.ok(html.includes('nw-v4-main-heading'),'V4 main heading typography');
