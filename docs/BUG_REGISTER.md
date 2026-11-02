@@ -60,3 +60,14 @@ Catatan: **penutupan bug membutuhkan bukti reproduksi sudah tidak muncul pada li
 - **Solusi:** baca `versionName` dari `app/build.gradle` setelah build, gunakan output langkah tersebut untuk nama artifact. Perubahan CI-only **tidak menaikkan versi APK**.
 - **Tes:** Actions build berikutnya harus menghasilkan label `nahwoo-v0.1.8.9-debug-apk`. Status sementara **PATCH DIBUAT / PERLU VERIFIKASI CI**.
 - **Jangan diulang:** jangan mengunci nama APK debug/ZIP/artifact dengan angka versi statis; ambil dari sumber Gradle yang terverifikasi.
+
+
+## N-018 — Tinggi Kartu Mufradat Beranda Berubah Saat Rotasi (2026-11-02)
+
+- **Keluhan:** kartu Mufradat yang disejajarkan dengan Lanjut Belajar + Lisensi tampak naik-turun saat kata atau contoh kalimat panjang.
+- **Penyebab teknis:** versi sebelumnya masih memiliki aturan `height:auto` dan ukuran font statis besar, sehingga konten Arab/terjemahan memengaruhi tinggi grid. Tidak ada transisi dua tahap; isi ditukar langsung.
+- **Solusi V0.1.8.10:** tinggi pasangan kartu dikunci dari tinggi kolom kiri pada saat pengukuran Beranda, **bukan** dari panjang kata. Ukuran 5 jenis teks dalam kartu disesuaikan bertahap agar muat. Saat Ganti/rotasi, konten fade-out lalu fade-in tanpa animasi dimensi kartu. Tombol simpan tidak membuat ulang Beranda.
+- **Tipografi:** hanya teks dalam kartu Beranda yang disesuaikan; ukuran font reader pengguna dan isi Kamus Mini tidak disentuh.
+- **Tanda baca:** buang tanda titik hanya di akhir contoh Arab/Indonesia dalam kartu Beranda. Sumber bank, terjemahan di Kamus Mini, dan tanda baca internal tetap dipertahankan.
+- **Regresi wajib:** 30 kata pendek/panjang berurutan pada layar 320/360/390 px; periksa tinggi kartu sama sebelum/sesudah, posisi grid tidak berubah, bintang & Ganti, rotasi 60 detik, pergantian tab, mode gelap, reduced-motion, dan font ekstrem.
+- **Status:** SOURCE PATCH + unit syntax/dot check; tes nyata Android belum dilakukan. **Jangan tandai selesai tanpa APK diperiksa.**

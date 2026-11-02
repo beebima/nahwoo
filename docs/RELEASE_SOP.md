@@ -81,3 +81,12 @@ Instruksi awal: "Baca docs/README.md, docs/DEVELOPMENT_LEDGER.md, docs/BUG_REGIS
 - Nama artifact GitHub Actions **harus diambil dari `app/build.gradle` `versionName`**, bukan string versi statis di workflow.
 - Setiap versi cek kesesuaian label artifact, `versionCode`, `versionName`, dan commit HEAD; label lama tidak otomatis berarti binari lama.
 - Bedakan keberhasilan *upload artifact* dari keberhasilan install APK dan perilaku pada perangkat.
+
+
+## J. Tes wajib kartu Beranda berukuran tetap (N-018)
+
+- Rotasi mufradat **tidak boleh mengubah tinggi kartu** ataupun mendorong tombol grid ke bawah. Ambil tinggi acuan dari Lanjut Belajar + Lisensi; jangan mengukur tinggi dari jumlah baris mufradat.
+- Teks Arab, arti, jenis kata, contoh Arab, dan terjemahannya wajib menyesuaikan ukuran di dalam kartu; lakukan tes frasa pendek dan panjang pada 320/360/390 px serta variasi tinggi layar dan ukuran font pengguna.
+- Transisi Ganti/manual maupun rotasi otomatis harus memudar lembut; kartu luar tetap diam. Hormati `prefers-reduced-motion`.
+- Buang titik **hanya pada tampilan akhir contoh kalimat** Beranda, jangan modifikasi bank sumber/kamus dan jangan hapus titik internal.
+- Periksa tidak ada pergeseran saat bintang disentuh atau setelah kembali dari menu lain; ukur tinggi elemen sebelum/sesudah pada browser/perangkat.

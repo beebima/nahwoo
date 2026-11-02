@@ -56,3 +56,7 @@ Dokumen ini dibuat setelah commit V0.1.8.8; **bukan** pernyataan versi V0.1.8.9.
 - **Target:** 0.1.8.9 / code 16, patch renderer global dan QA rich-text sebagai syarat build; jangan mengubah 24 level/soal, mufradat, lisensi, toolbar atau layout.
 - **QA yang diperlukan:** unit-test renderer + scan 24 level di CI; tes aktual di Android setelah APK tersedia.
 - **Rollback:** commit baseline di atas; gunakan revert commit, jangan force-push.
+## Update 2026-11-02 — V0.1.8.10
+- Perubahan khusus kartu Mufradat Beranda: frame tetap, ukuran isi otomatis, fade transition, contoh tanpa titik terakhir pada tampilan.
+- Data bank mufradat dan Kamus Mini tidak diubah. Bug N-018 tercatat di BUG_REGISTER.
+- Pastikan pengujian Android sebelum menandai rilis stabil.
