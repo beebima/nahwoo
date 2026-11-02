@@ -92,3 +92,11 @@ Instruksi awal: "Baca docs/README.md, docs/DEVELOPMENT_LEDGER.md, docs/BUG_REGIS
 - Periksa tidak ada pergeseran saat bintang disentuh atau setelah kembali dari menu lain; ukur tinggi elemen sebelum/sesudah pada browser/perangkat.
 
 - Gate CI khusus N-018: jalankan `node scripts/qa-home-vocab.js` sebelum Gradle. Gate ini **bukan** pengganti tes tampilan Android.
+
+## K. Aturan injeksi bank mufradat parsial (N-019)
+
+- Validasi jumlah **rekaman yang benar-benar dibaca** dari berkas sumber; rentang nomor VOC atau klaim jumlah dalam nama ZIP bukan bukti jumlah aktif.
+- Bila sumber baru tidak lengkap, gabungkan hanya yang valid dengan bank saat ini, laporkan ID hilang dan jumlah unik setelah deduplikasi, serta tandai DRAFT_REVIEW.
+- Pelabelan subjenis harus berasal dari sumber, **bukan** menebak dari bentuk kata.
+- Jangan hapus 50 entri lama atau reset bookmark. Contoh kalimat tetap tampil tanpa titik terakhir baik pada Beranda maupun Kamus Mini.
+- Jalankan tes otomatis `node scripts/qa-mufradat-partial.js` serta QA perangkat untuk ukuran kartu dan pencarian; lakukan backup sumber dan catat commit.

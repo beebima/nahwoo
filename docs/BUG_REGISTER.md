@@ -73,3 +73,13 @@ Catatan: **penutupan bug membutuhkan bukti reproduksi sudah tidak muncul pada li
 - **Status:** SOURCE PATCH + unit syntax/dot check; tes nyata Android belum dilakukan. **Jangan tandai selesai tanpa APK diperiksa.**
 
 **N-018 QA otomatis:** `scripts/qa-home-vocab.js` memeriksa kontrak frame, resize teks, fade transition, aksesibilitas reduced-motion, dan penghilangan titik akhir. Dijalankan di GitHub Actions sebelum build. Tes ukuran nyata dan kelancaran animasi di APK tetap manual.
+
+### N-019 — Target 7.200 belum mempunyai seluruh berkas sumber (2 November 2026)
+
+- **Gejala:** penomoran checkpoint sudah mencapai VOC-07200, tetapi ZIP RUN 01–02 dan RUN 04–07 tidak tersedia pada sesi ini. Compiler kit yang dilampirkan bukan 7.000 data.
+- **Tindakan:** injeksikan hanya RUN 03 (1.000) + RUN 08 checkpoint (200), pertahankan 50 contoh yang telah ada. Terdapat satu pasangan lema dan arti duplikat; indeks otomatis dedup menjadi perkiraan 1.249 mufradat aktif.
+- **Larangan:** jangan menampilkan angka 7.200 sebagai jumlah entri aktif, jangan mengarang 6.000 entri yang berkasnya tidak tersedia.
+- **Klasifikasi:** RUN 03 hanya menyimpan jenis kata umum, RUN 08 menyimpan subjenis spesifik. Subjenis RUN 03 tidak boleh ditebak tanpa review.
+- **Tanda baca:** titik terminal contoh Arab dan terjemahan disembunyikan dalam tampilan Beranda **dan Kamus Mini**; berkas sumber tetap utuh.
+- **Tes wajib:** file 12 bagian, jumlah 1.200, ID unik, bank awal tidak hilang, pencarian Arab/Indonesia hanya kepala kata dan arti, rotasi kartu setiap menit, frame tetap, CI & build, tinjauan guru.
+- **Status:** injeksi parsial untuk pengujian, seluruh konten DRAFT_REVIEW; pemeriksaan ilmiah belum dilakukan.

@@ -60,3 +60,9 @@ Dokumen ini dibuat setelah commit V0.1.8.8; **bukan** pernyataan versi V0.1.8.9.
 - Perubahan khusus kartu Mufradat Beranda: frame tetap, ukuran isi otomatis, fade transition, contoh tanpa titik terakhir pada tampilan.
 - Data bank mufradat dan Kamus Mini tidak diubah. Bug N-018 tercatat di BUG_REGISTER.
 - Pastikan pengujian Android sebelum menandai rilis stabil.
+
+## 2 November 2026 — V0.1.8.11: 1.200 mufradat parsial
+- 1.000 dari RUN03 dan 200 dari RUN08; 50 data awal dipertahankan, 1.249 indeks unik diperkirakan setelah dedup.
+- Belum tersedia sumber 6.000 entri dari RUN01–02/RUN04–07. Tidak boleh mengklaim sudah memuat 7.200.
+- Subjenis RUN08 dipertahankan, RUN03 tetap kategori umum; status DRAFT_REVIEW.
+- Pembaruan Kamus Mini, auto-playlist Beranda, dan terminal dot pada kedua tampilan; catatan N-019.

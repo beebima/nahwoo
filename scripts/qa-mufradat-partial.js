@@ -1,0 +1,24 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const vm=require('node:vm');
+const p='app/src/main/assets/content/mufradat/';
+const files=[...Array.from({length:10},(_,i)=>`run03_part_${String(i+1).padStart(2,'0')}.js`),...Array.from({length:2},(_,i)=>`run08_part_${String(i+1).padStart(2,'0')}.js`)];
+const context={window:{}};vm.createContext(context);
+for(const name of files){const s=fs.readFileSync(p+name,'utf8');new vm.Script(s,{filename:name}).runInContext(context);}
+const data=context.window.NW_MINI_DICTIONARY_IMPORTED;
+assert.equal(data.length,1200,'12 data chunks must contain 1200 source records');
+assert.equal(new Set(data.map(r=>r.id)).size,1200,'all imported VOC IDs must be distinct');
+assert.equal(data.filter(r=>r.id>='VOC-02001'&&r.id<='VOC-03000').length,1000);
+assert.equal(data.filter(r=>r.id.startsWith('VOC-07')).length,200);
+assert.equal(data.filter(r=>r.word_subtype).length,200,'only RUN08 has published subtypes');
+assert.ok(data.every(r=>['ar','meaning','kind','example','translation','status','id'].every(k=>typeof r[k]==='string' && r[k].trim())));
+assert.ok(data.every(r=>r.status==='DRAFT_REVIEW'));
+const html=fs.readFileSync('app/src/main/assets/index.html','utf8');
+assert.ok(html.includes('window.NW_MINI_DICTIONARY_IMPORTED'));
+assert.ok(html.includes("content/mufradat/run08_part_02.js"));
+assert.ok(html.includes('nwHomeNoFinalDot(item.example)'),'remove final dots in Kamus Mini');
+assert.ok(html.includes('nwHomeNoFinalDot(item.translation)'),'remove final translation dots');
+assert.ok(html.includes('nwHomeSyncBank()'),'home shares complete dictionary index');
+assert.ok(html.includes('window.setInterval(nwHomeTick,1000)'),'home rotation exists');
+assert.ok(html.includes('const candidates=isArabic?[entry.ar,...entry.formsAr]:[entry.meaning,...entry.aliases]'),'search never includes example');
+console.log('QA Mufradat RUN03 + RUN08: 1200 valid imported records, all metadata intact');

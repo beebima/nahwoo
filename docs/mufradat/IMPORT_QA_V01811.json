@@ -1,0 +1,154 @@
+{
+  "status": "PARTIAL_DATA_ONLY_DRAFT_REVIEW",
+  "target_requested": 7200,
+  "verified_new_entries": 1200,
+  "existing_live_bank_expected": 50,
+  "combined_raw_records_expected": 1250,
+  "unique_arabic_normalized_and_indonesian_meaning_expected": 1249,
+  "available_source_ranges": [
+    "VOC-02001..VOC-03000",
+    "VOC-07001..VOC-07200"
+  ],
+  "missing_source_ranges": [
+    "VOC-00001..VOC-02000 already not supplied as full RUN01/02 except 50 live samples",
+    "VOC-03001..VOC-07000 (RUN04..RUN07 not supplied)"
+  ],
+  "all_records_have_arabic_meaning_class_examples": true,
+  "word_subtype_present": 200,
+  "word_subtype_missing": 1000,
+  "word_classes": {
+    "isim": 1068,
+    "sifah": 27,
+    "fiil": 96,
+    "harf": 9
+  },
+  "duplicate_headword_and_meaning": [
+    {
+      "key": [
+        "استدامة",
+        "keberlanjutan"
+      ],
+      "count": 2
+    }
+  ],
+  "chunks": [
+    {
+      "file": "content/mufradat/run03_part_01.js",
+      "count": 100,
+      "first_id": "VOC-02001",
+      "last_id": "VOC-02100",
+      "sha256": "06f94fa826a87ee596b515984ba133d93be032de77587949451e10c3a31a4f15",
+      "bytes": 38055
+    },
+    {
+      "file": "content/mufradat/run03_part_02.js",
+      "count": 100,
+      "first_id": "VOC-02101",
+      "last_id": "VOC-02200",
+      "sha256": "e7b8ff116099ded45a466d3255541f0b39619e6b28a973d0ce38e92bb171ed9d",
+      "bytes": 37595
+    },
+    {
+      "file": "content/mufradat/run03_part_03.js",
+      "count": 100,
+      "first_id": "VOC-02201",
+      "last_id": "VOC-02300",
+      "sha256": "a8560c9faa2e58ee8c7853e2b99385380100623f01d95d5227acb0ce9fee1751",
+      "bytes": 37555
+    },
+    {
+      "file": "content/mufradat/run03_part_04.js",
+      "count": 100,
+      "first_id": "VOC-02301",
+      "last_id": "VOC-02400",
+      "sha256": "8e3be40a5466278e42055b190d0af9d8e0035205297705936906df43acdcdb19",
+      "bytes": 37514
+    },
+    {
+      "file": "content/mufradat/run03_part_05.js",
+      "count": 100,
+      "first_id": "VOC-02401",
+      "last_id": "VOC-02500",
+      "sha256": "aba0309808b948dd975553ffeefdcb319ac730b24167f8d19bb951c08d3a2f5c",
+      "bytes": 38128
+    },
+    {
+      "file": "content/mufradat/run03_part_06.js",
+      "count": 100,
+      "first_id": "VOC-02501",
+      "last_id": "VOC-02600",
+      "sha256": "846c1e6a5adc4322a04be4823e766ffebbfb477e5636848b48380a9f3b1e77d6",
+      "bytes": 37721
+    },
+    {
+      "file": "content/mufradat/run03_part_07.js",
+      "count": 100,
+      "first_id": "VOC-02601",
+      "last_id": "VOC-02700",
+      "sha256": "2577ce85152bdbb37a3f189ed69297b605dfd137d8c889e6e68508de1ecde986",
+      "bytes": 38043
+    },
+    {
+      "file": "content/mufradat/run03_part_08.js",
+      "count": 100,
+      "first_id": "VOC-02701",
+      "last_id": "VOC-02800",
+      "sha256": "6939d63d80d9049d83c9b5f29aafabb585b84ec993d81eab077df65dc49bdada",
+      "bytes": 37585
+    },
+    {
+      "file": "content/mufradat/run03_part_09.js",
+      "count": 100,
+      "first_id": "VOC-02801",
+      "last_id": "VOC-02900",
+      "sha256": "c570730654b09c55a5ac45fe3a9aeda48cdbfd757efc03101a434fb6d9c1f84e",
+      "bytes": 32683
+    },
+    {
+      "file": "content/mufradat/run03_part_10.js",
+      "count": 100,
+      "first_id": "VOC-02901",
+      "last_id": "VOC-03000",
+      "sha256": "ed5edf69b7182f3383c53cfe777a0ab8bf50d9558f4467a9bcf0a8a8900ecb05",
+      "bytes": 31222
+    },
+    {
+      "file": "content/mufradat/run08_part_01.js",
+      "count": 100,
+      "first_id": "VOC-07001",
+      "last_id": "VOC-07100",
+      "sha256": "6d7db9c1f622c7bc2843e03022148839fe89508526328a75c3f25023de8756b2",
+      "bytes": 38063
+    },
+    {
+      "file": "content/mufradat/run08_part_02.js",
+      "count": 100,
+      "first_id": "VOC-07101",
+      "last_id": "VOC-07200",
+      "sha256": "380bd91fe532ee6dbda36facd09c80222633308225abc9ac1ac57c405a017ddf",
+      "bytes": 39896
+    }
+  ],
+  "sources": [
+    {
+      "run": "run03",
+      "zip_name": "NAHWOO_MUFRADAT_RUN_03_02001-03000_DRAFT_REVIEW(2).zip",
+      "sha256": "dcd998afa29229246f1d54f72251c2ed560e2166bb47472e3ea00c9ba3ec706b",
+      "source_json": [
+        "MUFRADAT_RUN_03_02001-03000.json"
+      ]
+    },
+    {
+      "run": "run08",
+      "zip_name": "NAHWOO_MUFRADAT_RUN_08_07001-07200_CHECKPOINT_200_DRAFT_REVIEW(1).zip",
+      "sha256": "1eff344ac509f351f75df1e17a35fa8d8a50036a7993f6bebd6af3fce6864877",
+      "source_json": [
+        "part_01_07001-07100/MUFRADAT_RUN_08_07001-07100.json",
+        "part_02_07101-07200/MUFRADAT_RUN_08_07101-07200.json"
+      ]
+    }
+  ],
+  "dots_policy": "Raw imported data stays unchanged; Kamus Mini and Home remove terminal period in display layer",
+  "search_policy": "Only ar, meaning and aliases; not example or translation",
+  "publishing_risk": "All 1200 records DRAFT_REVIEW; not expert-audited"
+}

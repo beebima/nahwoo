@@ -18,6 +18,8 @@ jobs:
         run: node scripts/qa-richtext.js
       - name: QA Mufradat Beranda fixed frame and smooth rotation
         run: node scripts/qa-home-vocab.js
+      - name: QA partial mufradat RUN03 and RUN08 imports
+        run: node scripts/qa-mufradat-partial.js
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
