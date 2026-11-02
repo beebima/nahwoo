@@ -66,3 +66,13 @@ Tidak boleh menyatakan "sukses end-to-end" hanya karena syntax/ZIP/GitHub commit
 ## G. Aturan penggunaan catatan saat berpindah chat
 
 Instruksi awal: "Baca docs/README.md, docs/DEVELOPMENT_LEDGER.md, docs/BUG_REGISTER.md, docs/RELEASE_SOP.md, dan rilis terakhir. Bandingkan dengan branch GitHub, temukan masalah terbuka sebelum coding. Jangan ulang eksperimen yang sudah gagal kecuali ada bukti kondisi berubah. Perbarui catatan dan Summary/Description bersama setiap ZIP dan commit."
+
+## H. Pencegahan kebocoran kode Markdown di materi (N-016, wajib semua aplikasi)
+
+1. Semua teks yang terlihat user harus melalui komponen/renderer rich-text **aman**, bukan menampilkan kode Markdown mentah sebagai plain text.
+2. Konversi `**bold**`, `*italic*`, dan style `segments[].marks` **sebelum** HTML dirender; delimiter dapat melewati beberapa runs, termasuk teks Arab. Pertahankan Arab RTL, harakat, dan font.
+3. Uji 24 level + soal, bukan hanya screenshot satu quote; jalankan `node scripts/qa-richtext.js` pada setiap commit kode maupun konten.
+4. Lakukan HTML escaping untuk teks materi dan input; jangan mengganti Markdown dengan `innerHTML` mentah dari sumber.
+5. Tambahkan tes `**bold**` di satu run, `**...**` lintas runs, Arab dengan mark bold, `*italic*`, string berisi `<script>`, dan penanda tidak berpasangan.
+6. Build GitHub Actions wajib gagal lebih awal bila tes rich-text gagal. Android tetap harus di-review langsung setelah build.
+7. Bila sumber berisi delimiter tidak berpasangan, catat sebagai QA editorial; jangan diam-diam merombak kaidah atau terjemahan Arab.

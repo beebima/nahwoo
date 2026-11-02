@@ -10,6 +10,12 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v4
+      # N-016: block a build if Markdown ** markers would leak in rendered lessons.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: QA rich-text formatting across 24 levels
+        run: node scripts/qa-richtext.js
       - uses: actions/setup-java@v4
         with:
           distribution: temurin

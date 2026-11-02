@@ -48,3 +48,11 @@
 ## 5. Status pencatatan
 
 Dokumen ini dibuat setelah commit V0.1.8.8; **bukan** pernyataan versi V0.1.8.9. Perubahan dokumentasi yang berdiri sendiri boleh memakai commit GitHub tanpa menaikkan angka versi app.
+
+## 6. Rencana V0.1.8.9 — Pencegahan Raw Markdown
+
+- **Permintaan:** screenshot 2026-11-02 memperlihatkan `**` di kartu Tiga Keluarga Kata.
+- **Baseline GitHub sebelum perubahan:** `main` HEAD `b6e9ee3eb096152c42a5da980d819bacfb28be29`, versi 0.1.8.8 / code 15.
+- **Target:** 0.1.8.9 / code 16, patch renderer global dan QA rich-text sebagai syarat build; jangan mengubah 24 level/soal, mufradat, lisensi, toolbar atau layout.
+- **QA yang diperlukan:** unit-test renderer + scan 24 level di CI; tes aktual di Android setelah APK tersedia.
+- **Rollback:** commit baseline di atas; gunakan revert commit, jangan force-push.

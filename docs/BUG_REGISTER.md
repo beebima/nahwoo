@@ -43,3 +43,13 @@ Risiko tersisa / jangan diulang:
 ```
 
 Catatan: **penutupan bug membutuhkan bukti reproduksi sudah tidak muncul pada lingkungan target**. Jangan menandai "fix" final hanya dari perubahan source.
+
+| N-016 | Tanda `**` kode Bold tampil mentah dalam kartu **Tiga Keluarga Kata**, terlihat di Android (2 Nov 2026) | Akar terkonfirmasi: teks sumber mencampur Markdown `**...**` dengan rich-text runs; pembuka/penutup `**` dapat berada di run berbeda. `nwSegments` lama hanya membaca `marks` per-run dan tidak mengenali delimiter Markdown lintas run. Ditemukan juga di Level 02, 16, 19, 23. | V0.1.8.9: parser inline menangani `**bold**`, `*italic*`, melintasi runs, mempertahankan Arab berharakat, dan melakukan HTML escaping. CI wajib menjalankan `node scripts/qa-richtext.js` sebelum build. | **PATCH DIBUAT + UNIT TEST LOKAL LULUS**; Android & GitHub Actions belum dibuktikan. Jangan tandai SELESAI sebelum APK retest. |
+
+### N-016 — Langkah reproduksi dan pencegahan
+
+- **Reproduksi:** buka Level 01 sublevel dengan bagian `Tiga Keluarga Kata`, lihat quote berawalan _Sebelum sibuk dengan harakat akhir…_. Pada V0.1.8.8 terlihat tanda `**` di sekitar frasa yang harus bold.
+- **Penyebab:** memaksa data produksi ke potongan `segments` yang memiliki `marks` _dan_ karakter penanda Markdown; parser menganggap `**` sebagai karakter biasa. Contoh lain: `Perhatikan **` + `<b>قَالَ</b>` + `**. Di sinilah…`.
+- **Yang tidak boleh diulang:** sekadar mengganti string spesifik atau menghapus semua `*` di file sumber. Cara tersebut merusak penekanan, bisa bocor lagi di level lain.
+- **Solusi:** normalisasi _saat render_ berdasarkan seluruh teks pada satu blok, kemudian terapkan gaya asli pada masing-masing run. Test setiap block/soal untuk `**` mentah dan pastikan renderer menggunakan `<strong>/<em>` secara aman.
+- **Bukti:** screenshot Android Gus 2026-11-02; unit test renderer lokal. Bukti APK final masih menunggu.
