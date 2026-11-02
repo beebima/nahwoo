@@ -1,21 +1,16 @@
-# GitHub Commit — Nahwoo V0.1.8.7
+# Nahwoo V0.1.8.8
 
 ## Summary
-Nahwoo V0.1.8.7 — Inject 50 Mufradat Draf, Smart Search Arab–Indonesia & Inventaris 1.816 Bentuk
+Nahwoo V0.1.8.8 — Perbaikan Mufradat Beranda, Bank 50 Kata & Rotasi Otomatis 1 Menit
 
 ## Description
-- Mengganti 24 entri demo Kamus Mini dengan 50 entri mufradat bersumber dari paket DRAFT_REVIEW yang diberikan.
-- Mempertahankan arti Indonesia, kelas kata, Arab berharakat, dan contoh Arab beserta terjemahan dari sumber tanpa menulis ulang isinya.
-- Mempertahankan smart search dua arah hanya pada lema/alias, tanpa pencarian di contoh kalimat.
-- Menampilkan label Draf — menunggu review guru pada kartu kosakata.
-- Menyimpan inventaris 1.683 kandidat inti dan 1.816 bentuk Arab keseluruhan dalam folder editorial untuk kurasi, bukan langsung masuk hasil kamus.
-- Menyimpan data JSON dan laporan QA sumber sebagai berkas editorial.
-- Mempertahankan seluruh 24 level, 240 sublevel, 4.800 soal, pengaturan font, dan navigasi.
-- Android versionCode 14, versionName 0.1.8.7.
-
-## QA
-- Struktur 50/50 entri lengkap dan unik; checksum manifest sumber lolos.
-- Pencarian Arab/Indonesia dan pengecualian teks contoh diuji.
-- JavaScript sintaks dan integritas ZIP diperiksa.
-- APK/perangkat fisik belum diuji dan peninjauan bahasa Arab independen belum selesai.
-- Target 10.000 belum tercapai; 1.816 kandidat bukan lema tervalidasi.
+- Menghapus empat mufradat dummy dari sumber kartu Beranda.
+- Memuat bank mufradat yang sama dengan Kamus Mini secara otomatis ketika aplikasi dibuka.
+- Menampilkan Arab, arti Indonesia, jenis kata, contoh kalimat, dan terjemahan dari 50 entri DRAFT_REVIEW.
+- Mengganti mufradat otomatis setiap pergantian menit (60 detik) dan menyelaraskan rotasi ketika aplikasi aktif kembali.
+- Tombol Ganti maju satu kata; tombol bintang menyimpan kosakata yang sedang muncul.
+- Mengubah teks pada kartu secara langsung tanpa render ulang layar Beranda, sehingga menghindari bug pergeseran layout.
+- Mempertahankan Kamus Mini dengan smart search, 24 level, 240 sublevel, 4.800 soal dan setelan pengguna.
+- versionName 0.1.8.8; versionCode 15.
+- Pemeriksaan sintaks JavaScript dan logika rotasi lulus; build APK, timer pada Android, serta uji visual di HP masih diperlukan.
+- Sumber 50 mufradat masih berstatus DRAFT_REVIEW.
