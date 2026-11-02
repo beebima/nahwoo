@@ -1,0 +1,190 @@
+{
+  "provenance": "NAHWOO_V4_LEVEL_09-16_KOMPILASI_LENGKAP(1).zip",
+  "version": "nahwoo.v4.09-16.source-parity",
+  "levels": {
+    "9": {
+      "public_payload_sha256": "6e41fa50040e8fe3f033cab60dd26351c583aee2a0b16755e7bfd0220f54ba42",
+      "public_source_sha256": "bfdd838c1dc814c63a8083ac9f79f156c70e34b3a8d19e03275c4f593f67419a",
+      "keys_payload_sha256": "55b216d30bec91f89b844d4d60c616892f76f7b670eaf1a0da2484459efb62c3",
+      "keys_source_sha256": "4d57b307861437fb1af4d9db363703e51cb93df281acde30131d0bf2797f016c",
+      "sublevels": 10,
+      "questions": 200,
+      "blocks": 310,
+      "keys": 200,
+      "source_level_title": "Bongkar Kata Sampai Akarnya",
+      "source_public_path": "NAHWOO_V4_L09_Bongkar_Kata_Sampai_Akarnya/NAHWOO_V4_L09_KONTEN_PUBLIK.json",
+      "source_private_path": "NAHWOO_V4_L09_Bongkar_Kata_Sampai_Akarnya/NAHWOO_V4_L09_KUNCI_INTERNAL.json",
+      "semantics": {
+        "flow": 66,
+        "example": 5,
+        "practice": 22,
+        "warning": 12,
+        "breakdown": 11,
+        "takeaway": 9,
+        "compare": 5
+      }
+    },
+    "10": {
+      "public_payload_sha256": "59431baedaf861e9943971ed318753c7b1594623b18538a900d2410b1a880453",
+      "public_source_sha256": "f0d56cf4fd740cb8f4e204dce8faf42cf108a3ab2dcd3cd174c25655185c1c4f",
+      "keys_payload_sha256": "26f2bc176e2b7117cbc66848e12dca1298a54cca20a7c5b0d4601d3379d198a7",
+      "keys_source_sha256": "c98dbf35b1264d4ef284c9115ef549e1f135bb4222450711858e758d079e5400",
+      "sublevels": 10,
+      "questions": 200,
+      "blocks": 270,
+      "keys": 200,
+      "source_level_title": "Satu Fi‘il, Banyak Wajah",
+      "source_public_path": "NAHWOO_V4_L10_Satu_Fiil_Banyak_Wajah/NAHWOO_V4_L10_KONTEN_PUBLIK.json",
+      "source_private_path": "NAHWOO_V4_L10_Satu_Fiil_Banyak_Wajah/NAHWOO_V4_L10_KUNCI_INTERNAL.json",
+      "semantics": {
+        "flow": 64,
+        "example": 2,
+        "compare": 3,
+        "practice": 19,
+        "warning": 8,
+        "takeaway": 7,
+        "breakdown": 7
+      }
+    },
+    "11": {
+      "public_payload_sha256": "2a201bdb22fc4d78475a792b7a59953499083df881ebf76e2fb2ded66d6726df",
+      "public_source_sha256": "ca28cee8897755dda9e2bb3d58c9a71b898687cc32630cf6d4c49785864e3c52",
+      "keys_payload_sha256": "62dc04484d347ac13ae249cba84f83ac755a108df7374db60630a574c29ffc53",
+      "keys_source_sha256": "d4d8b2be022ee3d953c03bad1856278d774c00bf2c1e64e263a0568e02e4e45e",
+      "sublevels": 10,
+      "questions": 200,
+      "blocks": 300,
+      "keys": 200,
+      "source_level_title": "Mengenali Keluarga Sebuah Kata",
+      "source_public_path": "NAHWOO_V4_L11_Mengenali_Keluarga_Sebuah_Kata/NAHWOO_V4_L11_KONTEN_PUBLIK.json",
+      "source_private_path": "NAHWOO_V4_L11_Mengenali_Keluarga_Sebuah_Kata/NAHWOO_V4_L11_KUNCI_INTERNAL.json",
+      "semantics": {
+        "flow": 27,
+        "example": 20,
+        "breakdown": 12,
+        "compare": 11,
+        "practice": 40,
+        "warning": 10
+      }
+    },
+    "12": {
+      "public_payload_sha256": "fc17e052dbca90fffefbed894394c92f307a44574fd609702df8f791947bc8e4",
+      "public_source_sha256": "2d1c7b92567ece4775e9827fd15ba4480ff741a7a620d02c1b134dc03c34ac05",
+      "keys_payload_sha256": "86dd155f628f87eeb2a8bf09bf49ef3a2d13c596384403f7cdcecc3e7369108b",
+      "keys_source_sha256": "60b6b784973d7bc2c523dc7b1e083b7be8ac82551d16fcd9fe2c95f5a5cdcb12",
+      "sublevels": 10,
+      "questions": 200,
+      "blocks": 350,
+      "keys": 200,
+      "source_level_title": "Klinik Kitab Gundul I",
+      "source_public_path": "NAHWOO_V4_L12_Klinik_Kitab_Gundul_I/NAHWOO_V4_L12_KONTEN_PUBLIK.json",
+      "source_private_path": "NAHWOO_V4_L12_Klinik_Kitab_Gundul_I/NAHWOO_V4_L12_KUNCI_INTERNAL.json",
+      "semantics": {
+        "flow": 27,
+        "example": 40,
+        "breakdown": 21,
+        "compare": 11,
+        "warning": 10,
+        "practice": 21,
+        "takeaway": 10
+      }
+    },
+    "13": {
+      "public_payload_sha256": "f343f4c59614cfcb2b921c574a9a5a20d4c68173a5637853cddcd0ad4a56c65d",
+      "public_source_sha256": "4496287aa55cf993e8c55974d835ce0b9419b593868f9033daf92e775b68473e",
+      "keys_payload_sha256": "096ce80170d394f3eeb5b1ba86ce88bb346e6668b46896db02eab3a8a162a7fd",
+      "keys_source_sha256": "3b5d63cd60a25aeddd691a44702f8a116ff42c7f7b40657eb62c2676190771df",
+      "sublevels": 10,
+      "questions": 200,
+      "blocks": 400,
+      "keys": 200,
+      "source_level_title": "Isim yang Suka Bikin Kita Kecele",
+      "source_public_path": "NAHWOO_V4_L13_Isim_yang_Suka_Bikin_Kita_Kecele/NAHWOO_V4_L13_KONTEN_PUBLIK.json",
+      "source_private_path": "NAHWOO_V4_L13_Isim_yang_Suka_Bikin_Kita_Kecele/NAHWOO_V4_L13_KUNCI_INTERNAL.json",
+      "semantics": {
+        "flow": 38,
+        "target": 10,
+        "example": 10,
+        "compare": 11,
+        "warning": 10,
+        "practice": 10,
+        "takeaway": 10,
+        "breakdown": 1
+      }
+    },
+    "14": {
+      "public_payload_sha256": "b65e75e1d28f5b0082f5c6ddebe8d7ec3c9e6f4aeb171fa83f07797efb4858df",
+      "public_source_sha256": "30677980ceddcbb5467b43d6992108020ababa2164a3b4892cd4ec8134b905ba",
+      "keys_payload_sha256": "7cd2b90c8dc46d2ca2bc119db86c6cb2d1676ae07276855e3bde7530ca6207d6",
+      "keys_source_sha256": "8fffb2c4ecb70636eca669f39e13b7c672a4fa721e9f5e8d9cb7776898375038",
+      "sublevels": 10,
+      "questions": 200,
+      "blocks": 370,
+      "keys": 200,
+      "source_level_title": "‘Amil: Siapa yang Mengubah Harakat?",
+      "source_public_path": "NAHWOO_V4_L14_Amil_Siapa_yang_Mengubah_Harakat/NAHWOO_V4_L14_KONTEN_PUBLIK.json",
+      "source_private_path": "NAHWOO_V4_L14_Amil_Siapa_yang_Mengubah_Harakat/NAHWOO_V4_L14_KUNCI_INTERNAL.json",
+      "semantics": {
+        "practice": 21,
+        "target": 10,
+        "flow": 24,
+        "example": 14,
+        "breakdown": 11,
+        "compare": 10,
+        "warning": 10,
+        "takeaway": 10
+      }
+    },
+    "15": {
+      "public_payload_sha256": "6e435f861d6218e2b02f7c6d303aec1a54803b4ac07adcfb41b0b877e82be850",
+      "public_source_sha256": "ba83a47191e5ddfa91c14dab3c9d8c58725621c51c7fbcf0bc0d1d570347fafe",
+      "keys_payload_sha256": "057d10bc9478959bec23f36273ce33530fac7800609a35954e7ea3ad64c2f529",
+      "keys_source_sha256": "10c5bcbc38b83e2a765ce7f535d5b4f5607a59a54c2d3b7aadaa4db54e91ed91",
+      "sublevels": 10,
+      "questions": 200,
+      "blocks": 440,
+      "keys": 200,
+      "source_level_title": "Unsur-Unsur yang Mengikuti",
+      "source_public_path": "NAHWOO_V4_L15_Unsur_Unsur_yang_Mengikuti/NAHWOO_V4_L15_KONTEN_PUBLIK.json",
+      "source_private_path": "NAHWOO_V4_L15_Unsur_Unsur_yang_Mengikuti/NAHWOO_V4_L15_KUNCI_INTERNAL.json",
+      "semantics": {
+        "flow": 20,
+        "target": 10,
+        "example": 20,
+        "breakdown": 10,
+        "compare": 10,
+        "warning": 10,
+        "practice": 20,
+        "takeaway": 10
+      }
+    },
+    "16": {
+      "public_payload_sha256": "779ce5fca4d6dad6dd97a6837b7f253bd5dc292f505455a6c46058425b99331f",
+      "public_source_sha256": "804a2d33a638e6d090a2a75536601f766ce2ad648972c36fe35ec9c434adabdd",
+      "keys_payload_sha256": "9602881488c4767ca5c855c1c4893dd8ef5af177b886d0b31a9f4a747538f438",
+      "keys_source_sha256": "30129de502977a5313e251a621d0955111fddc68791b398d76e0cbf5415288cf",
+      "sublevels": 10,
+      "questions": 200,
+      "blocks": 400,
+      "keys": 200,
+      "source_level_title": "Fi‘il yang Bentuknya Berubah",
+      "source_public_path": "NAHWOO_V4_L16_Fiil_yang_Bentuknya_Berubah/NAHWOO_V4_L16_KONTEN_PUBLIK.json",
+      "source_private_path": "NAHWOO_V4_L16_Fiil_yang_Bentuknya_Berubah/NAHWOO_V4_L16_KUNCI_INTERNAL.json",
+      "semantics": {
+        "example": 4,
+        "target": 10,
+        "breakdown": 8,
+        "compare": 3,
+        "warning": 9,
+        "flow": 36,
+        "practice": 9,
+        "takeaway": 11
+      }
+    }
+  },
+  "total_sublevels": 80,
+  "total_questions": 1600,
+  "total_material_blocks": 2840,
+  "total_hints": 3200,
+  "total_options": 9600
+}

@@ -119,3 +119,14 @@ Instruksi awal: "Baca docs/README.md, docs/DEVELOPMENT_LEDGER.md, docs/BUG_REGIS
 - `Cek Cepat` boleh memakai elemen HTML `<details>` untuk jawaban **jika** penanda jawaban tersedia eksplisit; pertahankan teks aslinya.
 - Uji 320/360/390px, dark mode, font Latin/Arab kecil-besar, Arab inline dan harakat panjang, scrolling dan evaluasi.
 - Pengujian browser statis tidak sama dengan Android WebView; catat status keduanya terpisah.
+
+## M. SOP update V4 Level 09–16 (N-026–N-028)
+
+1. Pastikan delapan JSON sumber publik dan delapan JSON kunci benar-benar tersedia, dan manifest checksum cocok sebelum konversi
+2. Pertahankan `sublevel_id`, ID soal, seluruh teks/harakat/terjemahan serta kunci; jangan membuat jawaban alternatif atau merombak materi untuk layout
+3. Normalisasi opsi ke `segments[]`, bahan ke `blocks[]`; file `keys.js` tetap terpisah dari `public.js`. Level 16 memakai struktur kunci khusus
+4. Klasifikasi kartu per heading **dan level** setelah memeriksa isi. Jangan memilih jenis kartu dari posisi seksi. Jangan buat kartu target ganda ketika kompetensi sudah menjadi section target
+5. Namespace jawaban evaluasi diganti hanya untuk Level yang soalnya berubah. Progres penyelesaian, setelan, Mufradat, Level lain dan wrapper Android harus bertahan
+6. QA otomatis sebelum build: `node scripts/qa-v4-level09-16.js` dan `node scripts/qa-v4-reader09-16.js`
+7. Screenshot preview 320/360/390px, ukuran font ekstrem, RTL/harakat, dark mode dan WebView Android **wajib** diperiksa. Build hijau bukan bukti visual benar
+8. Setiap versi tambahkan catatan `docs/releases/`, BUG_REGISTER, DEVELOPMENT_LEDGER, Summary dan Description GitHub, dan ZIP cadangan

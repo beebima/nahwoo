@@ -80,3 +80,10 @@ Dokumen ini dibuat setelah commit V0.1.8.8; **bukan** pernyataan versi V0.1.8.9.
 - Menghapus kartu berdasarkan indeks section; map eksplisit heading aktual + 80 competency sumber; latihan cek cepat jawaban dikunci details.
 - Preview Chromium 320/360/390px tidak mengalami horizontal overflow. Android fisik belum dites.
 - Bug N-024/N-025, SOP & release notes diperbarui.
+
+## 2 November 2026 — V0.1.8.14: V4 Level 09–16
+- Ganti 8 level / 80 sublevel / 2.840 blok materi / 1.600 soal lengkap 9.600 opsi, 3.200 hint dan kunci privat sesuai ZIP.
+- Target pembelajaran kuning tanpa duplikasi, metadata heading semantik 416 pasangan heading-level; paragraf biasa tetap terbuka, Arab terjaga.
+- Namespace evaluasi 09–16 baru, progres tidak direset; Level 01–08 dan 17–24, Mufradat & AdMob dipertahankan.
+- Perbedaan schema kunci Level 16 distandarkan; manifest SHA256 dan QA CI ditambahkan.
+- Bug N-026 sampai N-028, lihat docs/releases/V0.1.8.14.md.

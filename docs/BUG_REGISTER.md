@@ -119,3 +119,22 @@ Catatan: **penutupan bug membutuhkan bukti reproduksi sudah tidak muncul pada li
 - **Solusi:** jawabannya dibungkus `<details>` yang bisa dibuka pengguna; teks sumber tetap persis sama dan urutannya terjaga.
 - **Fallback:** jika tidak ada penanda jawaban eksplisit, renderer tidak menyembunyikan atau memindahkan paragraf lain secara spekulatif.
 - **Status:** patch dibuat / butuh verifikasi Android.
+
+### N-026 — Pergantian konten V4 Level 09–16 tanpa merusak progres (2026-11-02)
+
+- **Akar risiko:** materi/soal lama mempunyai schema evaluator berbeda dengan JSON V4 dan opsi teks baru tidak bisa langsung dibaca renderer lawas
+- **Perbaikan:** konversi sumber `material_blocks[].text` menjadi `blocks[].segments`, `ARABIC_TEXT` ke `.arabic`, `options[].text` ke `.segments`, kunci terpisah, judul dan kompetensi dari sumber; namespace evaluasi Level 09–16 terpisah
+- **Jangan diulang:** dilarang menyalin mentah JSON V4 sebagai `NW_LEVEL_DATA`; wajib tes 20 soal + enam opsi + dua hint per sublevel, sumber penuh dan kelas font Arab
+- **Status:** data diproses, perlu bukti GitHub CI dan tes APK nyata
+
+### N-027 — Format file kunci privat antarlevel tidak seragam (2026-11-02)
+
+- **Gejala:** `KUNCI_INTERNAL.json` Level 09–15 menggunakan `answers[]`, tetapi Level 16 menggunakan `sublevels[].questions[]`
+- **Solusi:** baca kedua format tanpa mengarang kunci; cocokan semua 1.600 ID soal dan jawaban enam pilihan, jangan menyisipkan kunci dalam JS publik
+- **Tes:** QA parity dan tidak ada `correct_index`/`explanation` di JS publik
+
+### N-028 — Risiko kartu target ganda & pemetaan warna berdasarkan urutan (2026-11-02)
+
+- **Akar risiko:** Level 13–16 sudah memiliki subjudul target belajar di sumber; menambahkan kartu target global lagi akan menggandakan isi. Judul seksi antarlevel tidak mempunyai posisi tetap
+- **Solusi:** klasifikasi berdasarkan daftar heading berpasangan nomor level, bukan indeks. Kartu target sumber di-render in situ; target dari metadata kompetensi hanya ditampilkan bila tidak ada judul target. Narasi tetap terbuka
+- **Tes:** preview Level 09–S01, sampel Level 13/15/16, dark mode, Arab inline, tinggi baris, dan scrolling pada Android
