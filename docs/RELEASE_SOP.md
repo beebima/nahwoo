@@ -76,3 +76,8 @@ Instruksi awal: "Baca docs/README.md, docs/DEVELOPMENT_LEDGER.md, docs/BUG_REGIS
 5. Tambahkan tes `**bold**` di satu run, `**...**` lintas runs, Arab dengan mark bold, `*italic*`, string berisi `<script>`, dan penanda tidak berpasangan.
 6. Build GitHub Actions wajib gagal lebih awal bila tes rich-text gagal. Android tetap harus di-review langsung setelah build.
 7. Bila sumber berisi delimiter tidak berpasangan, catat sebagai QA editorial; jangan diam-diam merombak kaidah atau terjemahan Arab.
+## I. Penamaan artifact Android otomatis (N-017)
+
+- Nama artifact GitHub Actions **harus diambil dari `app/build.gradle` `versionName`**, bukan string versi statis di workflow.
+- Setiap versi cek kesesuaian label artifact, `versionCode`, `versionName`, dan commit HEAD; label lama tidak otomatis berarti binari lama.
+- Bedakan keberhasilan *upload artifact* dari keberhasilan install APK dan perilaku pada perangkat.

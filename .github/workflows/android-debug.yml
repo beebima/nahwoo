@@ -41,8 +41,15 @@ jobs:
           "$SDKMANAGER" 'platforms;android-35' 'build-tools;35.0.0'
       - name: Build debug APK
         run: gradle --no-daemon assembleDebug
+      # N-017: artifact label must reflect the current Gradle versionName.
+      - name: Read Android version for artifact label
+        id: appversion
+        run: |
+          version=$(sed -n "s/.*versionName '\([^']*\)'.*/\1/p" app/build.gradle | head -n 1)
+          test -n "$version"
+          echo "value=$version" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-artifact@v4
         with:
-          name: nahwoo-v0.1.3-debug-apk
+          name: nahwoo-v${{ steps.appversion.outputs.value }}-debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error

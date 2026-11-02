@@ -53,3 +53,10 @@ Catatan: **penutupan bug membutuhkan bukti reproduksi sudah tidak muncul pada li
 - **Yang tidak boleh diulang:** sekadar mengganti string spesifik atau menghapus semua `*` di file sumber. Cara tersebut merusak penekanan, bisa bocor lagi di level lain.
 - **Solusi:** normalisasi _saat render_ berdasarkan seluruh teks pada satu blok, kemudian terapkan gaya asli pada masing-masing run. Test setiap block/soal untuk `**` mentah dan pastikan renderer menggunakan `<strong>/<em>` secara aman.
 - **Bukti:** screenshot Android Gus 2026-11-02; unit test renderer lokal. Bukti APK final masih menunggu.
+### N-017 — Nama artifact APK tertinggal di versi lama (2026-11-02)
+
+- **Gejala:** GitHub Actions untuk commit V0.1.8.9 berhasil, tetapi artifact terunggah masih bernama `nahwoo-v0.1.3-debug-apk`.
+- **Akar masalah:** nama artifact di `.github/workflows/android-debug.yml` ditulis statis pada versi awal; tidak mengikuti `versionName` Gradle.
+- **Solusi:** baca `versionName` dari `app/build.gradle` setelah build, gunakan output langkah tersebut untuk nama artifact. Perubahan CI-only **tidak menaikkan versi APK**.
+- **Tes:** Actions build berikutnya harus menghasilkan label `nahwoo-v0.1.8.9-debug-apk`. Status sementara **PATCH DIBUAT / PERLU VERIFIKASI CI**.
+- **Jangan diulang:** jangan mengunci nama APK debug/ZIP/artifact dengan angka versi statis; ambil dari sumber Gradle yang terverifikasi.
