@@ -66,3 +66,11 @@ Dokumen ini dibuat setelah commit V0.1.8.8; **bukan** pernyataan versi V0.1.8.9.
 - Belum tersedia sumber 6.000 entri dari RUN01–02/RUN04–07. Tidak boleh mengklaim sudah memuat 7.200.
 - Subjenis RUN08 dipertahankan, RUN03 tetap kategori umum; status DRAFT_REVIEW.
 - Pembaruan Kamus Mini, auto-playlist Beranda, dan terminal dot pada kedua tampilan; catatan N-019.
+
+## Update 2026-11-02 — V0.1.8.12 V4 Reading-First Level 01–08
+- Sumber: ZIP kompilasi lengkap V4 Level 01–08, 80 sublevel, 1.600 soal, 3.200 hint, 1.600 kunci.
+- Replaced: Level 01–08 public & keys scripts; Level 09–24 (3.200 soal) untouched.
+- Schema JSON V4 diadaptasi ke reader/evaluator lama; 80 judul sublevel dan 8 judul level diperbarui.
+- Namespace jawaban untuk Level 01–08 baru; progres/notes/other levels tetap.
+- Batasan: Quick Check L07–L08 tanpa jawaban; telaah akademik eksternal belum dilakukan.
+- Bug baru N-020/N-021/N-022/N-023; QA otomatis.

@@ -1,0 +1,368 @@
+{
+  "source_file": "NAHWOO_V4_LEVEL_01-08_KOMPILASI_LENGKAP(1).zip",
+  "source_size_bytes": 4534145,
+  "schema": "nahwoo.v4.reading-first.level.v1",
+  "levels": [
+    {
+      "level": 1,
+      "title": "Ternyata Kitab Gundul Bisa Dibaca",
+      "sublevel_titles": [
+        "Kitab Gundul Itu Sebenarnya Apa?",
+        "Jangan Baca Dulu: Cari Jejaknya",
+        "Tiga Pemain Utama: Isim, Fi‘il, Huruf",
+        "Cara Mencurigai Sebuah Kata sebagai Isim",
+        "Cara Mencurigai Sebuah Kata sebagai Fi‘il",
+        "Huruf Kecil yang Mengubah Hubungan Kata",
+        "Dari Kata Menjadi Kelompok Kata",
+        "Jangan Langsung Terjemahkan: Cari Hubungannya",
+        "Tebak → Buka Harakat → Periksa",
+        "Buka Kitab #01 — Membongkar Kalimat Gundul Pertama"
+      ],
+      "source_level_version": "L01.1",
+      "material_blocks": {
+        "MAIN_HEADING": 10,
+        "SUBHEADING": 140,
+        "BODY": 170,
+        "ARABIC_TEXT": 50,
+        "QUOTE": 10
+      },
+      "quick_checks_with_feedback": 10,
+      "quick_checks_question_only": 0,
+      "question_count": 200,
+      "hint_count": 400,
+      "keys_count": 200,
+      "format_warnings": [],
+      "editorial_statuses": [
+        "REVIEWED_EDITORIAL_NOT_EXPERT_APPROVED"
+      ],
+      "source_public_sha256": "46a534941dc17a06a2b37fd7e162913f90a683d8d41c5ae82012cc0bfb597c90",
+      "source_keys_sha256": "28f0510ba5f5c1aeb5b268b9e81ddebd52ae6e5b79c3061cd69e3e4e8b0505d8",
+      "output_public_sha256": "84029c5bac81be4b3f7d1b6078449130b631f57b4540ceba6fb5485a7b019287",
+      "output_keys_sha256": "fa1159acfeb889b7f1d57bf64b83bf56f3ec764f3eddc945644c25cd62707474",
+      "source_QA_notes": {
+        "notes": [
+          "Validasi editorial dan struktur otomatis; belum ada review ahli bahasa Arab eksternal.",
+          "DOCX telah dirender dan ditinjau secara visual; build/injeksi di aplikasi Nahwoo belum dijalankan.",
+          "Materi Arab merupakan contoh pedagogis, bukan kutipan autentik kitab yang diberi atribusi."
+        ]
+      }
+    },
+    {
+      "level": 2,
+      "title": "Memburu Identitas Kata",
+      "sublevel_titles": [
+        "Ciri-Ciri Isim yang Kelihatan",
+        "Nakirah: Sesuatu yang Masih Umum",
+        "Ma‘rifah: Ketika Maksudnya Sudah Jelas",
+        "Mudzakkar dan Mu’annats",
+        "Mufrad: Satu",
+        "Mutsanna: Dua",
+        "Jama‘ Mudzakkar Salim",
+        "Jama‘ Mu’annats Salim",
+        "Jama‘ Taksir: Bentuk yang Berubah",
+        "Buka Kitab #02 — Tandai Semua Isimnya"
+      ],
+      "source_level_version": "L02.1",
+      "material_blocks": {
+        "MAIN_HEADING": 10,
+        "SUBHEADING": 140,
+        "BODY": 170,
+        "ARABIC_TEXT": 50,
+        "QUOTE": 10
+      },
+      "quick_checks_with_feedback": 10,
+      "quick_checks_question_only": 0,
+      "question_count": 200,
+      "hint_count": 400,
+      "keys_count": 200,
+      "format_warnings": [],
+      "editorial_statuses": [
+        "EDITORIAL_QA_COMPLETED_NOT_EXPERT_APPROVED"
+      ],
+      "source_public_sha256": "50445e99d5441c9daad2234ca1c31e6b69e8db99a3ad4d9f68266f062878709b",
+      "source_keys_sha256": "89c5fac515ab7ce2d729ec991aff2177656990de419c8bf8ab00f4f01b0e1478",
+      "output_public_sha256": "1ce019f6115de820fc253bb1cdffbc5d25140321e0f0b90084359db14b8b5718",
+      "output_keys_sha256": "c66fc82e0789abacc9ceb641f8bdf6defcc7e6bb982877ff75eda871b0c01a7d",
+      "source_QA_notes": {
+        "limitations": [
+          "Belum diperiksa oleh pengajar nahwu eksternal",
+          "Belum diuji pada runtime injeksi aplikasi",
+          "Pilihan dinilai dari kategori unik yang telah ditandai editorial; pengujian pengguna tetap diperlukan"
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "title": "Siapa Sedang Membicarakan Siapa?",
+      "sublevel_titles": [
+        "Kalimat yang Tidak Dimulai Fi‘il",
+        "Menemukan Mubtada’",
+        "Menemukan Khabar",
+        "Kenapa Keduanya Saling Membutuhkan?",
+        "Mubtada’ Ma‘rifah",
+        "Bentuk-Bentuk Khabar Sederhana",
+        "Ketika Khabar Ada di Depan",
+        "Membaca Harakat Akhirnya",
+        "Membongkar Jumlah Ismiyah Gundul",
+        "Buka Kitab #03 — Satu Kalimat, Kita Harakati Sendiri"
+      ],
+      "source_level_version": "L03.1",
+      "material_blocks": {
+        "MAIN_HEADING": 10,
+        "SUBHEADING": 120,
+        "BODY": 140,
+        "ARABIC_TEXT": 50,
+        "QUOTE": 10
+      },
+      "quick_checks_with_feedback": 10,
+      "quick_checks_question_only": 0,
+      "question_count": 200,
+      "hint_count": 400,
+      "keys_count": 200,
+      "format_warnings": [],
+      "editorial_statuses": [
+        "EDITORIAL_QA_COMPLETED_NOT_EXPERT_APPROVED"
+      ],
+      "source_public_sha256": "ce36c16d67e32deed515c0dfc64493c69c77e3970bb2aaec27daaedc4041d77a",
+      "source_keys_sha256": "4dfe17a30a0b9bb3ba4ec3ed3ec6690c125b2dc2916c0d138291e9d7d945c4bd",
+      "output_public_sha256": "ff9c16f997b80efcfcac8d289ac36c6746ae15d37720430872ba53c8d9c8eca0",
+      "output_keys_sha256": "fcb9529997a6f3abebe9bfe082f40387ad25c7af407ffb80bb1f87da7b88123d",
+      "source_QA_notes": {
+        "caveats": [
+          "Materi disusun secara editorial, tidak diuji oleh ahli nahwu eksternal.",
+          "Validasi struktur JSON dan konsistensi kunci bukan pengujian injeksi ke aplikasi.",
+          "Pilihan harakat akhir memakai contoh isim tunggal mu‘rab yang dipilih agar satu jawaban benar."
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "title": "Siapa Melakukan Apa?",
+      "sublevel_titles": [
+        "Mengenali Fi‘il",
+        "Fi‘il Madhi",
+        "Menemukan Pelaku: Fa‘il",
+        "Kenapa Fa‘il Dibaca Rafa‘?",
+        "Menemukan Maf‘ul Bih",
+        "Kenapa Maf‘ul Dibaca Nashab?",
+        "Fi‘il Lazim",
+        "Fi‘il Muta‘addi",
+        "Jangan Sampai Pelaku dan Objek Ketuker",
+        "Buka Kitab #04 — Siapa Melakukan Apa kepada Siapa?"
+      ],
+      "source_level_version": "L04.1",
+      "material_blocks": {
+        "MAIN_HEADING": 10,
+        "SUBHEADING": 120,
+        "BODY": 151,
+        "ARABIC_TEXT": 50,
+        "QUOTE": 10
+      },
+      "quick_checks_with_feedback": 10,
+      "quick_checks_question_only": 0,
+      "question_count": 200,
+      "hint_count": 400,
+      "keys_count": 200,
+      "format_warnings": [],
+      "editorial_statuses": [
+        "AUTOMATED_QA_DONE_NEEDS_EXPERT_REVIEW"
+      ],
+      "source_public_sha256": "2b6d6210f4982f02d890905e5a094195342b7ca9f87829c25414f48a14f786b0",
+      "source_keys_sha256": "3ea7a15948b450c040402252776ebea546cad98f8ca851257c1d5ddef7c90874",
+      "output_public_sha256": "107b03fa001e8f5f2b3fda35cd8f9f779cd949f7bd527d2e149c433683136fb5",
+      "output_keys_sha256": "7a83d4809ede7eafa4f57e610f5427532feb64797942c7dde5ab3e9884785963",
+      "source_QA_notes": {
+        "limitations": [
+          "Pemeriksaan ini bersifat otomatis dan editorial; belum ada telaah ahli nahwu independen.",
+          "JSON belum diuji injeksi pada runtime aplikasi pengguna.",
+          "Pembaca tahap awal diminta membenarkan harakat akhir pada isim mufrad biasa, bukan mengarang seluruh harakat leksikal."
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "title": "Kata yang Menarik Kata Lain",
+      "sublevel_titles": [
+        "Huruf Jar",
+        "Isim Setelah Huruf Jar",
+        "Makna مِنْ",
+        "Makna إِلَى",
+        "Makna فِي",
+        "Makna عَلَى",
+        "Makna بِـ dan لِـ",
+        "Satu Huruf, Makna Bisa Berubah",
+        "Mendeteksi Jar di Teks Gundul",
+        "Buka Kitab #05 — Berburu Huruf Jar"
+      ],
+      "source_level_version": "L05.1",
+      "material_blocks": {
+        "MAIN_HEADING": 10,
+        "SUBHEADING": 120,
+        "BODY": 151,
+        "ARABIC_TEXT": 50,
+        "QUOTE": 10
+      },
+      "quick_checks_with_feedback": 10,
+      "quick_checks_question_only": 0,
+      "question_count": 200,
+      "hint_count": 400,
+      "keys_count": 200,
+      "format_warnings": [],
+      "editorial_statuses": [
+        "AUTOMATED_EDITORIAL_QA_NEEDS_EXPERT_REVIEW"
+      ],
+      "source_public_sha256": "8fc5f49e9dcbc90381ce1e4357c1dfe02c625a2d477759e14aa6627a4cdcd830",
+      "source_keys_sha256": "43054f9441a3c43e270fd30d18f3b0fb230c5c7b334be14efe1be7f05984c2e0",
+      "output_public_sha256": "7695eede442160828c22d98fd2d13ea26bb0e33ee29a16caec693628bf43751c",
+      "output_keys_sha256": "8e23d1be5daeec1de69b513941c43e8c40942708c24d2fbf7aa2fc0079e77f83",
+      "source_QA_notes": {
+        "injection_runtime_test": "not_tested",
+        "expert_arabic_review": "not_conducted",
+        "limitations": [
+          "Pengujian otomatis tidak membuktikan bahwa semua pilihan semantik tak ambigu.",
+          "Contoh disusun untuk pedagogi, bukan dikutip dari sumber kitab tertentu.",
+          "Bacaan kata berharakat dalam model tidak berarti pembelajar sudah dapat menebak semua vokal leksikal."
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "title": "Dua Isim yang Bergandengan",
+      "sublevel_titles": [
+        "Apa Itu Mudhaf–Mudhaf Ilaih?",
+        "Cara Menemukan Pasangan Idhafah",
+        "Mudhaf Tidak Menerima ال",
+        "Mudhaf Ilaih Selalu Majrur",
+        "Idhafah dan Makna Kepemilikan",
+        "Idhafah yang Tidak Harfiah",
+        "Idhafah Bertingkat",
+        "Jangan Tertukar dengan Na‘at",
+        "Membongkar Idhafah Gundul",
+        "Buka Kitab #06 — Memburu Rantai Idhafah"
+      ],
+      "source_level_version": "L06.1",
+      "material_blocks": {
+        "MAIN_HEADING": 10,
+        "SUBHEADING": 140,
+        "BODY": 150,
+        "ARABIC_TEXT": 60,
+        "QUOTE": 10
+      },
+      "quick_checks_with_feedback": 10,
+      "quick_checks_question_only": 0,
+      "question_count": 200,
+      "hint_count": 400,
+      "keys_count": 200,
+      "format_warnings": [],
+      "editorial_statuses": [
+        "AUTOMATED_EDITORIAL_QA_NEEDS_EXPERT_REVIEW"
+      ],
+      "source_public_sha256": "4266bb9390e082d9c5b7149867f723f5efb019bf3382bfe10642fc3725dec896",
+      "source_keys_sha256": "6be5cd2f7d8fca340c96db2f52ab543d12c1bc87601b742d7cbddc70dc88e615",
+      "output_public_sha256": "1417acade617fd33033c93950ea05023f608b0891fb34c0bf3a68a7a73a983e5",
+      "output_keys_sha256": "b474592200cc27ae2e888d613dd7504707baffcdde25690059afbe2266384440",
+      "source_QA_notes": {
+        "arabic_review": "Editorial structural checks; expert linguistic review not conducted",
+        "limitations": [
+          "Belum dilakukan penilaian ahli nahwu independen untuk setiap butir.",
+          "Belum diuji injeksi langsung pada aplikasi.",
+          "Contoh Arab disusun untuk pembelajaran, bukan kutipan kitab terverifikasi."
+        ]
+      }
+    },
+    {
+      "level": 7,
+      "title": "Ketika Isim Punya Sifat",
+      "sublevel_titles": [
+        "Mengenal Na‘at",
+        "Man‘ut: Kata yang Diterangkan",
+        "Kesamaan Harakat",
+        "Kesamaan Ma‘rifah–Nakirah",
+        "Kesamaan Gender",
+        "Kesamaan Jumlah",
+        "Na‘at vs Khabar",
+        "Na‘at vs Idhafah",
+        "Deteksi Susunan dalam Teks",
+        "Buka Kitab #07 — Ini Sifat atau Bukan?"
+      ],
+      "source_level_version": "L07.1",
+      "material_blocks": {
+        "MAIN_HEADING": 10,
+        "SUBHEADING": 150,
+        "BODY": 170,
+        "ARABIC_TEXT": 50,
+        "QUOTE": 10
+      },
+      "quick_checks_with_feedback": 0,
+      "quick_checks_question_only": 10,
+      "question_count": 200,
+      "hint_count": 400,
+      "keys_count": 200,
+      "format_warnings": [],
+      "editorial_statuses": [
+        "AUTOMATED_EDITORIAL_QA_NEEDS_EXPERT_REVIEW"
+      ],
+      "source_public_sha256": "0e3e181c28e1c607cf63731d4f42851580109987e8dd72dabc3f085124920232",
+      "source_keys_sha256": "8f0c6ee474591ecb2a4f88b290abe3f5f15a20ece6562701307ee4719e86f487",
+      "output_public_sha256": "0a5bec6f2d0c88a0b0283e0b73fd9da6793488235abe8bab0db1debd2e8fd772",
+      "output_keys_sha256": "72b9479527a02fd97076ed69fd5c9958925e44fdc05cc521647d4c1f4c96093c",
+      "source_QA_notes": {
+        "limitations": [
+          "Not yet tested against live injection loader",
+          "No independent Arabic linguist audit",
+          "No real-world learner pilot"
+        ]
+      }
+    },
+    {
+      "level": 8,
+      "title": "Peta I‘rab Pertama Kita",
+      "sublevel_titles": [
+        "Apa Sebenarnya I‘rab?",
+        "Rafa‘",
+        "Nashab",
+        "Jar",
+        "Jazm",
+        "Dhammah Bukan Selalu “Rafa‘ Biasa”",
+        "Fathah dan Penggantinya",
+        "Kasrah dan Penggantinya",
+        "Cara Menentukan Harakat dari Posisi",
+        "Buka Kitab #08 — Harakati Kalimat Tanpa Menebak"
+      ],
+      "source_level_version": "L08.1",
+      "material_blocks": {
+        "MAIN_HEADING": 10,
+        "SUBHEADING": 160,
+        "BODY": 150,
+        "ARABIC_TEXT": 50,
+        "QUOTE": 10
+      },
+      "quick_checks_with_feedback": 0,
+      "quick_checks_question_only": 10,
+      "question_count": 200,
+      "hint_count": 400,
+      "keys_count": 200,
+      "format_warnings": [],
+      "editorial_statuses": [
+        "STRUCTURAL_QA_PASS_NEEDS_EXPERT_REVIEW"
+      ],
+      "source_public_sha256": "b4dd7b57d40b487b828ae054ddf0de60e7ce26ce03fcccb95a56021fbbf8e66d",
+      "source_keys_sha256": "f23abb414707f7be23ad7874896ce2b23ad2df8d482c14540ada517a19674e0b",
+      "output_public_sha256": "bb529ae9844c37d23f4263238644ec4a4bb2316aa11c601c5cc6f8ac6ea21858",
+      "output_keys_sha256": "cd972670630277323ccba9fd1b21e3a9a7cdb2e28a17919aaa9e92e09639982a",
+      "source_QA_notes": {
+        "caveats": [
+          "Automated structures and representative examples inspected; NOT independent full expert review of 200 Arabic sentences.",
+          "Not verified against live application injection. Backend must keep answer keys private.",
+          "Model texts were authored for pedagogy and may not match an attributed classical passage."
+        ]
+      }
+    }
+  ],
+  "total_sublevels": 80,
+  "total_questions": 1600,
+  "total_hints": 3200,
+  "total_answer_keys": 1600,
+  "note": "Structural validation only; no independent scholarly validation",
+  "total_qa_format_warnings": 0
+}

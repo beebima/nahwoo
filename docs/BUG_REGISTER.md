@@ -83,3 +83,23 @@ Catatan: **penutupan bug membutuhkan bukti reproduksi sudah tidak muncul pada li
 - **Tanda baca:** titik terminal contoh Arab dan terjemahan disembunyikan dalam tampilan Beranda **dan Kamus Mini**; berkas sumber tetap utuh.
 - **Tes wajib:** file 12 bagian, jumlah 1.200, ID unik, bank awal tidak hilang, pencarian Arab/Indonesia hanya kepala kata dan arti, rotasi kartu setiap menit, frame tetap, CI & build, tinjauan guru.
 - **Status:** injeksi parsial untuk pengujian, seluruh konten DRAFT_REVIEW; pemeriksaan ilmiah belum dilakukan.
+
+### N-020 — Materi V4 dengan schema baru dapat tampil kosong (2026-11-02)
+- **Sumber:** NAHWOO_V4_LEVEL_01-08_KOMPILASI_LENGKAP; blok V4 berbentuk `{type,text}`, renderer lama membutuhkan `{type,segments:[{text,marks}]}` untuk BODY/SUBHEADING/QUOTE.
+- **Pencegahan:** converter ke schema runtime dan `scripts/qa-v4-level01-08.js` memeriksa semua 80 sublevel dan 1.600 soal.
+- **Status:** patch dibuat; uji browser/Android setelah build tetap diperlukan.
+
+### N-021 — Jawaban tersimpan salah setelah soal Level 01–08 diganti (2026-11-02)
+- **Gejala potensial:** `localStorage` lama tetap menyimpan jawaban bernomor opsi untuk soal lama.
+- **Solusi:** namespace jawaban V4 `nahwoo_eval_v4_01812` khusus Level 01–08; data/progres level lain tidak dihapus.
+- **Status:** patch + QA source; perlu uji upgrade Android nyata.
+
+### N-022 — Quick Check Level 07–08 tanpa jawaban di sumber (2026-11-02)
+- **Temuan:** seluruh 20 Quick Check pada Level 07–08 hanya memiliki pertanyaan, tidak punya kolom answer/reason.
+- **Tindakan:** tampilkan pertanyaan saja, jangan mengarang pembahasannya. Level 01–06 memakai feedback persis dari sumber.
+- **Status:** batasan sumber, terbuka untuk review guru.
+
+### N-023 — Paket V4 belum lolos telaah ahli nahwu (2026-11-02)
+- **Temuan:** QA sumber menilai struktur, ID, kunci, dan editorial; bukan audit independen semua contoh Arab.
+- **Tindakan:** rilis berlabel sumber Editorial/DRAFT; validasi guru sebelum klaim keilmuan atau publikasi final.
+- **Status:** editorial terbuka.

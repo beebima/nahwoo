@@ -20,6 +20,8 @@ jobs:
         run: node scripts/qa-home-vocab.js
       - name: QA partial mufradat RUN03 and RUN08 imports
         run: node scripts/qa-mufradat-partial.js
+      - name: QA V4 Reading-First replacement Level 01–08
+        run: node scripts/qa-v4-level01-08.js
       - uses: actions/setup-java@v4
         with:
           distribution: temurin

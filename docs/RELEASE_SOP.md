@@ -100,3 +100,11 @@ Instruksi awal: "Baca docs/README.md, docs/DEVELOPMENT_LEDGER.md, docs/BUG_REGIS
 - Pelabelan subjenis harus berasal dari sumber, **bukan** menebak dari bentuk kata.
 - Jangan hapus 50 entri lama atau reset bookmark. Contoh kalimat tetap tampil tanpa titik terakhir baik pada Beranda maupun Kamus Mini.
 - Jalankan tes otomatis `node scripts/qa-mufradat-partial.js` serta QA perangkat untuk ukuran kartu dan pencarian; lakukan backup sumber dan catat commit.
+
+## L. SOP wajib pergantian materi dan soal V4 (N-020–N-023)
+- Jangan menyalin JSON V4 mentah langsung ke `window.NW_LEVEL_DATA`; konversi `material_blocks.text` ke `blocks.segments` dan `questions.options.text` ke `options.segments` agar pembaca/opsi tampil.
+- Validasi 10 sublevel × 20 soal × 6 opsi × 2 hint per level, ID unik, kunci 1:1 dan indeks jawaban sah, tanpa kunci di JS publik.
+- Untuk pembaruan soal, namespace state jawaban harus baru hanya pada level yang diganti, sedangkan progres dan level lain jangan direset.
+- Quick Check tanpa jawaban sumber hanya boleh menampilkan pertanyaan, jangan membuat umpan balik rekaan.
+- Di GitHub Actions, wajib jalankan `node scripts/qa-v4-level01-08.js` sebelum Gradle; QA keilmuan dan perangkat Android tetap terpisah.
+- Pertahankan file level 09–24 dan seluruh Mufradat/AdMob tanpa perubahan di diff.
