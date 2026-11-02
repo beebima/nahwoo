@@ -74,3 +74,9 @@ Dokumen ini dibuat setelah commit V0.1.8.8; **bukan** pernyataan versi V0.1.8.9.
 - Namespace jawaban untuk Level 01–08 baru; progres/notes/other levels tetap.
 - Batasan: Quick Check L07–L08 tanpa jawaban; telaah akademik eksternal belum dilakukan.
 - Bug baru N-020/N-021/N-022/N-023; QA otomatis.
+
+## 2026-11-02 — V0.1.8.13 Premium Smart Reader
+- V0.1.8.12 sudah menginjeksikan seluruh V4 Level 01–08. Data level dibiarkan utuh; QA SHA parity memastikan tidak ada materi/soal yang berubah.
+- Menghapus kartu berdasarkan indeks section; map eksplisit heading aktual + 80 competency sumber; latihan cek cepat jawaban dikunci details.
+- Preview Chromium 320/360/390px tidak mengalami horizontal overflow. Android fisik belum dites.
+- Bug N-024/N-025, SOP & release notes diperbarui.

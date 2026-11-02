@@ -108,3 +108,14 @@ Instruksi awal: "Baca docs/README.md, docs/DEVELOPMENT_LEDGER.md, docs/BUG_REGIS
 - Quick Check tanpa jawaban sumber hanya boleh menampilkan pertanyaan, jangan membuat umpan balik rekaan.
 - Di GitHub Actions, wajib jalankan `node scripts/qa-v4-level01-08.js` sebelum Gradle; QA keilmuan dan perangkat Android tetap terpisah.
 - Pertahankan file level 09–24 dan seluruh Mufradat/AdMob tanpa perubahan di diff.
+
+## M. SOP pemetaan Smart Reader berdasarkan isi, bukan nomor urut (N-024/025)
+
+- Sebelum mengganti materi, baca current HEAD, validasi ZIP sumber dan contoh L01-S01, L04-S05, L08-S10.
+- Konten V4 perlu dipetakan berdasarkan nama heading sumber yang terverifikasi/tipe blok, **bukan** indeks seksi atau asumsi jumlah seksi selalu 13.
+- Target belajar memakai `competency` asli, bukan rangkuman baru; bagian naratif tetap terbuka.
+- Jangan menambah kartu demi dekorasi. Contoh Arab biru, analisis/compare hijau, latihan ungu, warning merah, target kuning, takeaway biru.
+- Buat parity hash source untuk teks materi, soal, hint, opsi, kunci dan pembahasan (per-sublevel). Selalu jalankan `node scripts/qa-v4-source-parity.js` sebelum build.
+- `Cek Cepat` boleh memakai elemen HTML `<details>` untuk jawaban **jika** penanda jawaban tersedia eksplisit; pertahankan teks aslinya.
+- Uji 320/360/390px, dark mode, font Latin/Arab kecil-besar, Arab inline dan harakat panjang, scrolling dan evaluasi.
+- Pengujian browser statis tidak sama dengan Android WebView; catat status keduanya terpisah.

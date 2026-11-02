@@ -103,3 +103,19 @@ Catatan: **penutupan bug membutuhkan bukti reproduksi sudah tidak muncul pada li
 - **Temuan:** QA sumber menilai struktur, ID, kunci, dan editorial; bukan audit independen semua contoh Arab.
 - **Tindakan:** rilis berlabel sumber Editorial/DRAFT; validasi guru sebelum klaim keilmuan atau publikasi final.
 - **Status:** editorial terbuka.
+
+## N-024 — Kartu Smart Reader disimpulkan dari urutan seksi (2026-11-02)
+
+- **Gejala:** Level 01–08 V4 berisi 12–16 seksi tergantung level, sedangkan renderer V0.1.8.12 mengaktifkan kartu hanya untuk tepat 13 seksi. Pada level lain isi menjadi hampir semua narasi polos; pada 13 seksi warna bisa salah karena posisi tidak selalu menjelaskan fungsi konten.
+- **Akar masalah terverifikasi:** `complete13?j:-1` dan pemetaan `{1:'target',2:'example',3:'breakdown',6:'compare',8:'practice',10:'warning'}` di `nwSemanticSectionMarkup`.
+- **Perbaikan:** pemetaan heading V4 yang eksplisit dari paket sumber + default naratif terbuka; Target Pembelajaran diambil dari `competency` asli setiap sublevel (tidak direkayasa); warna contoh/analisis/latihan/peringatan/inti sesuai master prompt.
+- **Perlindungan isi:** integritas sumber V4 dibuktikan oleh manifest fingerprint untuk materi, soal dan kunci/penjelasan; jangan mengubah materi demi mempercantik UI.
+- **QA:** tes template mobile statis 320/360/390px lulus tanpa overflow; CI harus lulus source parity, semantic-reader gate dan build Android. Testing Android langsung masih wajib.
+- **Status:** SOURCE PATCH / QA statis, **belum lulus Android device** hingga diuji di WebView asli.
+
+## N-025 — Jawaban “Cek Cepat” tampil sebelum dicoba (2026-11-02)
+
+- **Gejala:** sejumlah konten V4 menyimpan pertanyaan dan “Jawaban dan alasan” sebagai dua blok BODY berurutan dalam seksi “Cek Cepat”. Pembaca langsung melihat jawaban tanpa kesempatan mencoba.
+- **Solusi:** jawabannya dibungkus `<details>` yang bisa dibuka pengguna; teks sumber tetap persis sama dan urutannya terjaga.
+- **Fallback:** jika tidak ada penanda jawaban eksplisit, renderer tidak menyembunyikan atau memindahkan paragraf lain secara spekulatif.
+- **Status:** patch dibuat / butuh verifikasi Android.

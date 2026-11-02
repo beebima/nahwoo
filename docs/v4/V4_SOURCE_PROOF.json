@@ -1,0 +1,582 @@
+{
+  "schema": "v4-read-first-parity-v1",
+  "source": "Uploaded NAHWOO_V4_LEVEL_01-08_KOMPILASI_LENGKAP.zip; 02-Nov-2026",
+  "levels": {
+    "1": {
+      "L01-S01": {
+        "blocks": "e6a2ae1b46f9e42d777537d48e932769551d295a17a30d82c40b02fff5b14438",
+        "questions": "adae73e2ead4e68331985e713d87f1bf8e28804e44470cb76d7173b7e957ae39",
+        "answers": "3a2214c2f65826437a993760aa39ef4febf121211a8f9656c0a1417095758977",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L01-S02": {
+        "blocks": "929f8227cf172b739b35dd9eb9b5f9d874d27babf535285f7fb3bb6388610cf3",
+        "questions": "9994fc646349e26594df0917e46688d0e808cb38e205ba1ec08195b0473d949b",
+        "answers": "3063bdc1ff5c9629f4da2efe5a0f726517b7bf111add4c036e5f7c65f60e4d47",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L01-S03": {
+        "blocks": "f009275fd4f925c23ba40dc27f008f45f22a538a03eeee99dbdbc36c7af3ab8f",
+        "questions": "f2395c6c0f18b25a87409c4d9a3d4e9b50d856d4083a5ebf168ca83e417e4471",
+        "answers": "faec7ec11e86ab74d924b08123355a92092f53df0ad443dc8cbae078e3455efc",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L01-S04": {
+        "blocks": "381b3afe650b50ac169b8a7e077f625d8a34f3caba04deb8bfec2e5d590b93c2",
+        "questions": "c3373151f7c019e453046158a541ae301a56696e455304eb204adde5fbd61278",
+        "answers": "4badff0162b4c7e82f4bd81b23010967ac3c2d4970162e0fc83a63e63cb8db0e",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L01-S05": {
+        "blocks": "267108d710df7b8d69fc86e60ab12896210fc145ffd47f044955ab7ba0872dad",
+        "questions": "46fd9bd7ac35880a4eb47805dee85cb3e725640c0e1d02cd5ca72ecc82d5ad68",
+        "answers": "a2a12c714f1f9a4e885ab6b0b18769b6d95dd5459b23d5114a36ec664085b8fd",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L01-S06": {
+        "blocks": "ac2b65d9fb43716aab25360fd89e8fbd96569de409209bc97d789084d86426de",
+        "questions": "9d90881e6bef97de60c980d93b55dcff1ca46bfaa35566d11d7d163e478d47bf",
+        "answers": "485d757af284d8445954503a0f5bfe9478b9e407f2936cce005f5c4a2e896faf",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L01-S07": {
+        "blocks": "1a70cca4bb6a8d012cc7f9344c3e05a3388986425cedae0e49b1178e1e442f95",
+        "questions": "9ceafb2df31d7feacb44f79c39d79ed774eeab243d15d094c2deaea27652e19b",
+        "answers": "4264a673a14d1fe5b800d9ce70091c480282dfe3ea69b392add5c68a6933ff13",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L01-S08": {
+        "blocks": "26d2ed23a9447e24129c0003bf4ef840021d07d4295107be199d0b30dd13bea8",
+        "questions": "93748491a25f6593d25651108114861b27f4ec812c7e54b6bb6cccb0d81069a1",
+        "answers": "f980dd7a798cc15493f7461a9f8fe087e7641f5581595ae129d0da14e3fc6ea1",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L01-S09": {
+        "blocks": "57e069764c14b3001a0425459c761799987e3f5179037462ef9606023b5140ad",
+        "questions": "642c25d298b89bdda2dd48e25f5e82fab43491d2f84f8d56d54272c2e5e42fd1",
+        "answers": "0825411b0cf8bba1ec3fe85d981dbafd141fa1c1893cc330fb8b1201066026f5",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L01-S10": {
+        "blocks": "1b95ff31262ee4080452ecea8ac1cb5b9424ab5e4a27c48f3b46196364d0a350",
+        "questions": "5252d7685be555d72cad179f7204decfaf0cb425e28e55b1545d2aa25f1bcd07",
+        "answers": "b65e64615fe698723dd54673270003159024698778d049565e07123257c53ebd",
+        "block_count": 38,
+        "question_count": 20
+      }
+    },
+    "2": {
+      "L02-S01": {
+        "blocks": "538fb6a2218ec8c9b73a215f2cf04ed58eede5fb0f6209ade83c7991a76d164e",
+        "questions": "6fe82a713ce0c8025431076bef9bae279ba5bfb388802bd254052e16cac1f95f",
+        "answers": "aee14602db5ed8a8937d6319adfb58b171a43d2bf9e02a56d4195ac7416d7f4b",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L02-S02": {
+        "blocks": "4781b423ea6a47e0d20648a813fc997f8c539178255deba40904b8a9cc45de30",
+        "questions": "5f38661496adf8e8e481f31aefb75ac8bde3f92625809abdb322af690d75540a",
+        "answers": "229f8f7d4c3a788889f565b37533b479d438920e84a69a57621da813d1f9713a",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L02-S03": {
+        "blocks": "2b5a31cf9491099c690a804de8b88098d66c2d1fb4797cca2e3ab21f5e26df71",
+        "questions": "2038f619386f2595c88734387721437aa59129c959e4586e9706391a65643ba1",
+        "answers": "e227c07f1cb048cb6fb1e404a2a437e763e8c8cb79b84f8c9c52425f2f1b2c61",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L02-S04": {
+        "blocks": "6117364f71184e69b329f4539275f99479baa247c041e76beb18795d2f1f1858",
+        "questions": "8d9765d2c588bfda2f194156bd7772c984b2040bfb071d653291385fc0889f20",
+        "answers": "0af113a038c8a406d34aac007efb87d5ed43d7701c652ad58fdab993f7307dfc",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L02-S05": {
+        "blocks": "584381bd1552cf8007272ce7bfdf293ffd796d25e5275128292aae80129c9bc2",
+        "questions": "477f46c2eeaf53da36ab797bda62b50450e7ef35fcc38e27c7e74db5634f5719",
+        "answers": "cd274995d2c2ecd779b46333585133b6e623b5bfb3f16f943ac08f1855b409b5",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L02-S06": {
+        "blocks": "14fbcef4afb7654d468ec41eb11d45118ba4ee3755a0bb636c19628c7dfba106",
+        "questions": "333379544af07a7fe61ff91903840b066767f8cd52621a27c97ac31097a44f48",
+        "answers": "5d30deac3d7b7447d618b49f16de60e1dabe4efe30703715baa106c95f9139bb",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L02-S07": {
+        "blocks": "aabb1aa2589f358461b15d081dac2ea31b4902a15d94cfc3ea1c576696568009",
+        "questions": "9e4a3fd6415e1a5b99042a0047a951e9c1bf9aaee4bb5d2f28ff20ff3bfe4e47",
+        "answers": "b1369c4bebaff5f1f813442a569c30c7efc19b30048325f84ddc80dea3f39c77",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L02-S08": {
+        "blocks": "0055210eca95c72d37a4a183bfecc57490dd6fe6f4278bd32b858753b83b374e",
+        "questions": "b9a44ad9ef5816e0b001d8c1b58ec897ea44d26be772b7ad32dc5ea2568c0690",
+        "answers": "d81ad93c6c3b655d8049c4f2680294d9020b1bdb9d643501471460705924ba63",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L02-S09": {
+        "blocks": "66238933fae2442568854a49aa7cd7c91a0b9dc84bff2d7ffe4384efd677c82b",
+        "questions": "a3cf5acb5b70158e35f50a1717e3ac49ba6590abad2e8461277db3fbc6a9c0e9",
+        "answers": "1e27b501ae4b5b35776e37498e6403c99acd04208f8f9abb0cf5aac6f78f77d3",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L02-S10": {
+        "blocks": "964241dba4aa8f1b17c26fad010d3ec74b819d2bd32c38ac18372d2b8a0edce7",
+        "questions": "66d1551ace11fe7cb959b6edcf943f27974f1be517764a4bc108411f1a8a641d",
+        "answers": "c0594de05e184bc3f8699d8d6fb9f0fbf957231c09b5ce0a8917f695d1ccb323",
+        "block_count": 38,
+        "question_count": 20
+      }
+    },
+    "3": {
+      "L03-S01": {
+        "blocks": "366f668fa4ac46be5812bb282f3f18237aad44ac9a4e6358f4fbe39da8ac2aaf",
+        "questions": "bc01e14a49a75ec3c4be214c67f4ef7ac4be9e3348be843d572843ac2f4bc27d",
+        "answers": "00b6af1fd87d68205b283efbc6e3614c08a6c686d4d8d2344c9b3f06cd874329",
+        "block_count": 33,
+        "question_count": 20
+      },
+      "L03-S02": {
+        "blocks": "65393a5091f21515c699546030b434b51b82a08922501fb5d3a4d00d339493fc",
+        "questions": "5ff8ccf8319e7325378395b195c09ad85f9c63047236911bb658f41ef3fa8bc8",
+        "answers": "6b1bafe38d14fdf688c044f86652b4530c35b18c9dbe5c22005cdeda905c2ae4",
+        "block_count": 33,
+        "question_count": 20
+      },
+      "L03-S03": {
+        "blocks": "14251a0bb3e82b0c65bc279e5cfecec018774dae7bfea90a0aae011a1a088421",
+        "questions": "366d40d5ef0445be6a791ecc3a503f80001cc63187d44e78d41d0ad732232458",
+        "answers": "4278246aac0121cf424fc95138310cdb1f1aba21f342a4537326a3a81ed6c850",
+        "block_count": 33,
+        "question_count": 20
+      },
+      "L03-S04": {
+        "blocks": "82904662c3282e5743d25f131a2c5418d4607aa0e4af6f236c56dfc600c4747c",
+        "questions": "5d0779ded6fefd4c6142f360447a52fd22510c017516e85d221477268b7c8d0e",
+        "answers": "7e88b9656bc92705f18b3a02dff728be46068bb86ce3da81910deaa554e6dece",
+        "block_count": 33,
+        "question_count": 20
+      },
+      "L03-S05": {
+        "blocks": "952c557d84acc34c0320ce695f44fde40249fcaa5bbd06d35665a563df4b025e",
+        "questions": "c2d4dcd334215b0770788a27615153cd41acaa62835f734296845a9ad014b498",
+        "answers": "26829546f04ff7bbb0f33e9d45345322af0013273e058c89490900c23f8a14bc",
+        "block_count": 33,
+        "question_count": 20
+      },
+      "L03-S06": {
+        "blocks": "2523ab7751b62a568140b7b803ab4fbbc81810f8ddf02165ba7681e85e0784a1",
+        "questions": "7f636b49eb03481c4609c73f4fd673662050980a5040af12b46fac9c41250163",
+        "answers": "657800aa1dbc3f3f605b6a61fb74eb69a0995a584eb641972ce7445f7326fed4",
+        "block_count": 33,
+        "question_count": 20
+      },
+      "L03-S07": {
+        "blocks": "a85d05085078abde65d18c4798147de0271e913155bf3ade44b77de58a55bf2e",
+        "questions": "995c31ea2cce5fadd0b8e4ca25649c0ffb0d95ed9e985f06d44bda6f2d7d0098",
+        "answers": "3d6de7cb455bcf1c12fbbc734e91100e765eeac994adca366186541e4355b6c0",
+        "block_count": 33,
+        "question_count": 20
+      },
+      "L03-S08": {
+        "blocks": "ae45f9d943acf214d32e60c307b2be36e1b2e1f154d04f0d5a02201a31f6b180",
+        "questions": "a3ba1fe60d9822a4727ed3d544c9aa5ee96fa9b5969a0f758444bddd13c0b410",
+        "answers": "71f7556e60c48bc0ed8f6c835196f518fab5e3abce6f5f95f1e86ef134b2301c",
+        "block_count": 33,
+        "question_count": 20
+      },
+      "L03-S09": {
+        "blocks": "8974d4f701f1ae806b0411b1cbe5f9f3417beb8c96e36e5c97e814e039695ad7",
+        "questions": "7382430f0d9e1fcec455cb61e806519b979d83aac3483c9af688b9080ca65b11",
+        "answers": "584a42cf33dc11b080b2800a05e18ef74c6c169ca21b9adae717421fb3d18935",
+        "block_count": 33,
+        "question_count": 20
+      },
+      "L03-S10": {
+        "blocks": "405ebf8cad501dd77ae99a728baa00befdfc6a60568d0c39db579b702261a5ed",
+        "questions": "142643d233aed6411f2eade02bd5e131b4e3695a835b85c5e14a4cdb8f34128f",
+        "answers": "2a20633abdb0e2ac5d1ad3642e2b05c671f8303e901e998036cee2615c04eb03",
+        "block_count": 33,
+        "question_count": 20
+      }
+    },
+    "4": {
+      "L04-S01": {
+        "blocks": "2ae943f05fd5f479ed06abe4648474c3a1f440ede91b52244cfb95c6a93be078",
+        "questions": "4ccc838eede4cd29656720861c75c78df2e98f993e21a3d29881a2864eb01c99",
+        "answers": "7309eb9da114e9ca3407dfb4ccfac8e369a852083be1a748a660e403d4b90820",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L04-S02": {
+        "blocks": "160ba5d4a57205146f2ade938de52e545af7ddf26d70142ee921b04a23080c95",
+        "questions": "0a16727fcf7e6595cf0fb1e5f0d7b01f3c3e0b00b417c63d21c4cc856a0d67a8",
+        "answers": "1fb0302575937c374db885822b0fec90a3676b8e1418537e389ebd781ed64d02",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L04-S03": {
+        "blocks": "3cde9bef48072b59cb92586bf80faf34e21f3670a141018267096afcfdae78f5",
+        "questions": "a20f8556cb4116c436515a94da55e6f4f2433c01e0e015c06cc90dc2f7fb0dda",
+        "answers": "a51298657f3bca2fed68f85ea28eae4f04df68c692750546b710ded959b7d667",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L04-S04": {
+        "blocks": "ce822b5a1a829b98b48960dae1893ee46e535dc58fe561f6ccc7252aa4eb3dcb",
+        "questions": "0bbde39f702cb53c1505bab490d89c0664426d761a8b8085a0c29c48816998c7",
+        "answers": "4257034b67e14b1c118148b404b7d7789ad0d3f41e3fbc51d94d68208da04e39",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L04-S05": {
+        "blocks": "038f1d24482eb4b967de4fc3be3191095a4ce8044de4a61ae3e10fc58dd2bd45",
+        "questions": "360253a5096c9b660806166f5c6b068a5962a4939906761615b44a8bc4f6af4a",
+        "answers": "4b7b509c6dc06262deea3ddc803cdf7cc517067dde818d0773f5a8db60201cdd",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L04-S06": {
+        "blocks": "94c3a9f4f0ed726a2609832455668aec3845efe7bf0b29c8cec375d2c9870847",
+        "questions": "5043386b6ca60aedeb9c89f2327d7563c5e1be11660a12bd2ded8fcf1ff490b4",
+        "answers": "a5702f9fee37ac3094351d60fc68047a166fec9103d731090f9ff5def8e1ebdd",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L04-S07": {
+        "blocks": "a6815a397a300eaa18d38419968deba376a03c07aa49f580aba1ff93372f651d",
+        "questions": "d819db3fc2364b690c296f553106142bdfb3325d8292e8d6932c64fb31f8fa0e",
+        "answers": "24cfccd388f67b827e78dd2b1ca1371625b047bfe711eeb338ba8cdfbc9420d4",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L04-S08": {
+        "blocks": "1bdbedf25f8082d54bfe97ed047eb1fe4cb9dedfa112cbe3f330f612d4f37552",
+        "questions": "c0c33087bf9c33981a7df1ab383ef96a873d4327f4925c8b88e7d450aa97ecf0",
+        "answers": "7dfd0f759e323093c3a3af8215ce5c708374dfdd74d1a40c39af949ec1f5951c",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L04-S09": {
+        "blocks": "457bda96de216ef1a78e314514132cfa5047bb22de62ee86b1f114a0e42fe29f",
+        "questions": "62270a8bbc731334833f36457f8c6c82bcffb1397a15c31bc7dc4a74dec21beb",
+        "answers": "d0b749e310d53104d78c81814d16d64caa1e0304843de0435e0d7927ac47226d",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L04-S10": {
+        "blocks": "2652c566f399ea4f83fac950f83c4358269226fe3b80bb8db46dbe5d98916334",
+        "questions": "76ad0d32d016c396f866fa4216033dc9a6fdfc01bb950ca773e928ce19e6efe8",
+        "answers": "4cfc175fcd46ad826e7221c1dc36fddd69032e94d34a42b0344eb6dd4304d304",
+        "block_count": 35,
+        "question_count": 20
+      }
+    },
+    "5": {
+      "L05-S01": {
+        "blocks": "acae802e767184ca67f5e138138f3761ccf5ba6433046e662a578fc735930c70",
+        "questions": "47526e4a80a2d2cd64ce50f219919dfcb28a038ea2f1e72b00416d45128f5fc3",
+        "answers": "26e5bb4d4e72c5a484500371dbdf0d3c70112302226bc22fe43f6e143d25a6ef",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L05-S02": {
+        "blocks": "6e181b156a6cf24ea828fbc1d88a0ae865ae458379cb2b9b545327740bb4291d",
+        "questions": "ce006d79b55dcc2b4f626587a97345cd07e1fa322c6182b5922202711b507b8b",
+        "answers": "d871951362a75029cb5be9dd1364d8303950d5941014a82027ec875ccdc9e039",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L05-S03": {
+        "blocks": "443901ed9ee1dc53dafc9bf1c7f7f2d48d410b63b8720910629b7cb863cdba1f",
+        "questions": "75f46594ede4dcd3b020b2c7dcc84b18d6ec928aa8dc81ef871a5a265b4cd94d",
+        "answers": "61b4da5561db096b6f075c4380fecdd2a3e745c7d389c18532423ee370ae330d",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L05-S04": {
+        "blocks": "360baf883e7f0ae7892dd1b278a62fac145df4fca859bdc2e6d9c5646e7f47b0",
+        "questions": "45b602144b9cc105452e051617415ca42c35c79667c4b65da92cad8811696376",
+        "answers": "a2fbbf0fd8b99a49e7ce6b17da0ac74460a94e46eb9feeaa281adf464bb53e7c",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L05-S05": {
+        "blocks": "c696fa208c939ea4afc47271c2e1beb5451d32b90ec9be1df569009473d9d888",
+        "questions": "2b4e708855c49dfffa070d7565413115b4cb7aaae77aedb0475820ea82872784",
+        "answers": "0f65f7a5a844df7035202d974ae8b724792292693a7c216d992a8e35cb24fc87",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L05-S06": {
+        "blocks": "7271d08fab620b9f0953b5786424174af4b9f61e1da2042f85dde22d8f970ccf",
+        "questions": "32c5be04bb4657943379f53095ce0734d1120becf467baf2bcb4a184e176a772",
+        "answers": "0e5c2b1817f0526bacd5f14fec345cd4055ee86689ff3c954f10485ffb029b4b",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L05-S07": {
+        "blocks": "f37f57fb3714f61064ae7bfee4933d55047ccf186bd867544546e52f358cbb3f",
+        "questions": "1574fc48ace89cc0f867d1457374ed8d0677d65a1bc82ffeb15a83987157f88f",
+        "answers": "7782538b2027e9f8d8fc9f32b0cc764c7a11960acf74a09799f4e28c8292dc37",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L05-S08": {
+        "blocks": "af4c91fd87a9b06ee62694529eb63e33027d08492b0ce4f4d60a822dceb2035c",
+        "questions": "9fae3e7402e0e8a4c2b5932a3a9b417cd06cd15168e076928a1875289869fbdb",
+        "answers": "d9590b8399bd395258fe171e50f38199bf3c5b8ee96d7fe8d54a79e4245e718c",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L05-S09": {
+        "blocks": "fd28371c0cb632177f288185579d87ba763f9ad8c71d43594be83082b811a203",
+        "questions": "47c9a4a2a74db8157a8bacad71b2f25c60df8cc37e1d4c1e642fa6319ebde1dc",
+        "answers": "3783b8402de8c825f7b3d3fe1cb015da31061bbf4d10f3030a0042d744b5d482",
+        "block_count": 34,
+        "question_count": 20
+      },
+      "L05-S10": {
+        "blocks": "4ffab1a8e337f5afd2bb2be32b7e428599a01ff2682065c23d5c3d5bf2397df0",
+        "questions": "4a23e56c687ac1663cb01c4c6fddcf23487ae957c3ee564ef15a6eda7680b7a4",
+        "answers": "a01ce2671e706f0c7b3eca409d0f42892a207d09a285a35003a6f8a882a10a1e",
+        "block_count": 35,
+        "question_count": 20
+      }
+    },
+    "6": {
+      "L06-S01": {
+        "blocks": "1c17562e8425f6a42689c61a4b77049d582e18fe044549413f12ad9bac32340b",
+        "questions": "66a49ebb0380e387c5aad8162369c385a5a8019116e3e2dc582dd38fbc57441f",
+        "answers": "5ab29e4d0198c00f0326a7d8671fce6b8648ffa16b5670bc4db757956a97061f",
+        "block_count": 37,
+        "question_count": 20
+      },
+      "L06-S02": {
+        "blocks": "da025efb8d174a0f77417c126c1e6eab81a3f34646d0ce094f841e0b3945250e",
+        "questions": "a53d74b0316612aed740bd711b2c7d0ad809beb88048f5425c72e586c1f5b0ce",
+        "answers": "0cefd1cc9faa3149181acbf1566e148240d50a6a63509e536abbf9a1a1334529",
+        "block_count": 37,
+        "question_count": 20
+      },
+      "L06-S03": {
+        "blocks": "4d11064053044de7e4f7fc49cb4e293941602eaa7b5090336411f0e9aaa87810",
+        "questions": "57f0d094b3b7790e7e30ffda2e53e6874e751bd835ec19d06ecc90be6ec27cd4",
+        "answers": "1cc62e15ce5d4540143c3ea0f9bfe4adb5591eb7bb9585e16d349af123b3e8d2",
+        "block_count": 37,
+        "question_count": 20
+      },
+      "L06-S04": {
+        "blocks": "6ebb390e9b022e37bcb00c6d753132cc2061ee3cb8c491d8bb5a7c7043b1ad3d",
+        "questions": "d47dee1f4f7012a1605dc7444db2db7cc46ecd40d0d62f2a34f4bd3219b79069",
+        "answers": "414e2d7b0834e02208c326fe8dc13a0ee8bdeecd0085a79e5b3df9d6d90776ca",
+        "block_count": 37,
+        "question_count": 20
+      },
+      "L06-S05": {
+        "blocks": "8c2b4eb399d8267113e4d48e9a711a19fbdf4b2a09ea7130cb9ad552325e875a",
+        "questions": "4473e3ae6bd85a185a26d1bfa08c53d53b64f8d1c6c4a9cca9233b14084257c3",
+        "answers": "04c57a2610ec816a99d58b736918ac7cc2f3a064dcdddaaa16d31843c0d5ab24",
+        "block_count": 37,
+        "question_count": 20
+      },
+      "L06-S06": {
+        "blocks": "2e57fb3e4c54e1901de14b3f0ca4edad2c8f628fec37fa0e214911be01174a59",
+        "questions": "aef825adfd42b4cc29faf2570c0418a2b7035bf9cd6f47db8ab98734d40fb48a",
+        "answers": "9a079fd56ca5a3ad4229d20b043f6bae9ef7e580ffea8e24e379435ecd65fb7e",
+        "block_count": 37,
+        "question_count": 20
+      },
+      "L06-S07": {
+        "blocks": "1e2c7d679bc14810e902af0bf059bd777c36fd5cdc19d813284817c274db7315",
+        "questions": "97309e1d2ff35ebb7772eaf5854445252783c9209960be50b5ad4e627308caf8",
+        "answers": "f3e72099da03f81b7b2bb0075f366ebcda3c46a3ad2d31222d56d76cf962d649",
+        "block_count": 37,
+        "question_count": 20
+      },
+      "L06-S08": {
+        "blocks": "0b120dd15dd991af0333e5f25173e36ab0cff5d7329585e4d01109ab79bf2f88",
+        "questions": "f09170aac56984c335cf1d2baaf2ffd41478184129247ebad45f3a4e0a62df4b",
+        "answers": "ffe8225259efa2a7d763fb8edc0db00e45c9781b7ccaa35f2b65324439375055",
+        "block_count": 37,
+        "question_count": 20
+      },
+      "L06-S09": {
+        "blocks": "351a52f40130bcab3b7daf65f273a4b9321f682e8b44813592a0d29ec013fed7",
+        "questions": "fcc6ee5751a48fb4fc3a547d50be22c5d4ce352dc17013d981ee27e24ddaa7a9",
+        "answers": "a2135c744752b7af98597fc034e914e1b029a628bc048ddcf7aaa63fa06e2bf4",
+        "block_count": 37,
+        "question_count": 20
+      },
+      "L06-S10": {
+        "blocks": "072935e7dbfdfbb90c60b37403dff633ebcccb9f70f4d36585f9928574dcd4a0",
+        "questions": "a69ea292399bbbedef3cd6ccf57ca9382c2ee850bc8340f90d493ddb3b726426",
+        "answers": "1306ab5a06eb864c927adef90d8c1495ea6dd3f0cf99f767838c0d9b5a7080b2",
+        "block_count": 37,
+        "question_count": 20
+      }
+    },
+    "7": {
+      "L07-S01": {
+        "blocks": "1cd0f24f45019d9b1d9a8fbd92a66f3434ce06500e5e66a85155f98696e7d291",
+        "questions": "e74cbaf399772af8d0068d2daa44ff55f5f920d61699690271871c22f5318685",
+        "answers": "b061630bb85e9cf8155cd76af518639de17d3644f67e710828ad0e12e88b31a2",
+        "block_count": 39,
+        "question_count": 20
+      },
+      "L07-S02": {
+        "blocks": "3f9d1a6764ea185bc0700b8c55c5fa7f25b8c4c5e62eda5f119f70e929ebf780",
+        "questions": "c335e93edb9df73973463bdbe4a95bacdf9fcabaa41f0d12c39d614140c7e67d",
+        "answers": "aa128d049672c11123887c042f9348dd621c6fefc8782ca1b08381f0bb838a8d",
+        "block_count": 39,
+        "question_count": 20
+      },
+      "L07-S03": {
+        "blocks": "0649d8ceea28e9b19b5622d54c0d43a01a9d4e0aa680f5e222412e632daafc27",
+        "questions": "1c0e395cb3df16c58e3fdf96817a81d62143c774bae2d3c753d8716247b302ca",
+        "answers": "d3462027de82d8cad5d17c65e56bf64b7aff6e722e02a367cec614d78e5bc415",
+        "block_count": 39,
+        "question_count": 20
+      },
+      "L07-S04": {
+        "blocks": "2f732bc41d3693a9db45e1716a5c16f5d13fccfa6b6eb389b8a1f929d96e90ed",
+        "questions": "dc10adfbfaf8a717036ae87e3eb2b9ec9e0051cf0e3be8afff5b4a883601ab73",
+        "answers": "d0333dd5fe3f7c6c482c1a017b79a02397911528f2a4934c39182153c177f88c",
+        "block_count": 39,
+        "question_count": 20
+      },
+      "L07-S05": {
+        "blocks": "c14cba1e5ef5e8a8f4666bdc6cf93abf4ed0a0750dfb066f2c15cb5d7e63ced8",
+        "questions": "5d6c62eca7a7501186423b245b729353ffd2f47371901f4748edd54e31e6c0dd",
+        "answers": "161ab54e4763b77c17769afca1c39ee897540bc547e5937dbbd93b15431719f9",
+        "block_count": 39,
+        "question_count": 20
+      },
+      "L07-S06": {
+        "blocks": "b2c0f3420e17ea3510943e9f972a7088de17dc95c176182664ece7c3f81a756b",
+        "questions": "aa66afc23d29e40ba3365c32f8a82385683d43002380640adc894e324d3c5d64",
+        "answers": "87ec2744b8199c4fad1c48bcd9c9a051463ad7fb016434b824035a0c5beea175",
+        "block_count": 39,
+        "question_count": 20
+      },
+      "L07-S07": {
+        "blocks": "7a3af6291e686b3905007b3fd0e5faaf0553715de23247773d4b428429fa0931",
+        "questions": "e3dadb1ac16c66b47dab79261735b8663c7a1186a4630973f80fe0fa2017ce25",
+        "answers": "efb5223f863216104d8e2b46a02a6bef599eb6303e1b4bfd7569ca5cd5dd5f98",
+        "block_count": 39,
+        "question_count": 20
+      },
+      "L07-S08": {
+        "blocks": "c64512986cced55516ea79a0e68864e11db9398caff17f014781989db2de0efc",
+        "questions": "682b753406194ee0f0891593c756e477170b70da3c83326205a4d05337f92c50",
+        "answers": "92fa3239052b5b4d1a17247254019edd3757eee265177eef0d64d4067cc15b6c",
+        "block_count": 39,
+        "question_count": 20
+      },
+      "L07-S09": {
+        "blocks": "6334c97269f0908037d44e93c89d1605396e77e22ef7bd40cae3a78a556441d3",
+        "questions": "f100748b8c453a653fc139932bf2f85c7bb5513fda610a06e0c1a9a244ad931f",
+        "answers": "238ada6a25ed127b5c9a4d3a71d9502d29c431cb8984e7bd86e4e759ea61330d",
+        "block_count": 39,
+        "question_count": 20
+      },
+      "L07-S10": {
+        "blocks": "df5669e5a4f68cb326d10ee75d3357ddaf1e1a57803ac7d2b1a6b29f7dcd1167",
+        "questions": "180049ac9f08c38059b7042340552b3cf4adf7ea51c483b0feb1b5606e8424be",
+        "answers": "bd59e8550e91319338a49e06cc12dc27a0aefdb425d5fabfdf1f021e99cb4221",
+        "block_count": 39,
+        "question_count": 20
+      }
+    },
+    "8": {
+      "L08-S01": {
+        "blocks": "acbd11e8052253df264aadc473908cd9218984878c989fcfd748f2e2f3e0ef92",
+        "questions": "b8f84b6e965f0837654cb2c9a71ea6966a3c5c9a374e4eaed8c292ef2526a74f",
+        "answers": "0b40eff59a8333b45a148fe6ee375bbd72979462617ad812eeadc32bf500da08",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L08-S02": {
+        "blocks": "dc027dd3d61b83afe20cf050046d42b628f72310a922c43b49ddca065adba2fd",
+        "questions": "fe6aec726cee12fc517e2a76290baedad29579a673db8f69a8c5fd3e2432aea0",
+        "answers": "95ecf5fc0515412408309eaa52b56c7fb1ffa8c313003a2c011ffbd93375aabc",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L08-S03": {
+        "blocks": "9f936fc8dfa6b08381fa2b033eb5f44d5bd3753bd04ef197135b73d82382978c",
+        "questions": "4b86a568f7c50ed95cd2777d9e0927996e6d8ec672c949f126ccea11ac743f6a",
+        "answers": "16869acea796ce6d66e8243a2ea3e282532560bd41978653df935e778b9deead",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L08-S04": {
+        "blocks": "60e96c578254425cd1b67594efd8f142aa045d77ed761ae88e751d760d09bf78",
+        "questions": "fe7c241745ce8cc7046bce2d1aa000e96b71083b9d4f51a845b177563fe92114",
+        "answers": "51ad46dc2982944c62c19bb782e10ff31b2dec54062c9ee8563c012372933015",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L08-S05": {
+        "blocks": "0b59e562f0862135b9fe6a11654e5756e81788bb96aeee1aaf15ff61ebd80132",
+        "questions": "886f1266cee523b54d52671f26f0f34725f9ee16572766de319b072534ee893e",
+        "answers": "06a2dec2dddb251c4301ddef18769ea16b5f70e4404f90bee8c65b9a2ff38a15",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L08-S06": {
+        "blocks": "f27c69b2729cead0fc3b174450e175dc0b79c53cd26b6e5dd61ba340102b7c2e",
+        "questions": "55510673629a0bc64a4752351263b14f5f3c5cb4889b8d9c42e7377b2092b448",
+        "answers": "0a52b33e1650c4a7ee2f3e1ad6794ed52d0570ae043bed3caf4358dc64c2794a",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L08-S07": {
+        "blocks": "1d79eab2f685d33e97bc928d7f709bd65101572cb8f623e0871dcfff1b231f5a",
+        "questions": "71b4d713bb38243f8516eeac97c7c9b063ac84ce6c1fd0c60d47c163f3817b32",
+        "answers": "06d83802aca0a1c1e71bfbcc53f1814f12fe78a019d896b99b4d118116178cff",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L08-S08": {
+        "blocks": "53492a155744f591b4219807fb9cef10bb6fdd6e80ce14495c3d6a018b4c99e5",
+        "questions": "01fe8b3e58cad3ad36436c38b2cda4871901105f8e50f10696e3d5e5b080fe5e",
+        "answers": "aaf405dbb65eddfb07157dced230b13fa33866704c17fd89475ce77443e5311f",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L08-S09": {
+        "blocks": "934b3174b2a0b2ef7a6a74b756bf843b5f649b2d18cf8f1ff9ec1d578b834298",
+        "questions": "f8415ae462245ad1abcb5a60d25bd8254622919193164f21ae7fe2467849d615",
+        "answers": "4d60e7e9edfebd2dc3c86d4f4d8130ccdb2ec213eeb743b25d1bfb5af044b398",
+        "block_count": 38,
+        "question_count": 20
+      },
+      "L08-S10": {
+        "blocks": "3d3176a96e2b8c624d7f83313036e061ecec07debf8de380db0b23b353ea6249",
+        "questions": "d4e7f5a0b0fdf565ad8cda4c44bcb2d32f3e2831209b955bd2275f5f47679698",
+        "answers": "991e43110e74dac73cb8f21568f75aaba8f6498b2be5a7695bdc2637af357506",
+        "block_count": 38,
+        "question_count": 20
+      }
+    }
+  }
+}

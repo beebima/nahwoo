@@ -1,0 +1,27 @@
+'use strict';
+/* V0.1.8.13 — check layout mapping, sourced learning targets, visual palette contract. */
+const assert=require('node:assert/strict');const fs=require('node:fs');const vm=require('node:vm');
+const path=require('node:path');const root=path.resolve(__dirname,'..');
+const html=fs.readFileSync(path.join(root,'app/src/main/assets/index.html'),'utf8');
+const snippet=html.match(/const nwV4LearningTargets=\{[\s\S]*?;\s*const nwV4HeadingTypes=\{[\s\S]*?;/);
+assert.ok(snippet,'V4 semantic metadata injected');
+const vars=vm.runInNewContext(`${snippet[0]}\n({targets:nwV4LearningTargets,kinds:nwV4HeadingTypes})`,{});
+assert.equal(Object.keys(vars.targets).length,80,'80 sourced competencies');
+assert.equal(vars.kinds['buka kitab!'],'practice');
+assert.equal(vars.kinds['jebakan yang perlu diwaspadai'],'warning');
+assert.equal(vars.kinds['kita bongkar pelan-pelan'],'breakdown');
+assert.equal(vars.kinds['cek cepat'],'practice');
+assert.equal(vars.kinds['momen aha'],'takeaway');
+assert.equal(vars.kinds['teks gundul pertama'],'example');
+assert.equal(vars.kinds['balik ke teks gundul'],'flow','Return to text should not get a large blue card');
+assert.ok(html.includes('function nwV4QuickCheckMarkup'),'quick check answer disclosure');
+assert.ok(html.includes('<details class="nwx-quick-answer">'),'quick-check details');
+assert.ok(html.includes('isV4?nwV4TargetMarkup(n,i)'),'yellow target sourced by sublevel competency');
+assert.ok(html.includes("n>=1&&n<=8"),'Other levels untouched');
+assert.ok(!html.includes('complete13?j:-1'),'Old positional card design should be removed');
+for(const c of ['#FFF5D9','#EDCF7D','#EDF3FF','#CBDCF9','#EDF8F1','#B9DFC9','#F1EDFF','#D3C5EC','#FFF0EE','#ECC4BE','#E7EEFF'])assert.ok(html.includes(c),`Expected palette ${c}`);
+assert.ok(html.includes('font-size:1.14em!important'),'Arabic inline must remain proportional');
+assert.ok(html.includes('var(--arabic-size'),'Independent Arabic font setting');
+const script=html.match(/<script>([\s\S]*?)<\/script>/);
+assert.ok(script,'Inline JS present');new vm.Script(script[1],{filename:'index-inline.js'});
+console.log(JSON.stringify({status:'PASS',levels:8,competencies:80,semanticHeadingTypes:Object.keys(vars.kinds).length}));

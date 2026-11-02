@@ -1,19 +1,16 @@
 # Summary
-Nahwoo V0.1.8.12 — Replace Materi & 1.600 Soal V4 Level 01–08 (Reading-First)
+Nahwoo V0.1.8.13 — Premium Smart Reader Semantik V4 Level 01–08 + QA Kesetiaan Sumber
 
 # Description
-NAHWOO ANDROID V0.1.8.12
-
-- Mengganti seluruh materi dan 20 evaluasi per sublevel untuk Level 01–08 memakai berkas asli V4 Reading-First.
-- Memperbarui 80 judul sublevel dan 8 judul level agar sama dengan paket V4.
-- Total terinjeksi: 80 sublevel, 1.600 soal, 9.600 opsi A–F, 3.200 hint, 1.600 kunci & pembahasan.
-- Mempertahankan level 09–24 dan 3.200 soal lainnya tanpa perubahan.
-- Mengonversi blok V4 MAIN_HEADING, SUBHEADING, BODY, ARABIC_TEXT, dan QUOTE ke semantic reader tanpa membuang teks materi.
-- Quick Check Level 01–06 memuat feedback sesuai sumber; Level 07–08 hanya pertanyaan karena jawaban tidak tersedia dalam bahan.
-- Materi dan soal publik disimpan terpisah dari kunci evaluasi yang dimuat hanya setelah submit (catatan: berkas offline masih dapat diekstrak).
-- Memisahkan penyimpanan jawaban evaluasi V4 Level 01–08 agar pilihan lama tidak dinilai terhadap soal baru; progres lainnya dipertahankan.
-- Mempertahankan Kamus Mini, bank mufradat, 60 detik rotasi Beranda, contoh tanpa titik, login, font, lisensi dan navigasi.
-- Menambahkan QA otomatis GitHub Actions dan laporan QA/provenance, serta catatan bug dan SOP.
-- versionName 0.1.8.12; versionCode 19.
-
-QA struktural bukan validasi ahli nahwu. Tes APK fisik dan review isi akademik tetap diperlukan.
+NAHWOO V0.1.8.13
+- Mempertahankan V4 Reading-First 80 sublevel dan 1.600 soal pada Level 01–08 yang sudah masuk di V0.1.8.12
+- Menghapus kesalahan pemilihan kartu berdasarkan posisi seksi atau asumsi semua sublevel 13 seksi
+- Memetakan kartu berdasarkan fungsi heading asli: narasi terbuka, contoh biru, breakdown/compare hijau, latihan ungu, peringatan merah, inti biru
+- Kartu target kuning memakai kompetensi verbatim tiap sublevel dari JSON sumber
+- Inline Arab proporsional dan Arabic block besar RTL, support dark mode dan ukuran font pengguna
+- Cek Cepat: jawaban sumber disembunyikan di elemen details sampai diklik
+- Menambah SHA256 source parity manifest untuk seluruh teks materi, harakat, 1.600 soal, opsi, hint, kunci & pembahasan
+- QA GitHub Actions + bug N-024/N-025 + catatan SOP/release
+- Mempertahankan 09–24, Mufradat, data progres, sistem evaluasi, navigasi dan wrapper Android
+- versionName 0.1.8.13, versionCode 20
+- Audit ahli keilmuan dan Android fisik masih diperlukan.
