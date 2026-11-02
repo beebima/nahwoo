@@ -71,3 +71,5 @@ Catatan: **penutupan bug membutuhkan bukti reproduksi sudah tidak muncul pada li
 - **Tanda baca:** buang tanda titik hanya di akhir contoh Arab/Indonesia dalam kartu Beranda. Sumber bank, terjemahan di Kamus Mini, dan tanda baca internal tetap dipertahankan.
 - **Regresi wajib:** 30 kata pendek/panjang berurutan pada layar 320/360/390 px; periksa tinggi kartu sama sebelum/sesudah, posisi grid tidak berubah, bintang & Ganti, rotasi 60 detik, pergantian tab, mode gelap, reduced-motion, dan font ekstrem.
 - **Status:** SOURCE PATCH + unit syntax/dot check; tes nyata Android belum dilakukan. **Jangan tandai selesai tanpa APK diperiksa.**
+
+**N-018 QA otomatis:** `scripts/qa-home-vocab.js` memeriksa kontrak frame, resize teks, fade transition, aksesibilitas reduced-motion, dan penghilangan titik akhir. Dijalankan di GitHub Actions sebelum build. Tes ukuran nyata dan kelancaran animasi di APK tetap manual.

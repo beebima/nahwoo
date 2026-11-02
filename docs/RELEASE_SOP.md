@@ -90,3 +90,5 @@ Instruksi awal: "Baca docs/README.md, docs/DEVELOPMENT_LEDGER.md, docs/BUG_REGIS
 - Transisi Ganti/manual maupun rotasi otomatis harus memudar lembut; kartu luar tetap diam. Hormati `prefers-reduced-motion`.
 - Buang titik **hanya pada tampilan akhir contoh kalimat** Beranda, jangan modifikasi bank sumber/kamus dan jangan hapus titik internal.
 - Periksa tidak ada pergeseran saat bintang disentuh atau setelah kembali dari menu lain; ukur tinggi elemen sebelum/sesudah pada browser/perangkat.
+
+- Gate CI khusus N-018: jalankan `node scripts/qa-home-vocab.js` sebelum Gradle. Gate ini **bukan** pengganti tes tampilan Android.
