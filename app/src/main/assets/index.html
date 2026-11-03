@@ -1077,25 +1077,67 @@ function nahwooLessonMarkup(n,i){
  if(current)sections.push(current);
  return '<div class="nw-reader nw-reader-v3 nw-reader-cards nwx-reader">'+(isV4?nwV4TargetMarkup(n,i):'')+sections.map((sec,j)=>nwSemanticSectionMarkup(sec,j,isV4,n)).join('')+(n>=9&&n<=24?nwV4QuickQuestionMarkup(lesson):'')+'</div>';
 }
-let nwEvalIndex=0, nwEvalAnswers={}, nwEvalSubmitted=false, nwEvalConfirm=false, nwEvalHintLevels={},nwEvalActiveKey='';
-function nwEvalKey(){const ns=level<=8?'nahwoo_eval_v4_01812':level<=16?'nahwoo_eval_v4_01814':'nahwoo_eval_v4_01815';return `${ns}_L${level}_S${String(sub+1).padStart(2,'0')}`;}
+let nwEvalIndex=0, nwEvalAnswers={}, nwEvalSubmitted=false, nwEvalConfirm=false, nwEvalHintLevels={},nwEvalActiveKey='',nwEvalOrder=[];
+function nwEvalRand(max){
+ if(window.crypto&&typeof window.crypto.getRandomValues==='function'){
+ const x=new Uint32Array(1);window.crypto.getRandomValues(x);return x[0]%max;
+ }
+ return Math.floor(Math.random()*max);
+}
+function nwEvalPermute(a){
+ for(let i=a.length-1;i>0;i--){const j=nwEvalRand(i+1);[a[i],a[j]]=[a[j],a[i]];}
+ return a;
+}
+function nwEvalOrderOK(a,n){
+ return Array.isArray(a)&&a.length===n&&new Set(a).size===n&&a.every(i=>Number.isInteger(i)&&i>=0&&i<n);
+}
+function nwEvalNewOrder(bank){
+ const nums=bank.map((_,i)=>i);
+ const typ=bank.map(q=>q.category);
+ if(bank.length!==20||typ.filter(x=>x==='harakat').length!==12||typ.filter(x=>x==='makna').length!==4||typ.filter(x=>x==='pemahaman').length!==4)return nwEvalPermute(nums);
+ for(let attempt=0;attempt<240;attempt++){
+  const a=nwEvalPermute(nums.slice());let run=1,longest=1;
+  for(let i=1;i<a.length;i++){run=typ[a[i]]===typ[a[i-1]]?run+1:1;longest=Math.max(longest,run);}
+  if(longest<=3&&new Set(a.slice(0,6).map(i=>typ[i])).size>=2)return a;
+ }
+ const pools={harakat:nwEvalPermute(nums.filter(i=>typ[i]==='harakat')),
+ makna:nwEvalPermute(nums.filter(i=>typ[i]==='makna')),
+ pemahaman:nwEvalPermute(nums.filter(i=>typ[i]==='pemahaman'))};
+ const pattern=['harakat','makna','harakat','pemahaman','harakat',
+ 'harakat','pemahaman','harakat','makna','harakat',
+ 'harakat','makna','pemahaman','harakat','harakat',
+ 'pemahaman','harakat','makna','harakat','harakat'];
+ return pattern.map(k=>pools[k].pop());
+}
+function nwEvalOrdered(bank){
+ if(!nwEvalOrderOK(nwEvalOrder,bank.length))nwEvalOrder=nwEvalNewOrder(bank);
+ return nwEvalOrder.map(i=>bank[i]);
+}
+function nwEvalKey(){const ns='nahwoo_eval_v21_01817';return `${ns}_L${level}_S${String(sub+1).padStart(2,'0')}`;}
 function nwEvalLoad(){
  const k=nwEvalKey();if(nwEvalActiveKey===k)return;
  nwEvalActiveKey=k;nwEvalIndex=0;nwEvalConfirm=false;
- try {const value=JSON.parse(localStorage.getItem(k)||'{}');nwEvalAnswers=(value.answers&&typeof value.answers==='object')?value.answers:{};nwEvalSubmitted=!!value.submitted;nwEvalHintLevels=(value.hints&&typeof value.hints==='object')?value.hints:{};}catch(e){nwEvalAnswers={};nwEvalSubmitted=false;nwEvalHintLevels={};}
+ let prev={};
+ try{prev=JSON.parse(localStorage.getItem(k)||'{}')||{}}catch(e){}
+ nwEvalAnswers=(prev.answers&&typeof prev.answers==='object')?prev.answers:{};
+ nwEvalSubmitted=!!prev.submitted;
+ nwEvalHintLevels=(prev.hints&&typeof prev.hints==='object')?prev.hints:{};
+ const bank=nwGetEvaluation(level,sub)?.questions||[];
+ nwEvalOrder=nwEvalOrderOK(prev.order,bank.length)?prev.order:nwEvalNewOrder(bank);
+ nwEvalSave();
 }
-function nwEvalSave(){try{localStorage.setItem(nwEvalKey(),JSON.stringify({answers:nwEvalAnswers,submitted:nwEvalSubmitted,hints:nwEvalHintLevels}));}catch(e){}}
+function nwEvalSave(){try{localStorage.setItem(nwEvalKey(),JSON.stringify({answers:nwEvalAnswers,submitted:nwEvalSubmitted,hints:nwEvalHintLevels,order:nwEvalOrder}));}catch(e){}}
 function nwEvalSelect(i){if(nwEvalSubmitted||!(i>=0&&i<6))return;nwEvalAnswers[nwEvalIndex]=i;nwEvalConfirm=false;nwEvalSave();nwEvalDraw();}
 function nwEvalGo(i){if(i<0||i>=20)return;nwEvalIndex=i;nwEvalConfirm=false;nwEvalDraw();}
 function nwEvalHint(n){if(nwEvalSubmitted||!(n===1||n===2))return;nwEvalHintLevels[nwEvalIndex]=Math.max(nwEvalHintLevels[nwEvalIndex]||0,n);nwEvalSave();nwEvalDraw();}
 function nwEvalSubmit(){if(nwEvalSubmitted||Array.from({length:20},(_,i)=>i).some(i=>!Number.isInteger(nwEvalAnswers[i])))return;nwEvalSubmitted=true;nwEvalConfirm=false;nwEvalSave();nwEvalDraw();}
-function nwEvalReset(){if(!confirm('Mulai sesi baru? Jawaban dan nilai sesi sebelumnya akan diganti di perangkat ini.'))return;nwEvalAnswers={};nwEvalSubmitted=false;nwEvalIndex=0;nwEvalHintLevels={};nwEvalSave();nwEvalDraw();}
+function nwEvalReset(){if(!confirm('Mulai sesi baru? Jawaban dan nilai sesi sebelumnya akan diganti di perangkat ini.'))return;nwEvalAnswers={};nwEvalSubmitted=false;nwEvalIndex=0;nwEvalHintLevels={};nwEvalOrder=nwEvalNewOrder(nwGetEvaluation(level,sub)?.questions||[]);nwEvalSave();nwEvalDraw();}
 function nwEvalButtons(q){return q.options.map((opt,i)=>`<button class="nw-eval-option ${nwEvalAnswers[nwEvalIndex]===i?'selected':''}" aria-pressed="${nwEvalAnswers[nwEvalIndex]===i}" onclick="nwEvalSelect(${i})"><span class="nw-eval-letter">${nwEscape(opt.label||String.fromCharCode(65+i))}</span><span>${nwSegments(opt.segments)}</span><span class="nw-eval-radio">${nwEvalAnswers[nwEvalIndex]===i?'●':'○'}</span></button>`).join('');}
 function nwEvalDraw(){
  const root=document.getElementById('nw-eval-root');if(!root)return;
  const ev=nwGetEvaluation(level,sub);if(!ev||ev.questions?.length!==20){root.innerHTML='<p class="nw-eval-note">Evaluasi belum tersedia untuk sublevel ini.</p>';return;}
- const bank=ev.questions,answered=Array.from({length:20},(_,i)=>i).filter(i=>Number.isInteger(nwEvalAnswers[i])&&nwEvalAnswers[i]>=0&&nwEvalAnswers[i]<=5).length;
- let out=`<div class="nw-eval-head"><span class="tag">EVALUASI AKHIR SUBLEVEL</span><h2>Uji Pemahaman · 20 Soal</h2><p>Enam opsi A–F, dua petunjuk opsional. <b>Nilai, kunci, dan pembahasan baru ditampilkan setelah semua jawaban dikirim.</b></p><div class="nw-eval-progress"><div style="width:${answered*5}%"></div></div><b>${answered}/20 terjawab</b></div>`;
+ const bank=nwEvalOrdered(ev.questions),answered=Array.from({length:20},(_,i)=>i).filter(i=>Number.isInteger(nwEvalAnswers[i])&&nwEvalAnswers[i]>=0&&nwEvalAnswers[i]<=5).length;
+ let out=`<div class="nw-eval-head"><span class="tag">EVALUASI AKHIR SUBLEVEL</span><h2>Uji Pemahaman · 20 Soal</h2><p>Urutan soal acak pada setiap percobaan. <b>Nilai, kunci, dan pembahasan baru dibuka setelah semua 20 jawaban dikumpulkan.</b></p><div class="nw-eval-progress"><div style="width:${answered*5}%"></div></div><b>${answered}/20 terjawab</b></div>`;
  if(nwEvalSubmitted){
   const keys=nwGetKey(level,sub);if(!keys){root.innerHTML=out+'<div class="nw-card"><b>Jawabanmu sudah terkirim dan dikunci.</b><p>Memuat nilai dan pembahasan…</p></div>';nwEnsureKeysLoaded(level);return;}
   const keyMap=Object.fromEntries(keys.answers.map(k=>[k.question_id,k]));

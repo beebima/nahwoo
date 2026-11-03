@@ -1,0 +1,11 @@
+{
+  "archive_sha256": "8b83a066ccb6738c203a82e5100ba3abfbed45024b8aa109061f8df960c56b6c",
+  "version": "0.1.8.17",
+  "levels": 24,
+  "sublevels": 240,
+  "questions": 4800,
+  "harakat": 2880,
+  "makna": 960,
+  "pemahaman": 960,
+  "level25_unchanged": true
+}
