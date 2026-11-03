@@ -100,4 +100,12 @@ assert "level<=16?'nahwoo_eval_v4_01814':'nahwoo_eval_v4_01815'" in html
 index.write_text(html,encoding="utf-8")
 g=gradle.read_text().replace("versionCode 21","versionCode 22",1).replace("versionName '0.1.8.14'","versionName '0.1.8.15'",1)
 gradle.write_text(g)
+# The V0.1.8.13 reader QA asserted that later levels were untouched. Update that
+# historical assertion to verify the intentionally expanded V4 reader range.
+readerqa=root/"scripts/qa-v4-reader-semantics.js"
+qatext=readerqa.read_text(encoding="utf-8")
+old="assert.ok(html.includes('n>=1&&n<=8'),'Other levels untouched');"
+new="assert.ok(html.includes('const isV4=(n>=1&&n<=24);'),'All 24 V4 reading levels enabled');"
+assert qatext.count(old)==1,"Legacy QA assertion changed unexpectedly"
+readerqa.write_text(qatext.replace(old,new),encoding="utf-8")
 print("V4 LEVEL 17-24 INJECTED",dict(tot),"semantic_heading_keys",len(semantic))

@@ -1,4 +1,4 @@
-name: NAHWOO V4 Level 17-24 — inject, QA, build, commit
+name: NAHWOO V4 Level 17-24 — inject, QA, build, commit (retry 2)
 on:
   push:
     branches: [main]
@@ -57,7 +57,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add app/src/main/assets/content/level_{17..24}_{public,keys}.js app/src/main/assets/index.html app/build.gradle docs/v4/V4_SEMANTIC_MAPPINGS_17-24.json docs/v4/V4_SOURCE_PROOF_17-24.json
+          git add app/src/main/assets/content/level_{17..24}_{public,keys}.js app/src/main/assets/index.html app/build.gradle docs/v4/V4_SEMANTIC_MAPPINGS_17-24.json docs/v4/V4_SOURCE_PROOF_17-24.json scripts/qa-v4-reader-semantics.js
           git diff --cached --check
           git commit -m "Nahwoo V0.1.8.15 — inject 80 V4 lessons and 1600 evaluations Level 17-24, QA and Android build"
           git push origin HEAD:main
