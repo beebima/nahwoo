@@ -1,0 +1,68 @@
+name: NAHWOO V4 Level 17-24 — inject, QA, build, commit
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/inject-v4-level17-24.yml'
+permissions:
+  contents: write
+jobs:
+  inject:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch uploaded source archive and verify integrity
+        env:
+          SOURCE_URL: 'https://d2ol7oe51mr4n9.cloudfront.net/user_3J4AJa2bMtKt6usVwv6mpQHsz9Q/f8f5ded5-ec44-45a1-9490-a4eefbd43a45.zip'
+        run: |
+          curl -fL --retry 3 --retry-delay 2 "$SOURCE_URL" -o "$RUNNER_TEMP/nahwoo-v4-l17-24.zip"
+          echo "b99c9936fb9716d94860891ad0fb44757fdb6a63d94cf75b770737fdbd605858  $RUNNER_TEMP/nahwoo-v4-l17-24.zip" | sha256sum -c -
+      - name: Replace V4 17-24 material, question, keys and renderer
+        run: python3 scripts/inject-v4-level17-24.py "$RUNNER_TEMP/nahwoo-v4-l17-24.zip"
+      - name: QA content counts, semantic cards, key parity and render flags
+        run: node scripts/qa-v4-level17-24.js
+      - name: Run baseline regression checks
+        run: |
+          node scripts/qa-richtext.js
+          node scripts/qa-home-vocab.js
+          node scripts/qa-mufradat-partial.js
+          node scripts/qa-v4-level01-08.js
+          node scripts/qa-v4-source-parity.js
+          node scripts/qa-v4-reader-semantics.js
+          node scripts/qa-v4-level09-16.js
+          node scripts/qa-v4-reader09-16.js
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: Install Android SDK
+        run: |
+          SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          if [ ! -x "$SDKMANAGER" ]; then SDKMANAGER=$(find "$ANDROID_HOME/cmdline-tools" -path '*/bin/sdkmanager' -type f | head -n 1); fi
+          test -x "$SDKMANAGER"
+          yes | "$SDKMANAGER" --licenses >/dev/null || true
+          "$SDKMANAGER" 'platforms;android-35' 'build-tools;35.0.0'
+      - name: Build APK BEFORE committing changed source
+        run: gradle --no-daemon assembleDebug
+      - name: Commit fully verified V0.1.8.15 replacement
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/src/main/assets/content/level_{17..24}_{public,keys}.js app/src/main/assets/index.html app/build.gradle docs/v4/V4_SEMANTIC_MAPPINGS_17-24.json docs/v4/V4_SOURCE_PROOF_17-24.json
+          git diff --cached --check
+          git commit -m "Nahwoo V0.1.8.15 — inject 80 V4 lessons and 1600 evaluations Level 17-24, QA and Android build"
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nahwoo-v0.1.8.15-debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
