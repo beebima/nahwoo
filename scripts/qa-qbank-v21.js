@@ -53,5 +53,5 @@ const special=fs.readFileSync(path.join(asset,'content/level_25_special.js'),'ut
 vm.runInNewContext(special,ctx);
 assert.equal(ctx.window.NAHWOO25.sublevels.length,11);
 const gradle=fs.readFileSync(path.join(root,'app/build.gradle'),'utf8');
-assert((gradle.includes("versionName '0.1.8.17'")&&gradle.includes('versionCode 24'))||(gradle.includes("versionName '0.1.8.18'")&&gradle.includes('versionCode 25'))||(gradle.includes("versionName '0.1.8.19'")&&gradle.includes('versionCode 26')),'Unexpected bank version; V2.1 data must remain unchanged');
+assert((gradle.includes("versionName '0.1.8.17'")&&gradle.includes('versionCode 24'))||(gradle.includes("versionName '0.1.8.18'")&&gradle.includes('versionCode 25'))||(gradle.includes("versionName '0.1.8.19'")&&gradle.includes('versionCode 26'))||(gradle.includes("versionName '0.1.8.20'")&&gradle.includes('versionCode 27')),'Unexpected bank version; V2.1 data must remain unchanged');
 console.log('PASS 4,800 QBANK V2.1:',JSON.stringify({levels,sublevels,questions,options,hints,totals,referenceLevel25:'retained'}));
