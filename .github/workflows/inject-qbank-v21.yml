@@ -1,0 +1,64 @@
+name: NAHWOO V0.1.8.17 — 4800 approved exercises, verify build publish
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/inject-qbank-v21.yml'
+permissions:
+  contents: write
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Download approved V2.1 question bank and verify source digest
+        env:
+          QBANK_SOURCE: 'https://d2ol7oe51mr4n9.cloudfront.net/user_3J4AJa2bMtKt6usVwv6mpQHsz9Q/efb73708-4d9e-4f33-a585-ac798f12de25.zip'
+        run: |
+          curl --fail --location --retry 3 --retry-delay 2 "$QBANK_SOURCE" -o "$RUNNER_TEMP/qbank-v21.zip"
+          echo "8b83a066ccb6738c203a82e5100ba3abfbed45024b8aa109061f8df960c56b6c  $RUNNER_TEMP/qbank-v21.zip" | sha256sum -c -
+      - name: Integrate only evaluations and keys, retaining all approved materials
+        run: python3 scripts/apply-qbank-v21.py "$RUNNER_TEMP/qbank-v21.zip"
+      - name: Validate 4800 keys, 60-20-20 per sublevel and shuffled evaluator JS
+        run: |
+          node scripts/qa-qbank-v21.js
+          node scripts/qa-richtext.js
+          node scripts/qa-home-vocab.js
+          node scripts/qa-mufradat-partial.js
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: Install Android SDK packages
+        run: |
+          SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          if [ ! -x "$SDKMANAGER" ]; then
+            SDKMANAGER=$(find "$ANDROID_HOME/cmdline-tools" -path '*/bin/sdkmanager' -type f | head -n 1)
+          fi
+          test -x "$SDKMANAGER"
+          yes | "$SDKMANAGER" --licenses >/dev/null || true
+          "$SDKMANAGER" 'platforms;android-35' 'build-tools;35.0.0'
+      - name: Build updated APK before committing release source
+        run: gradle --no-daemon assembleDebug
+      - name: Commit passing V0.1.8.17 to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/build.gradle app/src/main/assets/index.html app/src/main/assets/content/level_{01..24}_{public,keys}.js docs/v5/QUESTION_BANK_V21_RELEASE.json
+          git diff --cached --check
+          git commit -m "Nahwoo V0.1.8.17 — 4800 mixed randomized exercises with end-of-test review"
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nahwoo-v0.1.8.17-debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
