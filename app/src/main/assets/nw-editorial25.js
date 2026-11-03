@@ -1,5 +1,5 @@
 'use strict';
-/* NAHWOO V0.1.8.16: approved Editorial V5 1–24 + reference Level 25.
+/* NAHWOO V0.1.8.18: semantic Editorial V5 1–24 + reference Level 25.
    Uses the original content data; does not mutate lessons or evaluation keys. */
 function nwV5Text(x){return nwSegments(x);}
 function nwV5BlockText(b){return typeof b.text==='string'?b.text:(b.segments||[]).map(x=>x.text||'').join('');}
@@ -9,71 +9,101 @@ function nwV5Meaning(a,meta){
  const models=[meta.unvowelled_example,meta.vowelled_model].filter(Boolean).map(s=>String(s).replace(/\s+/g,' ').trim());
  return models.includes(raw)?(meta.natural_translation||''):'';
 }
+
 function nwV5Kind(t){
- const s=String(t||'').trim();
- if(/^(?:hati.hati|jangan sampai|waspada|jebakannya|yang perlu diwaspadai)/i.test(s))return 'warning';
- if(/^(?:bandingkan|coba bandingkan|lihat perbedaannya|bedanya)/i.test(s))return 'compare';
- if(/^(?:pecah|urai|kita bongkar|coba urai|petakan)/i.test(s))return 'breakdown';
- if(/^(?:sekarang uji|latihan kecil|coba tandai|sekarang giliran kita)/i.test(s))return 'practice';
+ const s=String(t||'').trim(),low=s.toLowerCase();
+ if(!s||s.length>650)return '';
+ if(/^(hati.hati|awas|waspada|jangan sampai|jebakan|kesalahan|salah baca|yang perlu diwaspadai)/i.test(s))return 'warning';
+ if(/^(bandingkan|coba bandingkan|lihat perbedaannya|bedanya|perbedaan|dua bentuk)/i.test(s))return 'compare';
+ if(/^(pecah|urai|kita bongkar|coba urai|petakan|mari kita urai)/i.test(s))return 'breakdown';
+ if(/^(sekarang uji|latihan kecil|coba tandai|sekarang giliran kita|uji sendiri|coba kerjakan)/i.test(s))return 'practice';
+ if(/^(ingat|intinya|yang penting kita ingat|pegangan kita)/i.test(s))return 'insight';
+ if(s.length>=100&&s.length<=450&&/^(pada|dalam|kata|bentuk|di sini|dari contoh|perhatikan bagaimana)/i.test(s)&&/(berfungsi|berperan|menandai|menunjukkan|sebagai|berarti|karena|dibentuk|menjadi|berhubungan|menyatakan|membedakan)/i.test(low))return 'breakdown';
+ if(s.length>=95&&s.length<=310&&/(jangan|keliru|salah kaprah|tidak boleh asal|nggak boleh asal)/i.test(low))return 'warning';
  return '';
 }
+function nwV5IsTranslation(block){
+ if(!block||block.type!=='BODY')return false;
+ const s=nwV5BlockText(block).trim();
+ if(!s||s.length>150||/[\n\r]/.test(s))return false;
+ if(/^(terjemahan?(?: natural)?|artinya|maknanya)\s*:/i.test(s))return true;
+ if(/[\u0600-\u06FF]|[*?؟«»“”]/.test(s))return false;
+ if(/^(coba|lihat|nah|pada|dalam|dari|sekarang|kalau|jadi|ini|tadi|kita|perhatikan|sebelum|setelah|yang|berikut|awali|catat|kenali|buat|untuk)\b/i.test(s))return false;
+ return s.split(/\s+/).length<=17&&(s.match(/[.!]/g)||[]).length<=1;
+}
 function nwV5Mission(m){
- const value=m.v4_meta?.competency||m.source_competency||'';
- return value?'<section class="nwv5-mission" aria-label="Misi Belajar"><div class="nwv5-mission-icon">✓</div><div><h2>Misi Belajar</h2><p>'+nwV5Text(value)+'</p></div></section>':'';
+ const val=m.v4_meta?.competency||m.source_competency||'';
+ return val?'<section class="nwv5-mission" aria-label="Misi Belajar"><div class="nwv5-mission-icon" aria-hidden="true">✓</div><div><h2>Misi Belajar</h2><p>'+nwV5Text(val)+'</p></div></section>':'';
 }
 function nwV5Conclusion(value){
- return value?'<aside class="nwv5-conclusion"><div class="nwv5-conclusion-head"><span>✦</span><h2>Kesimpulan</h2></div><p>'+nwV5Text(value)+'</p></aside>':'';
+ return value?'<aside class="nwv5-conclusion"><div class="nwv5-conclusion-head"><span aria-hidden="true">✦</span><h2>Kesimpulan</h2></div><p>'+nwV5Text(value)+'</p></aside>':'';
 }
 function nwV5Arabic(block,pair,meta){
  const arab=String(block.arabic||block.text||'');
  const companion=pair?nwV5BlockText(pair):'';
  const meaning=nwV5Meaning(arab,meta);
- const normalize=x=>String(x||'').replace(/\*\*|[“”"'.?!؟،]/g,'').trim().toLowerCase();
- const showMeaning=meaning&&!normalize(companion).includes(normalize(meaning));
- const short=companion.length<=120&&!/[\u0600-\u06ff]/.test(companion);
+ const normal=x=>String(x||'').replace(/\*\*|[“”"'.?!؟،]/g,'').trim().toLowerCase();
+ const showMeaning=meaning&&!normal(companion).includes(normal(meaning));
  return '<figure class="nwv5-arab'+(/[ًٌٍَُِّْٰ]/.test(arab)?'':' nwv5-arab-plain')+'">'
   +'<div class="nwv5-arab-text" lang="ar" dir="rtl">'+nwEscape(arab)+'</div>'
   +(showMeaning?'<div class="nwv5-arab-meaning">'+nwV5Text(meaning)+'</div>':'')
-  +(companion?'<figcaption class="nwv5-arab-description'+(short?' nwv5-arab-brief':'')+'">'+nwV5Text(companion)+'</figcaption>':'')
-  +'</figure>';
+  +(companion?'<figcaption class="nwv5-arab-description nwv5-arab-brief">'+nwV5Text(pair.segments||companion)+'</figcaption>':'')+'</figure>';
+}
+function nwV5TransitionHeading(t){
+ const s=String(t||'').trim();
+ return s.length>14&&s.length<=85&&/^(kita lihat|coba lihat|lihat dua|lihat tiga|sekarang lihat|sekarang kita bandingkan|mari kita lihat|perhatikan dua|perhatikan tiga|kita bandingkan)/i.test(s)&&!/[؟?]/.test(s)&&s.split(/[.!]/).length<=2;
 }
 function nwEditorialReaderMarkup(n,i){
  const m=nwGetLesson(n,i);
  if(!m)return '<p>Materi belum tersedia.</p>';
  const blocks=(m.blocks||[]).filter(b=>b.type!=='MAIN_HEADING');
- const intro=m.editorial_v5?.intro_count||2;
- let body=0,mission=false,quick=false;
+ const intro=Math.max(1,Math.min(3,Number(m.editorial_v5?.intro_count)||2));
+ let body=0,mission=false,quick=false,headings=0,panels=0,breakdowns=0,warnings=0;
  let content='';
  for(let j=0;j<blocks.length;j++){
-  const b=blocks[j], t=b.type;
+  const b=blocks[j],type=b.type;
   if(!mission&&body>=intro){content+=nwV5Mission(m);mission=true;}
-  if(t==='ARABIC_TEXT'){
-   const pair=blocks[j+1]?.type==='BODY'?blocks[j+1]:null;
+  if(type==='ARABIC_TEXT'){
+   const pair=nwV5IsTranslation(blocks[j+1])?blocks[j+1]:null;
    content+=nwV5Arabic(b,pair,m.v4_meta||m.source_meta||{});
    if(pair){j++;body++;}
-  }else if(t==='BODY'){
-   const value=nwV5BlockText(b);const kind=body>=intro?nwV5Kind(value):'';
-   const paragraph='<p class="nwv5-paragraph'+(body<intro?' nwv5-opening':'')+'">'+nwV5Text(b.segments||value)+'</p>';
-   content+=kind?'<div class="nwv5-panel nwv5-panel-'+kind+'">'+paragraph+'</div>':paragraph;
+  }else if(type==='BODY'){
+   const value=nwV5BlockText(b);
+   if(body>=intro+2&&headings<2&&nwV5TransitionHeading(value)){
+    content+='<h2 class="nwv5-heading">'+nwV5Text(b.segments||value)+'</h2>';headings++;
+   }else{
+    let kind=body>=intro+1&&panels<4?nwV5Kind(value):'';
+    if(kind==='breakdown'&&breakdowns>=2)kind='';
+    if(kind==='warning'&&warnings>=1)kind='';
+    const p='<p class="nwv5-paragraph'+(body<intro?' nwv5-opening':'')+'">'+nwV5Text(b.segments||value)+'</p>';
+    if(kind){content+='<aside class="nwv5-panel nwv5-panel-'+kind+'">'+p+'</aside>';panels++;if(kind==='breakdown')breakdowns++;if(kind==='warning')warnings++;}
+    else content+=p;
+   }
    body++;
-  }else if(t==='QUOTE'){
+  }else if(type==='QUOTE'){
    content+='<blockquote class="nwv5-quote">'+nwV5Text(b.segments||nwV5BlockText(b))+'</blockquote>';
-  }else if(t==='SUBHEADING'){
+  }else if(type==='SUBHEADING'){
    content+='<h2 class="nwv5-heading">'+nwV5Text(b.segments||nwV5BlockText(b))+'</h2>';
-  }else if(t==='QUICK_CHECK'){
-   quick=true;content+='<section class="nwv5-quick"><strong>Cek pemahaman</strong><p>'+nwV5Text(b.segments||nwV5BlockText(b))+'</p><details><summary>Lihat jawabannya</summary><p>'+nwV5Text(b.feedback||'')+'</p></details></section>';
-  }else if(t==='TARGET'){
+  }else if(type==='QUICK_CHECK'){
+   quick=true;
+   content+='<section class="nwv5-quick"><strong>Cek Pemahaman</strong><p>'+nwV5Text(b.segments||nwV5BlockText(b))+'</p>'
+    +(b.feedback?'<details><summary>Lihat jawaban dan penjelasan</summary><p>'+nwV5Text(b.feedback)+'</p></details>':'')+'</section>';
+  }else if(type==='TARGET'){
    content+=nwV5Mission({source_competency:nwV5BlockText(b)});mission=true;
-  }else if(t==='HOOK'||t==='NOTE'||t==='EXAMPLE'){
+  }else if(type==='HOOK'||type==='NOTE'||type==='EXAMPLE'){
    content+='<p class="nwv5-paragraph">'+nwV5Text(b.segments||nwV5BlockText(b))+'</p>';
   }
  }
  if(!mission)content+=nwV5Mission(m);
  if(!quick&&m.quick_check?.question){
-  content+='<section class="nwv5-quick"><strong>Cek pemahaman</strong><p>'+nwV5Text(m.quick_check.question)+'</p><details><summary>Lihat jawabannya</summary><p>'+nwV5Text(m.quick_check.answer||m.quick_check.reference_answer||'')+'</p></details></section>';
+  const q=m.quick_check,ans=q.answer||q.reference_answer||'';
+  content+='<section class="nwv5-quick"><strong>Cek Pemahaman</strong><p>'+nwV5Text(q.question)+'</p>'
+   +(ans?'<details><summary>Lihat jawaban dan penjelasan</summary><p>'+nwV5Text(ans)+'</p>'
+    +(q.reason?'<p>'+nwV5Text(q.reason)+'</p>':'')+'</details>':'')+'</section>';
  }
- return '<div class="nwv5-reader">'+content+nwV5Conclusion(m.conclusion||'')+'</div>';
+ return '<article class="nwv5-reader">'+content+nwV5Conclusion(m.conclusion||'')+'</article>';
 }
+
 let nw25Mode='guide',nw25Query='',nw25LoadStatus='';
 function nw25EnsureSpecial(){
  if(window.NAHWOO25||nw25LoadStatus==='loading')return;
