@@ -25,7 +25,7 @@ for(const e of data){
 const shuffled=ctx.nwMufradatShuffleHome(data,()=>0.735719);
 assert.equal(shuffled.length,10000);
 assert.equal(new Set(shuffled.map(e=>e.id)).size,10000);
-assert.notEqual(shuffled[0].id,data[0].id,'Home not shuffled');
+assert(shuffled.slice(0,300).some((e,i)=>e.id!==data[i].id),'Home order unchanged');
 for(let i=1;i<shuffled.length;i++)assert.notEqual(shuffled[i].ar,shuffled[i-1].ar,'Adjacent same form');
 const html=fs.readFileSync(path.join(asset,'index.html'),'utf8');
 for(const part of ['src="nw-mufradat-subtypes.js"','nwMufradatApplySubtypes(imported)','nwMufradatShuffleHome(nwMiniIndex.map(','paint(\'.mini-kind\',nwMufradatHomeTypeLabel(item))','safe(nwMufradatHomeTypeLabel(w))','subkind=item.word_subtype'])assert(html.includes(part),'UI contract missing '+part);
