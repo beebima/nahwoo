@@ -104,7 +104,7 @@ gradle.write_text(g)
 # historical assertion to verify the intentionally expanded V4 reader range.
 readerqa=root/"scripts/qa-v4-reader-semantics.js"
 qatext=readerqa.read_text(encoding="utf-8")
-old="assert.ok(html.includes('n>=1&&n<=8'),'Other levels untouched');"
+old="assert.ok(html.includes(\"n>=1&&n<=8\"),'Other levels untouched');"
 new="assert.ok(html.includes('const isV4=(n>=1&&n<=24);'),'All 24 V4 reading levels enabled');"
 assert qatext.count(old)==1,"Legacy QA assertion changed unexpectedly"
 readerqa.write_text(qatext.replace(old,new),encoding="utf-8")
