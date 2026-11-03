@@ -17,7 +17,7 @@ assert.equal(vars.kinds['balik ke teks gundul'],'flow','Return to text should no
 assert.ok(html.includes('function nwV4QuickCheckMarkup'),'quick check answer disclosure');
 assert.ok(html.includes('<details class="nwx-quick-answer">'),'quick-check details');
 assert.ok(html.includes('isV4?nwV4TargetMarkup(n,i)'),'yellow target sourced by sublevel competency');
-assert.ok(html.includes("n>=1&&n<=8"),'Other levels untouched');
+assert.ok(html.includes('const isV4=(n>=1&&n<=24);'),'All 24 V4 reading levels enabled');
 assert.ok(!html.includes('complete13?j:-1'),'Old positional card design should be removed');
 for(const c of ['#FFF5D9','#EDCF7D','#EDF3FF','#CBDCF9','#EDF8F1','#B9DFC9','#F1EDFF','#D3C5EC','#FFF0EE','#ECC4BE','#E7EEFF'])assert.ok(html.includes(c),`Expected palette ${c}`);
 assert.ok(html.includes('font-size:1.14em!important'),'Arabic inline must remain proportional');
