@@ -1112,7 +1112,7 @@ function nwEvalDraw(){
  else out+=`<p class="nw-eval-note">Masih ada ${20-answered} soal. Lengkapi semuanya untuk membuka tombol kirim. Pilihan tersimpan otomatis.</p>`;
  root.innerHTML=out;
 }
-function nwEvalArabic(q){const lines=(q.arabic_lines||[]).filter(Boolean);const words=(q.focus_words||[]).filter(Boolean);if(!lines.length&&!words.length)return '';return `<div class="nw-eval-arab-wrap"><span class="nw-eval-arab-label">PERHATIKAN TEKS ARAB</span>${lines.length?`<div class="nw-eval-arab-lines" lang="ar" dir="rtl">${lines.map(line=>`<div>${nwEscape(line)}</div>`).join('')}</div>`:''}${words.length?`<div class="nw-eval-focus" lang="ar" dir="rtl">${words.map(w=>`<span>${nwEscape(w)}</span>`).join('')}</div>`:''}</div>`;}
+function nwEvalArabic(q){const lines=(q.arabic_lines||[]).filter(Boolean);const words=(q.focus_words||[]).filter(Boolean);if(!lines.length&&!words.length)return '';return `<div class="nw-eval-arab-wrap">${lines.length?`<div class="nw-eval-arab-lines" lang="ar" dir="rtl">${lines.map(line=>`<div>${nwEscape(line)}</div>`).join('')}</div>`:''}${words.length?`<div class="nw-eval-focus" lang="ar" dir="rtl">${words.map(w=>`<span>${nwEscape(w)}</span>`).join('')}</div>`:''}</div>`;}
 function nwEvalMarkup(){return '<section class="nw-eval" id="nw-eval-root"><p>Menyiapkan 20 soal evaluasi…</p></section>';}
 
 /* Load mufradat on startup; a resumed WebView catches up after screen lock. */
