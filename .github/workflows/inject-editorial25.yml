@@ -1,0 +1,63 @@
+name: NAHWOO Approved Editorial 25 — inject, QA, build and publish
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/inject-editorial25.yml'
+permissions:
+  contents: write
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Retrieve two approved ZIPs and verify SHA-256
+        env:
+          SRC24: 'https://d2ol7oe51mr4n9.cloudfront.net/user_3J4AJa2bMtKt6usVwv6mpQHsz9Q/e0d39930-9613-456b-9578-a8f9934a73f3.zip'
+          SRC25: 'https://d2ol7oe51mr4n9.cloudfront.net/user_3J4AJa2bMtKt6usVwv6mpQHsz9Q/1d612bff-6e95-4cf4-843c-e490a3760b7d.zip'
+        run: |
+          curl -fL --retry 3 "$SRC24" -o "$RUNNER_TEMP/level01-24.zip"
+          curl -fL --retry 3 "$SRC25" -o "$RUNNER_TEMP/level25.zip"
+          echo "ab14692a03511346545ebfe250581c7e26acfe220ae6ba431013b6396077f1a7  $RUNNER_TEMP/level01-24.zip" | sha256sum -c -
+          echo "a1943af30b563c1808c577520a28538aa1703d0120cbf6535281155b0d56d87e  $RUNNER_TEMP/level25.zip" | sha256sum -c -
+      - name: Inject approved 25-level release in runner
+        run: python3 scripts/apply-editorial25.py "$RUNNER_TEMP/level01-24.zip" "$RUNNER_TEMP/level25.zip"
+      - name: Validate all 25 levels and full evaluation bank
+        run: |
+          node scripts/qa-editorial25.js
+          node scripts/qa-home-vocab.js
+          node scripts/qa-mufradat-partial.js
+          node scripts/qa-richtext.js
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: Install Android build packages
+        run: |
+          SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          if [ ! -x "$SDKMANAGER" ]; then SDKMANAGER=$(find "$ANDROID_HOME/cmdline-tools" -path '*/bin/sdkmanager' -type f | head -n 1); fi
+          test -x "$SDKMANAGER"
+          yes | "$SDKMANAGER" --licenses >/dev/null || true
+          "$SDKMANAGER" 'platforms;android-35' 'build-tools;35.0.0'
+      - name: Build updated Android debug APK before release commit
+        run: gradle --no-daemon assembleDebug
+      - name: Publish tested source to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/build.gradle app/src/main/assets/index.html app/src/main/assets/content docs/v5/APPROVED_EDITORIAL25_PROOF.json
+          git diff --cached --check
+          git commit -m "Nahwoo V0.1.8.16 — 24 approved editorial levels plus Level 25 handbook"
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nahwoo-v0.1.8.16-debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
