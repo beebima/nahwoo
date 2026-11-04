@@ -1,0 +1,31 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const html=fs.readFileSync('app/src/main/assets/index.html','utf8');
+const s=html.match(/<script>([\s\S]*?)<\/script>/);
+assert(s,'Main inline JS missing');new vm.Script(s[1],{filename:'NAHWOO-index.js'});
+const dollar=String.fromCharCode(36);
+assert(html.includes('.nw-eval-meta{scroll-margin-top:16px!important}'));
+assert(html.includes('id="nw-eval-active-number">SOAL '+dollar+'{nwEvalIndex+1} DARI 20'),'Question number label is not the scroll target');
+const start=s[1].indexOf('function nwEvalScrollToQuestion(){');
+const end=s[1].indexOf('function nwEvalHint(',start);
+assert(start>0&&end>start,'Scroll handler missing');
+const js=s[1].slice(start,end),calls=[];let draws=0;
+const marker={scrollIntoView:args=>calls.push(args)};
+const ctx={nwEvalIndex:0,nwEvalConfirm:false,nwEvalDraw:()=>draws++,
+ document:{getElementById:id=>id==='nw-eval-active-number'?marker:null},
+ requestAnimationFrame:f=>f(),window:{matchMedia:()=>({matches:false})}};
+vm.createContext(ctx);vm.runInContext(js,ctx,{timeout:2000});
+ctx.nwEvalGo(1);assert.equal(ctx.nwEvalIndex,1);assert.equal(draws,1);
+assert.equal(calls.length,1);assert.equal(calls[0].block,'start');
+assert.equal(calls[0].behavior,'smooth');
+ctx.nwEvalGo(0);assert.equal(ctx.nwEvalIndex,0);assert.equal(calls.length,2);
+ctx.nwEvalGo(19);assert.equal(ctx.nwEvalIndex,19);assert.equal(calls.length,3);
+ctx.nwEvalGo(-1);ctx.nwEvalGo(20);assert.equal(calls.length,3);
+assert(s[1].includes('onclick="nwEvalGo('+dollar+'{nwEvalIndex-1})"'),'Previous navigation missing');
+assert(s[1].includes('onclick="nwEvalGo('+dollar+'{nwEvalIndex+1})"'),'Next navigation missing');
+assert(s[1].includes('onclick="nwEvalGo('+dollar+'{i})"'),'Number-grid navigation missing');
+assert(/function nwEvalSelect\(i\)\{[^\n]*nwEvalDraw\(\);\}/.test(s[1]),'Selection behavior changed');
+assert(/function nwEvalHint\(n\)\{[^\n]*nwEvalDraw\(\);\}/.test(s[1]),'Hints behavior changed');
+ctx.window.matchMedia=()=>({matches:true});ctx.nwEvalGo(2);
+assert.equal(calls.at(-1).behavior,'auto');
+console.log('PASS v0.1.8.21: prev, next, and question grid scroll to SOAL X DARI 20 (reduced motion supported)');
