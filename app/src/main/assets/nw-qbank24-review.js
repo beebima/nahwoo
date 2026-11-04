@@ -12,14 +12,18 @@ try{
 }catch(e){}
 var nw24Pending={};
 function nw24Save(){try{localStorage.setItem(nw24Key,JSON.stringify(nw24State))}catch(e){}}
+function nw24CountLevel(n){var k='-L'+String(n).padStart(2,'0')+'-';return Object.keys(nw24State.selected).filter(function(id){return id.includes(k)&&Number.isInteger(nw24State.selected[id])}).length;}
+function nw24TotalProgress(){return Object.keys(nw24State.selected).filter(function(id){return /^N(?:W|B)-L\d{2}-/.test(id)&&Number.isInteger(nw24State.selected[id])}).length;}
+function nw24OpenLevel(n){if(typeof isLocked==='function'&&isLocked(n)){lockInfo(n);return}nw24State.level=n;nw24State.pack=1;nw24State.pos=0;nw24Save();openView('qbank24');}
+
 function nw24Markup(){
  return '<button class="back" onclick="back()">← Kembali ke Latihan</button>'+
  '<div class="nw24-title"><span class="eyebrow">BANK SOAL TAMBAHAN · DRAFT REVIEW</span>'+
  '<h1>24.000 Soal Nahwu</h1><p>24 level · 50 paket/level · 20 soal/paket. Terpisah dari 4.800 soal evaluasi yang sudah ada.</p>'+
- '<p class="nw24-disclaimer">Mode review langsung: baca soal, pilih opsi A–F, buka petunjuk, tandai masalah dan tulis catatan. Kunci dan pembahasan internal belum dimasukkan; penilaian otomatis belum aktif.</p></div>'+
+ '<p class="nw24-disclaimer">Mode review: 20 soal per paket, opsi A–F, dua petunjuk, dan catatan koreksi. Bank ini belum memiliki kunci/pembahasan dalam aplikasi sehingga penilaian benar-salah belum aktif.</p></div>'+
  '<div id="nw24-root" class="nw24-root"><p>Menyiapkan bank soal…</p></div>';
 }
-function nw24SetLevel(x){x=Number(x);if(!Number.isInteger(x)||x<1||x>24)return;nw24State.level=x;nw24State.pack=1;nw24State.pos=0;nw24Save();nw24Draw();}
+function nw24SetLevel(x){x=Number(x);if(!Number.isInteger(x)||x<1||x>24)return;if(typeof isLocked==='function'&&isLocked(x)){lockInfo(x);nw24Draw();return;}nw24State.level=x;nw24State.pack=1;nw24State.pos=0;nw24Save();nw24Draw();}
 function nw24SetPack(x){x=Number(x);if(!Number.isInteger(x)||x<1||x>50)return;nw24State.pack=x;nw24State.pos=0;nw24Save();nw24Draw();}
 function nw24SetPos(x){x=Number(x);if(!Number.isInteger(x)||x<0||x>19)return;nw24State.pos=x;nw24Save();nw24Draw();}
 function nw24Ref(){

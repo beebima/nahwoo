@@ -31,8 +31,12 @@ for(let n=1;n<=24;n++){
 assert.equal(unique.size,24000);
 const index=fs.readFileSync(path.join(root,'app/src/main/assets/index.html'),'utf8');
 assert(index.includes('nw-qbank24-review.js')&&index.includes('nw-qbank24-review.css'));
-assert(index.includes("view==='qbank24'")&&index.includes("openView('qbank24')"));
+assert(index.includes("view==='qbank24'")&&index.includes("nw24OpenLevel(n)"));
+assert(index.includes('nw24CountLevel(n)/1000*100')&&index.includes('nw24TotalProgress()'),'No actual 24K progress metrics');
+assert(!index.includes('Demo hanya 3 soal')&&!index.includes('1001 soal')&&!index.includes('24.024 soal'),'Legacy demo remains');
+assert(!index.includes("view==='quiz'"),'Old demo view must be removed');
+assert(fs.readFileSync(path.join(root,'app/src/main/assets/nw-qbank24-review.js'),'utf8').includes('function nw24OpenLevel(n)'),'Main route target missing');
 new vm.Script(fs.readFileSync(path.join(root,'app/src/main/assets/nw-qbank24-review.js'),'utf8'));
 const gradle=fs.readFileSync(path.join(root,'app/build.gradle'),'utf8');
-assert(gradle.includes("versionName '0.1.8.23'")&&gradle.includes('versionCode 30'));
+assert(gradle.includes("versionName '0.1.8.24'")&&gradle.includes('versionCode 31'));
 console.log('PASS — 24,000 unique draft review questions, 1,200 packs, no private answer keys; Bank bytes='+stats.reduce((s,x)=>s+x.bytes,0));
