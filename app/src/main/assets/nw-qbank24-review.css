@@ -7,3 +7,7 @@
 .nw24-question h2{font-size:var(--latin-size,16px);line-height:1.65;margin:12px 0}.nw24-options{display:grid;gap:7px;margin:12px 0}.nw24-choice{display:flex;gap:9px;align-items:flex-start;text-align:left;font-size:var(--latin-size,15px);background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:11px;line-height:1.55;cursor:pointer}.nw24-choice b{min-width:20px;color:var(--blue)}.nw24-choice.is-chosen{background:var(--soft);border:2px solid var(--blue)}
 .nw24-question details{border:1px solid var(--line);border-radius:10px;padding:10px;margin:10px 0}.nw24-question summary{color:var(--blue);font-size:13px;font-weight:700;cursor:pointer}.nw24-editor{display:grid;gap:12px;margin-top:15px}.nw24-editor label{font-size:13px;font-weight:700}.nw24-note{box-sizing:border-box;width:100%;padding:10px;margin-top:7px;background:var(--surface);border:1px solid var(--line);border-radius:9px;color:var(--ink);font:inherit;font-size:13px;resize:vertical}.nw24-nav{display:flex;gap:10px;margin:15px 0}.nw24-nav button{flex:1}.nw24-nav button:disabled{opacity:.4}
 @media(max-width:355px){.nw24-nums{grid-template-columns:repeat(5,minmax(0,1fr))}.nw24-selects{grid-template-columns:1fr}}
+
+/* Return to the packet counter + number grid after Previous/Next, below the top ad. */
+.nw24-top#nw24-scroll-anchor{scroll-margin-top:calc(var(--demo-ad-height,50px) + 12px)!important}
+body.demo-no-ads .nw24-top#nw24-scroll-anchor{scroll-margin-top:12px!important}

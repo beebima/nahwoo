@@ -8,8 +8,8 @@ android {
         applicationId 'id.sejutasantri.nahwoo'
         minSdk 24
         targetSdk 35
-        versionCode 31
-        versionName '0.1.8.24'
+        versionCode 32
+        versionName '0.1.8.25'
     }
     buildTypes {
         release { minifyEnabled false }

@@ -25,7 +25,17 @@ function nw24Markup(){
 }
 function nw24SetLevel(x){x=Number(x);if(!Number.isInteger(x)||x<1||x>24)return;if(typeof isLocked==='function'&&isLocked(x)){lockInfo(x);nw24Draw();return;}nw24State.level=x;nw24State.pack=1;nw24State.pos=0;nw24Save();nw24Draw();}
 function nw24SetPack(x){x=Number(x);if(!Number.isInteger(x)||x<1||x>50)return;nw24State.pack=x;nw24State.pos=0;nw24Save();nw24Draw();}
-function nw24SetPos(x){x=Number(x);if(!Number.isInteger(x)||x<0||x>19)return;nw24State.pos=x;nw24Save();nw24Draw();}
+/* V0.1.8.25: return to the 1–20 navigation and question heading on every question change.
+   Keep answer selection and review notes at their current scroll position. */
+function nw24ScrollToNavigation(){
+ requestAnimationFrame(function(){
+  var target=document.getElementById('nw24-scroll-anchor');
+  if(!target)return;
+  var reduced=!!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  target.scrollIntoView({behavior:reduced?'auto':'smooth',block:'start',inline:'nearest'});
+ });
+}
+function nw24SetPos(x){x=Number(x);if(!Number.isInteger(x)||x<0||x>19)return;nw24State.pos=x;nw24Save();nw24Draw();nw24ScrollToNavigation();}
 function nw24Ref(){
  var data=window.NW_QBANK24[nw24State.level];if(!data)return null;
  if(!data._byId){data._byId={};data.questions.forEach(function(q){data._byId[q.id]=q})}
@@ -70,7 +80,7 @@ function nw24Draw(){
  root.innerHTML=
  '<div class="nw24-top"><span>Level '+n2(level)+' · '+safe(data.title||'Bank Latihan')+'</span><b>1.000 soal</b></div>'+
  '<div class="nw24-selects"><label>Level<select onchange="nw24SetLevel(this.value)">'+levelOpts+'</select></label><label>Paket<select onchange="nw24SetPack(this.value)">'+packOpts+'</select></label></div>'+
- '<div class="nw24-top"><span>Paket '+nw24State.pack+'/50 · Dipilih '+answered+'/20</span><span>Soal '+(nw24State.pos+1)+'/20</span></div>'+
+ '<div class="nw24-top" id="nw24-scroll-anchor"><span>Paket '+nw24State.pack+'/50 · Dipilih '+answered+'/20</span><span>Soal '+(nw24State.pos+1)+'/20</span></div>'+
  '<div class="nw24-nums">'+numberBtns+'</div>'+
  '<article class="card nw24-question"><div class="nw24-top"><span class="eyebrow">'+safe(q.sublevel||'')+' · '+safe(q.difficulty||'LATIHAN')+'</span><small>'+safe(q.id)+'</small></div>'+
  '<div class="nw24-arabic" lang="ar" dir="rtl">'+safe(q.arabic||'')+'</div>'+
