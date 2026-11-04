@@ -1,0 +1,28 @@
+/* NAHWOO 0.1.8.26 — ciri kata, sebab harakat, kaidah dan resume tiap level */
+.nw-harakat-method,.nw-harakat-resume{min-width:0;border-radius:19px;margin:18px 0 22px;padding:18px 16px;background:var(--surface);color:var(--ink);border:1px solid var(--line);box-shadow:0 7px 22px rgba(24,64,124,.06)}
+.nw-harakat-method-head,.nw-harakat-resume-header{display:flex;align-items:center;gap:12px;margin:0 0 13px}
+.nw-harakat-icon{display:grid;place-items:center;background:#f3bf5e;color:#55310a;border-radius:14px;font-size:29px;flex:none;width:44px;height:44px}
+.nw-harakat-method-head h2,.nw-harakat-resume-header h2{font-size:var(--subheading-size,18px)!important;color:var(--ink);line-height:1.35;margin:4px 0 0;font-weight:850}
+.nw-harakat-eyebrow{font-size:10px;letter-spacing:.055em;color:var(--blue);font-weight:850}
+.nw-harakat-method>p,.nw-harakat-resume>p{font-size:var(--latin-size,15px);line-height:1.75;color:var(--ink);margin:11px 0}
+.nw-harakat-method>p>strong{color:var(--blue)}
+.nw-harakat-model{display:block;text-align:center;font-size:var(--arabic-size,28px);font-family:'Noto Naskh Arabic','Amiri','Traditional Arabic',serif;line-height:2.05;margin:14px 0;padding:14px 9px;background:#edf3ff;color:#1c487f;border-radius:14px;overflow-wrap:anywhere}
+.nwv5-reader .nwv5-quote.nw-harakat-quote,.nw-harakat-method .nw-harakat-quote{display:flex;flex-direction:column;gap:9px;border:2px solid #d47413!important;border-left:7px solid #c4520b!important;border-radius:14px!important;margin:16px 0 18px!important;padding:17px 15px!important;background:linear-gradient(135deg,#ffce76 0%,#ffe3a3 53%,#fff0cc 100%)!important;color:#5a290a!important;box-shadow:0 9px 21px rgba(158,72,0,.13)!important;font-weight:810;font-size:var(--quote-size,16px)!important;line-height:1.63!important}
+.nwv5-reader .nwv5-quote.nw-harakat-quote:before,.nw-harakat-quote:before{display:none!important}
+.nw-harakat-quote-label{font-size:11px;letter-spacing:.035em;font-weight:950;color:#8b3506!important}
+.nw-harakat-quote>span:last-child{display:block;color:#542705!important}
+.nw-harakat-check{padding:11px 12px;background:var(--soft);border-radius:12px;border-left:4px solid var(--blue)}
+.nwv5-reader .nwv5-conclusion .nw-harakat-conclusion-extra{margin-top:15px!important;padding:14px 13px!important;border-radius:12px;border:1px solid #ffffff70;background:#ffffff22;color:#fff!important;line-height:1.7!important}
+.nw-harakat-resume{border:2px solid #a9bde7;background:linear-gradient(180deg,#f5f8ff,var(--surface));margin:16px 0 21px}
+.nw-harakat-resume-icon{flex:none;font-size:26px}
+.nw-harakat-resume-lead{font-size:var(--latin-size,15px)!important;line-height:1.65!important}
+.nw-harakat-resume-list{list-style:none;padding:0;margin:12px 0;display:grid;gap:9px;counter-reset:unused}
+.nw-harakat-resume-list li{display:grid;gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:11px;padding:11px 12px;font-size:var(--latin-size,14px);line-height:1.55}
+.nw-harakat-resume-item-title{color:var(--blue);font-size:calc(var(--latin-size,15px)*.88);font-weight:800}
+.nw-harakat-resume-final{border-left:5px solid #ce7b24;background:#fff1d4;color:#5d3407;border-radius:10px;padding:14px;margin:12px 0 0;font-size:var(--latin-size,15px);line-height:1.72}
+body.dark .nw-harakat-model{background:#1e3357;color:#e2ecff}
+body.dark .nw-harakat-resume{background:linear-gradient(180deg,#192940,var(--surface));border-color:#5276a9}
+body.dark .nw-harakat-resume-final{background:#62471d;color:#fff2d7}
+body.dark .nwv5-reader .nwv5-quote.nw-harakat-quote,body.dark .nw-harakat-method .nw-harakat-quote{background:linear-gradient(130deg,#744015,#9e591c)!important;color:#fff4db!important;border-color:#ffbf66!important}
+body.dark .nw-harakat-quote-label,body.dark .nw-harakat-quote>span:last-child{color:#fff6df!important}
+@media(max-width:365px){.nw-harakat-method,.nw-harakat-resume{padding:15px 12px}.nw-harakat-method-head h2,.nw-harakat-resume-header h2{font-size:16px!important}}

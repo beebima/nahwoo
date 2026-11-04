@@ -101,7 +101,7 @@ function nwEditorialReaderMarkup(n,i){
    +(ans?'<details><summary>Lihat jawaban dan penjelasan</summary><p>'+nwV5Text(ans)+'</p>'
     +(q.reason?'<p>'+nwV5Text(q.reason)+'</p>':'')+'</details>':'')+'</section>';
  }
- return '<article class="nwv5-reader">'+content+nwV5Conclusion(m.conclusion||'')+'</article>';
+ return '<article class="nwv5-reader">'+content+nwHarakatMethodMarkup(n,i)+nwHarakatConclusionMarkup(n,i,m.conclusion||'')+'</article>';
 }
 
 let nw25Mode='guide',nw25Query='',nw25LoadStatus='';
