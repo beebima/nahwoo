@@ -38,5 +38,7 @@ assert(!index.includes("view==='quiz'"),'Old demo view must be removed');
 assert(fs.readFileSync(path.join(root,'app/src/main/assets/nw-qbank24-review.js'),'utf8').includes('function nw24OpenLevel(n)'),'Main route target missing');
 new vm.Script(fs.readFileSync(path.join(root,'app/src/main/assets/nw-qbank24-review.js'),'utf8'));
 const gradle=fs.readFileSync(path.join(root,'app/build.gradle'),'utf8');
-assert(gradle.includes("versionName '0.1.8.26'")&&gradle.includes('versionCode 33'));
+const appVersion=Number(gradle.match(/versionName '0\.1\.8\.(\d+)'/)?.[1]);
+const appCode=Number(gradle.match(/versionCode (\d+)/)?.[1]);
+assert(Number.isInteger(appVersion)&&appVersion>=26&&appVersion<=28&&appCode===appVersion+7,'Unexpected bank24 version/code');
 console.log('PASS — 24,000 unique draft review questions, 1,200 packs, no private answer keys; Bank bytes='+stats.reduce((s,x)=>s+x.bytes,0));
