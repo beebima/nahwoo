@@ -11,6 +11,11 @@ const text=s=>escape(Array.isArray(s)?s.map(x=>x.text||'').join(''):s);
 const ctx={window:{NW_LEVEL_DATA:{}},nwSegments:text,nwEscape:escape};
 ctx.nwGetLesson=(n,i)=>ctx.window.NW_LEVEL_DATA[n].materials[i];
 vm.createContext(ctx);vm.runInContext(js,ctx,{timeout:8000});
+for(const f of ['level_01_06.js','level_07_12.js','level_13_18.js','level_19_24.js']){
+  vm.runInContext(fs.readFileSync(path.join(base,'content/harakat',f),'utf8'),ctx,{timeout:8000});
+}
+vm.runInContext(fs.readFileSync(path.join(base,'nw-harakat-method.js'),'utf8'),ctx,{timeout:8000});
+
 let lessons=0,quotes=0,panels=0,examples=0;
 for(let level=1;level<=24;level++){
  const file=path.join(base,'content','level_'+String(level).padStart(2,'0')+'_public.js');

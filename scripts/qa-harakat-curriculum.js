@@ -17,7 +17,7 @@ for(let n=1;n<=24;n++){assert.equal(rules[n]?.length,10);for(const x of rules[n]
 const escape=s=>String(s||'').replace(/[&<>]/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[x]));
 c.nwV5Text=escape;c.nwEscape=escape;c.nwV5Conclusion=s=>'<aside class="nwv5-conclusion">'+escape(s)+'</aside>';
 vm.runInContext(fs.readFileSync(path.join(base,'nw-harakat-method.js'),'utf8'),c);
-const norm=s=>String(s||'').normalize('NFKD').toLowerCase().replace(/[\u0300-\u036f\u064b-\u065f]/g,'').replace(/[^\p{L}\p{N}]+/gu,' ').trim().replace(/\s+/g,' ');
+const norm=s=>String(s||'').normalize('NFKD').toLowerCase().replace(/[\u0300-\u036f]/g,'').replace(/[^\p{L}\p{N}\p{M}]+/gu,' ').trim().replace(/\s+/g,' ');
 const stop=new Set('dan yang dari dengan dalam untuk pada atau cara menjadi itu apa sebuah satu dua tiga bagaimana ketika di ke ini kitab baca membaca soal buka praktek praktikum mengenali kenapa baru bahwa bertanda tentang kata akhir bentuk jenis level menemukan mengubah tanda menentukan melihat mengetahui bisa ada sebagai lebih dasar harakat ciri'.split(' '));
 const toks=s=>new Set(norm(s).split(' ').filter(x=>x.length>2&&!stop.has(x)));
 const report={version:'0.1.8.26',scope:'24 levels, 240 lessons, 4800 keyed evaluation questions, 24000 unkeyed review questions',method:'Muhammad Abdul Fatah, Panduan Praktis Membaca dan Menerjemah Kitab Arab — adapted teaching method',curriculum:{supplements:0,resumes:0,quotes:0,conclusions:0},evaluation:{questions:0,key_count:0,duplicate_option_items:0},bank24:{questions:0,packs:0,valid_sublevel_links:0,missing_topic:0,topic_groups_needing_review:0,duplicate_option_items:0,answer_keys_bundled:false},flags:[],per_level:[]};
