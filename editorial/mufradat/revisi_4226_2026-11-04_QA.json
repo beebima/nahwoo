@@ -1,0 +1,995 @@
+{
+  "source_title": "NAHWOO — Perbaikan 4.226 Contoh Kalimat Mufradat | Progres & Naskah Kerja",
+  "source_url": "https://docs.google.com/document/d/1x_EhKV4GaBlRLnDTo3O8oSWpiy7yKg6dQ5oocpAdWUo/edit",
+  "source_revision": "AHj4eMQMJpACa8I0dvkkMnfH6x366ivTN45mBg-F51EhBh2AdXbGl1_OLc3xPkZYKLuvPAaWfJYHnQj1edm7wGTnxB2CunY9RCoJ0XYufE0",
+  "date": "2026-11-04",
+  "status": "DRAFT_REVIEW_NOT_APPROVED_FOR_FINAL_RELEASE",
+  "vocabulary_bank": 10000,
+  "revised_pairs": 4226,
+  "id_and_headword_and_meaning_matches": 4226,
+  "unmatched": 0,
+  "expert_approved": 0,
+  "proposal_count": 240,
+  "proposals": [
+    {
+      "id": "VOC-02595",
+      "note": "USULAN LEMA: تَوْثِيقٌ صَغِيرٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02596",
+      "note": "USULAN LEMA: تَصْنِيفٌ صَغِيرٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02598",
+      "note": "USULAN LEMA: تَبْوِيبٌ صَغِيرٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02599",
+      "note": "USULAN LEMA: تَنْسِيقٌ صَغِيرٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02600",
+      "note": "USULAN LEMA: تَحْرِيرٌ صَغِيرٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02901",
+      "note": "USULAN LEMA: مِرْصَدٌ حَدِيثٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02902",
+      "note": "USULAN LEMA: مِنْظَارٌ حَدِيثٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02903",
+      "note": "USULAN LEMA: مِجْهَرٌ حَدِيثٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02904",
+      "note": "USULAN LEMA: مِقْيَاسٌ حَدِيثٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02905",
+      "note": "USULAN LEMA: مِسْبَارٌ حَدِيثٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02907",
+      "note": "USULAN LEMA: مَجَرَّةٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02908",
+      "note": "USULAN LEMA: سَدِيمٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02911",
+      "note": "USULAN LEMA: نَيْزَكٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02912",
+      "note": "USULAN LEMA: مَدَارٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02913",
+      "note": "USULAN LEMA: مِحْوَرٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02914",
+      "note": "USULAN LEMA: خُسُوفُ الْقَمَرِ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02915",
+      "note": "USULAN LEMA: كُسُوفُ الشَّمْسِ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02916",
+      "note": "USULAN LEMA: مِزْوَلَةٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02917",
+      "note": "USULAN LEMA: تِلِسْكُوبٌ حَدِيثٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02918",
+      "note": "USULAN LEMA: فَلَكٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02928",
+      "note": "USULAN LEMA: صَهَارَةٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02938",
+      "note": "USULAN LEMA: مُسْتَحَاثَةٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02939",
+      "note": "USULAN LEMA: تَعْرِيَةٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02941",
+      "note": "USULAN LEMA: تَصَحُّرٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02942",
+      "note": "USULAN LEMA: تَجْوِيَةٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02944",
+      "note": "USULAN LEMA: هَضْبَةٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02946",
+      "note": "USULAN LEMA: حَوْضٌ مَائِيٌّ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02950",
+      "note": "USULAN LEMA: شَلَّالٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02953",
+      "note": "USULAN LEMA: مُسْتَنْقَعٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02957",
+      "note": "USULAN LEMA: وَاحَةٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02960",
+      "note": "USULAN LEMA: مُنْحَدَرٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02970",
+      "note": "USULAN LEMA: شِعَابٌ مَرْجَانِيَّةٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02978",
+      "note": "USULAN LEMA: رَصِيفٌ بَحْرِيٌّ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02982",
+      "note": "USULAN LEMA: مِرْسَاةٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02983",
+      "note": "USULAN LEMA: شِرَاعٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02984",
+      "note": "USULAN LEMA: دَفَّةٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02985",
+      "note": "USULAN LEMA: مِجْدَافٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-02999",
+      "note": "USULAN LEMA: رُبَّانٌ | CATATAN: pembetulan bentuk dan/atau arti sumber perlu ditashih sebelum impor."
+    },
+    {
+      "id": "VOC-03111",
+      "note": "USULAN LEMA: نَحَّاتٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03117",
+      "note": "USULAN LEMA: مِطْرَقَةٌ كَبِيرَةٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03122",
+      "note": "USULAN LEMA: فُرْنٌ يُوقَدُ بِالْحَطَبِ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03130",
+      "note": "USULAN LEMA: بَكْرَةُ خَيْطٍ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03131",
+      "note": "USULAN LEMA: إِبْرَةٌ دَقِيقَةٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03133",
+      "note": "USULAN LEMA: مِقَصٌّ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03135",
+      "note": "USULAN LEMA: طَرَّازٌ مَاهِرٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03137",
+      "note": "USULAN LEMA: سَحَّابٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03138",
+      "note": "USULAN LEMA: رُقْعَةٌ قُمَاشِيَّةٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03139",
+      "note": "USULAN LEMA: حَاشِيَةٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03145",
+      "note": "USULAN LEMA: حِذَاءٌ طَوِيلُ السَّاقِ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03149",
+      "note": "USULAN LEMA: مِخْرَزٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03156",
+      "note": "USULAN LEMA: مِفَكٌّ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03157",
+      "note": "USULAN LEMA: مِثْقَبٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03164",
+      "note": "USULAN LEMA: قُفْلٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03165",
+      "note": "USULAN LEMA: مِفْتَاحٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03166",
+      "note": "USULAN LEMA: حَدَّادٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03171",
+      "note": "USULAN LEMA: كَمَّاشَةٌ مَفْتُوحَةٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03173",
+      "note": "USULAN LEMA: مِبْرَاةٌ حَادَّةٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03174",
+      "note": "USULAN LEMA: مِسْطَرَةٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03175",
+      "note": "USULAN LEMA: فِرْجَارٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03176",
+      "note": "USULAN LEMA: مِنْقَلَةٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03177",
+      "note": "USULAN LEMA: مِمْحَاةٌ مُسْتَعْمَلَةٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03179",
+      "note": "USULAN LEMA: طَابِعَةٌ جَدِيدَةٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03180",
+      "note": "USULAN LEMA: مَطْبَعَةٌ مُطَوَّرَةٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03181",
+      "note": "USULAN LEMA: حَرْفٌ عَرَبِيٌّ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03182",
+      "note": "USULAN LEMA: خَطَّاطٌ مَاهِرٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03194",
+      "note": "USULAN LEMA: قِلَادَةٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03196",
+      "note": "USULAN LEMA: خَاتَمٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03199",
+      "note": "USULAN LEMA: يَاقُوتٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03200",
+      "note": "USULAN LEMA: زُمُرُّدٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03301",
+      "note": "USULAN LEMA: مِرْصَدٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03343",
+      "note": "USULAN LEMA: جِسْمٌ مُضَادٌّ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03445",
+      "note": "USULAN LEMA: فَهْرَسَةٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03477",
+      "note": "USULAN LEMA: بِلَاطٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03831",
+      "note": "USULAN LEMA: مُخَابَرَةٌ؛ تَعْنِي هُنَا عَقْدَ زِرَاعَةٍ بِحِصَّةٍ مِنَ الْمَحْصُولِ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-03838",
+      "note": "USULAN LEMA: وَسْمٌ | CATATAN: sumber memerlukan audit bentuk dan/atau padanan; usulan digunakan dalam contoh."
+    },
+    {
+      "id": "VOC-04339",
+      "note": "USULAN LEMA: كَتَّانٌ | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-04360",
+      "note": "USULAN LEMA: بَشِرَ | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-04421",
+      "note": "USULAN LEMA: طَلَبُ الْفَضْلِ | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-04430",
+      "note": "USULAN LEMA: اِسْتِلْطَافٌ؛ بِمَعْنَى اعْتِبَارِ الشَّيْءِ لَطِيفًا | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-04448",
+      "note": "USULAN LEMA: طَلَبُ هَدْمٍ | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-04450",
+      "note": "USULAN LEMA: اِسْتِيحَاشٌ | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-04451",
+      "note": "USULAN LEMA: اِسْتِيحَاشٌ | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-04457",
+      "note": "USULAN LEMA: اِسْتِئْثَارٌ | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-04464",
+      "note": "USULAN LEMA: اِحْتِرَازٌ | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-04472",
+      "note": "USULAN LEMA: خِزْيٌ | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-04497",
+      "note": "USULAN LEMA: إِسْتَبْرَقٌ | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-04507",
+      "note": "USULAN LEMA: بُرُوتِينٌ | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-04659",
+      "note": "USULAN LEMA: قَلْوَنَةٌ؛ يُرَاجَعُ الِاصْطِلَاحُ | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-04666",
+      "note": "USULAN LEMA: تَسَارُعٌ | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-04701",
+      "note": "USULAN LEMA: مُسَرِّعٌ | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-04727",
+      "note": "USULAN LEMA: عَدَّادُ الْمُرُورِ | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-04744",
+      "note": "USULAN LEMA: جِهَازُ قِيَاسِ مُعَامِلِ الِاحْتِكَاكِ | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-04898",
+      "note": "USULAN LEMA: مِضْرَبُ تَنِسٍ | CATATAN: bentuk dan/atau makna sumber tidak sesuai sepenuhnya; perlu penashihan."
+    },
+    {
+      "id": "VOC-05025",
+      "note": "USULAN LEMA: مَئِينٌ؛ يُرَاجَعُ الضَّبْطُ الْإِحْصَائِيُّ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05065",
+      "note": "USULAN LEMA: زَائِدَةٌ شَجَرِيَّةٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05079",
+      "note": "USULAN LEMA: الْمُسْتَقِيمُ؛ فِي التَّشْرِيحِ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05167",
+      "note": "USULAN LEMA: تَفْرِيغٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05192",
+      "note": "USULAN LEMA: صِنَاعَةُ الْفَخَّارِ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05222",
+      "note": "USULAN LEMA: اِسْتِعْطَارٌ؛ يُرَاجَعُ الِاسْتِعْمَالُ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05227",
+      "note": "USULAN LEMA: حِسَابٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05229",
+      "note": "USULAN LEMA: طَلَبُ الْكِفَايَةِ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05361",
+      "note": "USULAN LEMA: تَفَاقُدٌ؛ يُرَاجَعُ الِاسْتِعْمَالُ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05420",
+      "note": "USULAN LEMA: دِهْلِيزٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05607",
+      "note": "USULAN LEMA: اِسْتِعَارَةٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05612",
+      "note": "USULAN LEMA: طَلَبُ إِطْلَاقِ السَّرَاحِ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05621",
+      "note": "USULAN LEMA: اِسْتِنْهَاكٌ؛ يُرَاجَعُ الِاسْتِعْمَالُ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05626",
+      "note": "USULAN LEMA: طَلَبُ الْقُدْرَةِ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05627",
+      "note": "USULAN LEMA: اِنْقِلَابٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05631",
+      "note": "USULAN LEMA: اِقْتِرَانٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05632",
+      "note": "USULAN LEMA: اِسْتِبْطَاءٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05635",
+      "note": "USULAN LEMA: تَعْمِيقٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05636",
+      "note": "USULAN LEMA: اِسْتِيعَابٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05638",
+      "note": "USULAN LEMA: طَلَبُ الْفَلَاحِ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05639",
+      "note": "USULAN LEMA: فَقْسُ الْبَيْضِ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05640",
+      "note": "USULAN LEMA: فَحْصٌ مُتَعَمِّقٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05641",
+      "note": "USULAN LEMA: إِحْرَاجٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05643",
+      "note": "USULAN LEMA: اِسْتِحْوَاذٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05644",
+      "note": "USULAN LEMA: اِسْتِيحَاشٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05645",
+      "note": "USULAN LEMA: حِيَازَةٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05646",
+      "note": "USULAN LEMA: اِحْتِيَاطٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05648",
+      "note": "USULAN LEMA: اِخْتِيَارُ الْجَوِّ الْمُنَاسِبِ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05655",
+      "note": "USULAN LEMA: تَبَاهٍ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05657",
+      "note": "USULAN LEMA: تَكْلِيفٌ بِالْعَمَلِ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05658",
+      "note": "USULAN LEMA: تَسْمِينٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05666",
+      "note": "USULAN LEMA: طَلَبُ حَقِّ الْمُرُورِ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05669",
+      "note": "USULAN LEMA: تَعَرُّقٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05670",
+      "note": "USULAN LEMA: عَصْرٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05671",
+      "note": "USULAN LEMA: تَعَقُّلٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05673",
+      "note": "USULAN LEMA: الشُّعُورُ بِالْكِفَايَةِ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05674",
+      "note": "USULAN LEMA: اِنْغِرَامٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05675",
+      "note": "USULAN LEMA: طَلَبُ الْكَرَمِ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05683",
+      "note": "USULAN LEMA: طَلَبُ الْإِمَامَةِ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05684",
+      "note": "USULAN LEMA: طَلَبُ التَّعْجِيلِ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05711",
+      "note": "USULAN LEMA: مِلْحٌ مَعْدِنِيٌّ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05803",
+      "note": "USULAN LEMA: جَاغُوَارٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05816",
+      "note": "USULAN LEMA: جِهَازُ التَّرْقِيمِ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05844",
+      "note": "USULAN LEMA: دُلْفِينُ إِيرَاوَادِي | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05862",
+      "note": "USULAN LEMA: تَعْبِئَةٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05957",
+      "note": "USULAN LEMA: مُسْتَحَاثَةٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-05970",
+      "note": "USULAN LEMA: مُتَعَثِّرٌ | CATATAN: padanan/bentuk dalam sumber perlu diperiksa; kalimat memakai bentuk usulan."
+    },
+    {
+      "id": "VOC-06005",
+      "note": "USULAN LEMA: اِسْتِئْنَاسٌ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06062",
+      "note": "USULAN LEMA: تَرْبِيَةٌ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06078",
+      "note": "USULAN LEMA: تَسْجِيلٌ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06079",
+      "note": "USULAN LEMA: سَدَادٌ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06173",
+      "note": "USULAN LEMA: تَأَثُّرٌ عَمِيقٌ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06416",
+      "note": "USULAN LEMA: مَلَّحَ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06417",
+      "note": "USULAN LEMA: سَمَّدَ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06429",
+      "note": "USULAN LEMA: ذَابَ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06436",
+      "note": "USULAN LEMA: رَشَّ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06506",
+      "note": "USULAN LEMA: كَثَافَةٌ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06508",
+      "note": "USULAN LEMA: اِسْتِطَاعَةٌ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06509",
+      "note": "USULAN LEMA: إِرْهَاقٌ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06511",
+      "note": "USULAN LEMA: إِشْفَاقٌ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06514",
+      "note": "USULAN LEMA: طَلَبُ التَّصْدِيقِ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06517",
+      "note": "USULAN LEMA: اِعْتِمَادٌ عَلَى سَنَدٍ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06519",
+      "note": "USULAN LEMA: اِسْتِيفَاءٌ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06710",
+      "note": "USULAN LEMA: فَنِّيُّ مُخْتَبَرٍ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06825",
+      "note": "USULAN LEMA: أَلْيَافُ الْكَتَّانِ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-06884",
+      "note": "USULAN LEMA: قِرْدٌ | CATATAN: perlu audit ejaan, bentuk, kelas kata, atau padanan sumber."
+    },
+    {
+      "id": "VOC-07001",
+      "note": "USULAN LEMA: يُؤَرْشِفُ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07043",
+      "note": "USULAN LEMA: يُطْفِئُ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07050",
+      "note": "USULAN LEMA: تُخَشْخِشُ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07051",
+      "note": "USULAN LEMA: يُخْرِجُ صَوْتًا مَبْحُوحًا | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07067",
+      "note": "USULAN LEMA: يُؤَكْسِدُ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07068",
+      "note": "USULAN LEMA: يُمَلِّحُ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07078",
+      "note": "USULAN LEMA: يَذُوبُ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07084",
+      "note": "USULAN LEMA: يَرُشُّ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07099",
+      "note": "USULAN LEMA: مِيزَانٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07620",
+      "note": "USULAN LEMA: نَبْتَةٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07643",
+      "note": "USULAN LEMA: أَنْقَلِيسُ الْبَحْرِ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07649",
+      "note": "USULAN LEMA: سَمَكُ الشَّبُّوطِ؛ تَحْدِيدُ النَّوْعِ يَحْتَاجُ تَدْقِيقًا | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07702",
+      "note": "USULAN LEMA: إِحْسَاسٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07705",
+      "note": "USULAN LEMA: تَحْرِيمٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07710",
+      "note": "USULAN LEMA: طَلَبُ إِسْقَاطٍ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07712",
+      "note": "USULAN LEMA: اِنْتِشَارٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07723",
+      "note": "USULAN LEMA: اِحْتِكَارٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07725",
+      "note": "USULAN LEMA: اِجْتِهَادٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07728",
+      "note": "USULAN LEMA: تَعَطُّلٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07730",
+      "note": "USULAN LEMA: تَقْوِيمٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07751",
+      "note": "USULAN LEMA: مَخْبَزٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07752",
+      "note": "USULAN LEMA: زُجَاجَةُ عِطْرٍ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07753",
+      "note": "USULAN LEMA: مُتَّكَأٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07756",
+      "note": "USULAN LEMA: مِسْطَرَةٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07758",
+      "note": "USULAN LEMA: مُجَمِّدٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07760",
+      "note": "USULAN LEMA: مَنْكِبٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07765",
+      "note": "USULAN LEMA: مِكْوَاةٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07767",
+      "note": "USULAN LEMA: مِسْطَرَةٌ طَوِيلَةٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07801",
+      "note": "USULAN LEMA: دَوَاةٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07808",
+      "note": "USULAN LEMA: مِعْوَلٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07809",
+      "note": "USULAN LEMA: عُودُ تَحْرِيكٍ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07814",
+      "note": "USULAN LEMA: مَقْهًى | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07815",
+      "note": "USULAN LEMA: مَغْزًى | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07817",
+      "note": "USULAN LEMA: مَوْقِدٌ | CATATAN: ejaan atau arti asli perlu diperbaiki/diklarifikasi sebelum data digunakan dalam aplikasi."
+    },
+    {
+      "id": "VOC-07819",
+      "note": "USULAN LEMA: مُحَرِّكٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07820",
+      "note": "USULAN LEMA: عَجَلَةُ الْقِيَادَةِ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07821",
+      "note": "USULAN LEMA: مَدْفَعٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07822",
+      "note": "USULAN LEMA: أَدَاةُ زَخْرَفَةٍ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07823",
+      "note": "USULAN LEMA: مَحْبَسٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07824",
+      "note": "USULAN LEMA: قِمْعٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07825",
+      "note": "USULAN LEMA: مَرْكَبَةٌ مُصَفَّحَةٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07826",
+      "note": "USULAN LEMA: مِرْوَحَةٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07827",
+      "note": "USULAN LEMA: نُقْطَةُ الِارْتِكَازِ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07828",
+      "note": "USULAN LEMA: مَصِيفٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07829",
+      "note": "USULAN LEMA: كُؤُوسُ الْحِجَامَةِ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07834",
+      "note": "USULAN LEMA: مِرْوَحَةٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07835",
+      "note": "USULAN LEMA: غُرْفَةُ الْقِرَاءَةِ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07836",
+      "note": "USULAN LEMA: مَعْهَدٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07837",
+      "note": "USULAN LEMA: حِصْنٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07844",
+      "note": "USULAN LEMA: مِغْزَلٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07845",
+      "note": "USULAN LEMA: مِكْنَسَةٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07847",
+      "note": "USULAN LEMA: غُرْفَةُ الْكَيِّ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07848",
+      "note": "USULAN LEMA: مَسْكَبٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07849",
+      "note": "USULAN LEMA: مَرْكَزُ التَّعْبِئَةِ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07850",
+      "note": "USULAN LEMA: مَهْدٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07853",
+      "note": "USULAN LEMA: مَحْفَظَةٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07854",
+      "note": "USULAN LEMA: مُسْتَشْعِرٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07859",
+      "note": "USULAN LEMA: مَسْلَخٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07861",
+      "note": "USULAN LEMA: آلَةُ الثَّقْبِ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07862",
+      "note": "USULAN LEMA: مِرْجَلٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07863",
+      "note": "USULAN LEMA: غُرْفَةُ الْجِرَاحَةِ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07865",
+      "note": "USULAN LEMA: مُسْتَوْصَفٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07880",
+      "note": "USULAN LEMA: فَرْزٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07881",
+      "note": "USULAN LEMA: تَبَادُلُ الِالْتِزَامَاتِ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07887",
+      "note": "USULAN LEMA: تَخْوِيفٌ مُتَبَادَلٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07888",
+      "note": "USULAN LEMA: تَقْسِيمٌ إِلَى أَرْبَعَةِ أَجْزَاءٍ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07893",
+      "note": "USULAN LEMA: إِسْقَاطٌ مُتَبَادَلٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-07894",
+      "note": "USULAN LEMA: فُرْصَةٌ مُوَاتِيَةٌ | CATATAN: lema atau arti sumber berpotensi kurang tepat; contoh memakai usulan yang lebih sesuai."
+    },
+    {
+      "id": "VOC-08003",
+      "note": "USULAN LEMA: تَضْيِيقٌ | CATATAN: lema sumber memerlukan koreksi ejaan dan/atau padanan makna sebelum impor."
+    },
+    {
+      "id": "VOC-08015",
+      "note": "USULAN LEMA: زَخْرَفَةٌ | CATATAN: lema sumber memerlukan koreksi ejaan dan/atau padanan makna sebelum impor."
+    },
+    {
+      "id": "VOC-08017",
+      "note": "USULAN LEMA: تَنْعِيمٌ | CATATAN: lema sumber memerlukan koreksi ejaan dan/atau padanan makna sebelum impor."
+    },
+    {
+      "id": "VOC-08050",
+      "note": "USULAN LEMA: تَمْطِيطٌ | CATATAN: lema sumber memerlukan koreksi ejaan dan/atau padanan makna sebelum impor."
+    },
+    {
+      "id": "VOC-08064",
+      "note": "USULAN LEMA: تَجْفِيفٌ | CATATAN: lema sumber memerlukan koreksi ejaan dan/atau padanan makna sebelum impor."
+    },
+    {
+      "id": "VOC-08203",
+      "note": "USULAN LEMA: اِسْتِئْجَارٌ | CATATAN: lema sumber memerlukan koreksi ejaan dan/atau padanan makna sebelum impor."
+    },
+    {
+      "id": "VOC-08204",
+      "note": "USULAN LEMA: اِكْتِنَازٌ | CATATAN: lema sumber memerlukan koreksi ejaan dan/atau padanan makna sebelum impor."
+    },
+    {
+      "id": "VOC-08209",
+      "note": "USULAN LEMA: اِسْتِفْرَاغٌ | CATATAN: lema sumber memerlukan koreksi ejaan dan/atau padanan makna sebelum impor."
+    },
+    {
+      "id": "VOC-08210",
+      "note": "USULAN LEMA: تَكْتِيفُ الْيَدَيْنِ | CATATAN: lema sumber memerlukan koreksi ejaan dan/atau padanan makna sebelum impor."
+    },
+    {
+      "id": "VOC-08211",
+      "note": "USULAN LEMA: اِحْتِفَافٌ | CATATAN: lema sumber memerlukan koreksi ejaan dan/atau padanan makna sebelum impor."
+    },
+    {
+      "id": "VOC-08212",
+      "note": "USULAN LEMA: تَسْخِيرٌ قَسْرِيٌّ | CATATAN: lema sumber memerlukan koreksi ejaan dan/atau padanan makna sebelum impor."
+    },
+    {
+      "id": "VOC-08245",
+      "note": "USULAN LEMA: مَصْعُوقٌ بِالْكَهْرَبَاءِ | CATATAN: lema sumber memerlukan koreksi ejaan dan/atau padanan makna sebelum impor."
+    },
+    {
+      "id": "VOC-08276",
+      "note": "USULAN LEMA: مُتَخَفٍّ | CATATAN: lema sumber memerlukan koreksi ejaan dan/atau padanan makna sebelum impor."
+    }
+  ],
+  "changed_only_fields": [
+    "example",
+    "translation"
+  ],
+  "revisions_per_part": [
+    56,
+    271,
+    483,
+    532,
+    657,
+    719,
+    744,
+    500,
+    261,
+    3
+  ],
+  "notes": [
+    "240 examples may use proposed lemma forms, while original headword and meaning are deliberately preserved.",
+    "Expert Arabic tashih, grammatical/harakat review, and meaning correction remain required before final publication."
+  ]
+}
