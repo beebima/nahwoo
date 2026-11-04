@@ -5,8 +5,14 @@ const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),asse
 const base=path.resolve(__dirname,'../app/src/main/assets');
 const html=fs.readFileSync(path.join(base,'index.html'),'utf8'),ed=fs.readFileSync(path.join(base,'nw-editorial25.js'),'utf8');
 const main=html.match(/<script>([\s\S]*?)<\/script>/);assert(main);new vm.Script(main[1],{filename:'NAHWOO-index.js'});
-for(const s of ['nw-harakat-method.css','nw-harakat-method.js','nwHarakatResumeMarkup(n)'])assert(html.includes(s),s);
-assert(html.includes("level<=24&&sub===9?nwHarakatResumeMarkup(level):''"));
+for(const s of ['nw-harakat-method.css','nw-harakat-method.js'])assert(html.includes(s),s);
+assert(html.includes('function showLevelResume(n){'));
+assert(html.includes("view='levelResume'"));
+assert(html.includes("else if(view==='levelResume')"));
+assert(html.includes('showLevelResume(${n})'));
+assert(html.includes('${nwHarakatResumeMarkup(level)}'));
+assert(!html.includes("level<=24&&sub===9?nwHarakatResumeMarkup(level):''"));
+assert(!html.includes("${n<=24?nwHarakatResumeMarkup(n):''}"));
 assert(ed.includes("nwHarakatMethodMarkup(n,i)+nwHarakatConclusionMarkup(n,i,m.conclusion||'')"));
 const css=fs.readFileSync(path.join(base,'nw-harakat-method.css'),'utf8');assert(css.includes('nwv5-quote.nw-harakat-quote'));
 const c={window:{}};vm.createContext(c);
