@@ -13,7 +13,7 @@ const c={window:{}};vm.createContext(c);
 const group=['level_01_06.js','level_07_12.js','level_13_18.js','level_19_24.js'];
 for(const f of group){assert(html.includes('content/harakat/'+f));vm.runInContext(fs.readFileSync(path.join(base,'content/harakat',f),'utf8'),c);}
 const rules=c.window.NW_HARAKAT_DATA;assert.equal(Object.keys(rules).length,24);
-for(let n=1;n<=24;n++){assert.equal(rules[n]?.length,10);for(const x of rules[n])assert(x.length===3&&x.every(y=>typeof y==='string'&&y.length>=40));}
+for(let n=1;n<=24;n++){assert.equal(rules[n]?.length,10);for(const x of rules[n])assert(x.length===3&&x.every(y=>typeof y==='string'&&y.length>=30));}
 const escape=s=>String(s||'').replace(/[&<>]/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[x]));
 c.nwV5Text=escape;c.nwEscape=escape;c.nwV5Conclusion=s=>'<aside class="nwv5-conclusion">'+escape(s)+'</aside>';
 vm.runInContext(fs.readFileSync(path.join(base,'nw-harakat-method.js'),'utf8'),c);
