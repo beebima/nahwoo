@@ -1,0 +1,50 @@
+name: Backup legacy NAHWOO question banks to artifact
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/backup-legacy-questions.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Collect all old questions and key files
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p backup/legacy-questions/qbank24 backup/legacy-questions/evaluasi_internal_lama
+          for n in $(seq -w 1 24); do
+            test -s "app/src/main/assets/content/qbank24/level_${n}.js"
+            test -s "app/src/main/assets/content/level_${n}_public.js"
+            test -s "app/src/main/assets/content/level_${n}_keys.js"
+            cp "app/src/main/assets/content/qbank24/level_${n}.js" backup/legacy-questions/qbank24/
+            cp "app/src/main/assets/content/level_${n}_public.js" backup/legacy-questions/evaluasi_internal_lama/
+            cp "app/src/main/assets/content/level_${n}_keys.js" backup/legacy-questions/evaluasi_internal_lama/
+          done
+          cat > backup/legacy-questions/BACA_DULU.txt <<'EOF'
+          NAHWOO - BACKUP SOAL LAMA - 7 NOVEMBER 2026
+          Status: ARSIP, TIDAK DIGUNAKAN DALAM KURIKULUM V5.
+          qbank24/: 24 file (24 level x 1000 = 24000 soal akhir level lama).
+          evaluasi_internal_lama/: 24 file _public.js memuat 4800 soal evaluasi lama
+          (beserta materi legacy); 24 file _keys.js memuat kunci/pembahasan lama.
+          Total: 72 file JS plus manifest dan checksum.
+          Semua bank harus diganti dengan soal baru berdasarkan materi V5.
+          Jangan injeksikan arsip ini ke APK baru.
+          Sumber: repository beebima/nahwoo sebelum pembersihan.
+          EOF
+          find backup/legacy-questions -type f -name '*.js' | sort | xargs sha256sum > backup/legacy-questions/SHA256SUMS.txt
+          test "$(find backup/legacy-questions/qbank24 -type f -name '*.js' | wc -l)" -eq 24
+          test "$(find backup/legacy-questions/evaluasi_internal_lama -type f -name '*.js' | wc -l)" -eq 48
+          du -sh backup/legacy-questions
+      - name: Upload complete question archive for long-term Google Drive backup
+        uses: actions/upload-artifact@v4
+        with:
+          name: NAHWOO-BACKUP-SOAL-LAMA-24000-plus-4800-2026-11-07
+          path: backup/legacy-questions/
+          if-no-files-found: error
+          retention-days: 30
+          compression-level: 6
