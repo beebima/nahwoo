@@ -21,7 +21,7 @@ function block(b){
 window.nwV5LessonMarkup=function(n,i){
  const m=window.NW_V5_LEVELS[n]?.[i];if(!m)return '<p>Materi V5 belum tersedia untuk sublevel ini.</p>';
  let h='<article class="nwv5c-reader" data-v5-level="'+n+'" data-v5-sublevel="'+(i+1)+'">'+m.blocks.map(block).join('')+'</article>';
- if(i===9){let complete=typeof progress==='function'&&progress(n)===10;h+='<section class="nwv5c-final"><div class="nwv5c-label">SETELAH 10 SUBLEVEL</div><h2>Latihan Akhir Level '+n+'</h2><p>1.000 soal, 50 paket × 20 soal. Tidak ada soal di dalam materi.</p><button type="button" onclick="startQuiz('+n+')" '+(complete?'':'disabled')+'>'+(complete?'Buka 1.000 Soal Level '+n:'Tandai selesai seluruh 10 sublevel dahulu')+'</button></section>';}
+ if(i===9){let complete=typeof progress==='function'&&progress(n)===10;h+='<section class="nwv5c-final"><div class="nwv5c-label">SETELAH 10 SUBLEVEL</div><h2>Latihan Akhir Level '+n+'</h2><p>Target latihan baru: 1.000 soal, 50 paket × 20 soal. Bank V5 masih kosong.</p><button type="button" onclick="startQuiz('+n+')" '+(complete?'':'disabled')+'>'+(complete?'Lihat Rencana Latihan Level '+n:'Tandai selesai seluruh 10 sublevel dahulu')+'</button></section>';}
  return h;
 };
 })();

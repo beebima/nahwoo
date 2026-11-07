@@ -1,26 +1,30 @@
 'use strict';
+/* NAHWOO v0.1.8.30 — no old question datasets active or packaged. */
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
-const base=path.resolve(__dirname,'../app/src/main/assets');
-const html=fs.readFileSync(path.join(base,'index.html'),'utf8'),inline=html.match(/<script>([\s\S]*?)<\/script>/);
-assert(inline,'Inline application script missing');new vm.Script(inline[1],{filename:'index.html'});
-assert(!html.includes('nwEvalMarkup()}'),'Internal quiz still displayed');
-assert(!html.includes("else if(view==='levelResume')"),'Separate level recap still displayed');
-assert(!html.includes('Rangkuman Level '+String.fromCharCode(36)+'{n}'),'Recap still linked in menu');
-assert(html.includes('function nahwooLessonMarkup(n,i){if(n<=24&&window.NW_V5_LEVELS[n])return nwV5LessonMarkup(n,i);'));
-const ctx={window:{}};for(const f of ['01_04','05_08','09_12','13_16','17_20','21_24'])vm.runInNewContext(fs.readFileSync(path.join(base,'content/v5/level_'+f+'.js'),'utf8'),ctx,{timeout:12000});
-assert.equal(Object.keys(ctx.window.NW_V5_LEVELS).length,24);
-let subs=0,questions=0,packs=0;const seen=new Set();
-for(let n=1;n<=24;n++){
- const lessons=ctx.window.NW_V5_LEVELS[n];assert.equal(lessons.length,10,'V5 sublevels Level '+n);
- for(let i=0;i<10;i++){const m=lessons[i];assert.equal(m.level,n);assert.equal(m.sublevel,i+1);assert(m.title&&m.blocks.length>5);assert.equal(m.blocks.at(-1).kind,'summary');assert(!Object.hasOwn(m,'question_count'));assert(!m.blocks.some(x=>x.kind==='question'||x.kind==='quiz'));subs++;}
- const ctx2={window:{}};vm.runInNewContext(fs.readFileSync(path.join(base,'content/qbank24','level_'+String(n).padStart(2,'0')+'.js'),'utf8'),ctx2,{timeout:15000});
- const bank=ctx2.window.NW_QBANK24[n];assert.equal(bank.questions.length,1000);assert.equal(bank.packs.length,50);
- for(const q of bank.questions){assert(!seen.has(q.id));seen.add(q.id);assert.equal(q.options.length,6);assert(q.hint1&&q.hint2);}
- for(const p of bank.packs)assert.equal(p.ids.length,20);
- questions+=bank.questions.length;packs+=bank.packs.length;
+const root=path.resolve(__dirname,'..'),base=path.join(root,'app/src/main/assets');
+const index=fs.readFileSync(path.join(base,'index.html'),'utf8');
+const js=index.match(/<script>([\s\S]*?)<\/script>/);assert(js,'main application script missing');new vm.Script(js[1]);
+assert(!index.includes('nwEvalLoad();nwEvalDraw();'),'Internal evaluator still executes');
+assert(!index.includes('function nwEvalMarkup()'),'Internal evaluation renderer retained');
+assert(!index.includes("const questions=[{q:'Kata"),'3 legacy demo questions retained');
+assert(!index.includes("else if(view==='levelResume')"),'Old level recap still visible');
+assert(index.includes('function nahwooLessonMarkup(n,i){if(n<=24&&window.NW_V5_LEVELS[n])return nwV5LessonMarkup(n,i);'));
+const bankSrc=fs.readFileSync(path.join(base,'nw-qbank24-review.js'),'utf8');new vm.Script(bankSrc);
+assert(bankSrc.includes('function nw24CountLevel(n){return 0;}'));
+assert(bankSrc.includes('function nw24TotalProgress(){return 0;}'));
+assert(!bankSrc.includes('nwAssetLoad('),'Old question files still dynamically requested');
+const d={window:{}};vm.runInNewContext(bankSrc,d);assert.equal(d.nw24TotalProgress(),0);assert.equal(d.nw24CountLevel(1),0);
+for(let level=1;level<=24;level++){
+ const n=String(level).padStart(2,'0');
+ for(const p of ['content/qbank24/level_'+n+'.js','content/level_'+n+'_public.js','content/level_'+n+'_keys.js'])assert(!fs.existsSync(path.join(base,p)),'Old question data still bundled: '+p);
 }
-new vm.Script(fs.readFileSync(path.join(base,'nw-v5-reader.js'),'utf8'));
-assert.equal(subs,240);assert.equal(questions,24000);assert.equal(packs,1200);
-const gradle=fs.readFileSync(path.resolve(__dirname,'../app/build.gradle'),'utf8');
-assert(gradle.includes("versionName '0.1.8.29'")&&gradle.includes('versionCode 36'));
-console.log('PASS NAHWOO V5: 24 level, 240 sublevel; no internal questions or level recap; 24,000 end-level bank questions; 1,200 packs.');
+const c={window:{}};for(const x of ['01_04','05_08','09_12','13_16','17_20','21_24'])vm.runInNewContext(fs.readFileSync(path.join(base,'content/v5/level_'+x+'.js'),'utf8'),c,{timeout:12000});
+assert.equal(Object.keys(c.window.NW_V5_LEVELS).length,24);
+let total=0;
+for(let n=1;n<=24;n++){const rows=c.window.NW_V5_LEVELS[n];assert.equal(rows.length,10);
+ for(let i=0;i<rows.length;i++){const row=rows[i];assert.equal(row.level,n);assert.equal(row.sublevel,i+1);assert.equal(row.blocks.at(-1).kind,'summary');assert(!Object.hasOwn(row,'question_count'));assert(!row.blocks.some(x=>x.kind==='question'||x.kind==='quiz'));total++;}
+}
+assert.equal(total,240);
+const r=fs.readFileSync(path.join(base,'nw-v5-reader.js'),'utf8');new vm.Script(r);assert(r.includes('Bank V5 masih kosong.'));
+const gradle=fs.readFileSync(path.join(root,'app/build.gradle'),'utf8');assert(gradle.includes("versionName '0.1.8.30'")&&gradle.includes('versionCode 37'));
+console.log('PASS NAHWOO V5: 240 lessons retained; 0 old question files; 0 active question bank; no internal quiz; 1,000 new questions per level planned.');

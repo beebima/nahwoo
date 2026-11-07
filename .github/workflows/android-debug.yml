@@ -15,7 +15,7 @@ jobs:
           node-version: '22'
       - name: QA accepted editorial or legacy source by version
         run: |
-          if grep -q "versionName '0.1.8.29'" app/build.gradle; then
+          if grep -q "versionName '0.1.8.30'" app/build.gradle; then
             node scripts/qa-v5-injection.js
           elif grep -Eq "versionName '0.1.8.(17|18|19|20|21|22|23|24|25|26|27|28)'" app/build.gradle; then
             node scripts/qa-qbank-v21.js
