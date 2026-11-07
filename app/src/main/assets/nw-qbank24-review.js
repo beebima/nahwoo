@@ -18,8 +18,8 @@ function nw24OpenLevel(n){if(typeof isLocked==='function'&&isLocked(n)){lockInfo
 
 function nw24Markup(){
  return '<button class="back" onclick="back()">← Kembali ke Latihan</button>'+
- '<div class="nw24-title"><span class="eyebrow">BANK SOAL TAMBAHAN · DRAFT REVIEW</span>'+
- '<h1>24.000 Soal Nahwu</h1><p>24 level · 50 paket/level · 20 soal/paket. Terpisah dari 4.800 soal evaluasi yang sudah ada.</p>'+
+ '<div class="nw24-title"><span class="eyebrow">LATIHAN AKHIR LEVEL · DRAFT REVIEW</span>'+
+ '<h1>24.000 Soal Nahwu</h1><p>24 level · 50 paket/level · 20 soal/paket. Soal hanya tersedia di latihan akhir level, bukan di materi.</p>'+
  '<p class="nw24-disclaimer">Mode review: 20 soal per paket, opsi A–F, dua petunjuk, dan catatan koreksi. Bank ini belum memiliki kunci/pembahasan dalam aplikasi sehingga penilaian benar-salah belum aktif.</p></div>'+
  '<div id="nw24-root" class="nw24-root"><p>Menyiapkan bank soal…</p></div>';
 }
